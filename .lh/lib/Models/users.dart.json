@@ -1,0 +1,162 @@
+{
+    "sourceFile": "lib/Models/users.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1651669737664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651669765647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,13 @@\n       required this.time});\r\n   static List<Users> generateUsers() {\r\n     return [\r\n       Users(\r\n-        id: 1,\r\n-        firstName: 'Cecily',\r\n-        lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: 'Now',\r\n-      ),\r\n+          id: 1,\r\n+          firstName: 'Cecily',\r\n+          lastName: 'Trujillo',\r\n+          chatText: 'Awesome Setup',\r\n+          profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+          time: 'Now'),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651669780829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,30 @@\n       required this.time});\r\n   static List<Users> generateUsers() {\r\n     return [\r\n       Users(\r\n-          id: 1,\r\n-          firstName: 'Cecily',\r\n-          lastName: 'Trujillo',\r\n-          chatText: 'Awesome Setup',\r\n-          profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-          time: 'Now'),\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651669791151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,7 +38,47 @@\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n         time: 'Now',\r\n       ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n+      Users(\r\n+        id: 1,\r\n+        firstName: 'Cecily',\r\n+        lastName: 'Trujillo',\r\n+        chatText: 'Awesome Setup',\r\n+        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        time: 'Now',\r\n+      ),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651669796363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: 'Now',\r\n+        time: '18',\r\n       ),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651669808292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,10 +75,10 @@\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: '18',\r\n+        profileImage: 'assets/profile_pic/userImage8.jpeg',\r\n+        time: '18 Feb',\r\n       ),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651669817502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n       Users(\r\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n+        chatText: 'How are you',\r\n         profileImage: 'assets/profile_pic/userImage8.jpeg',\r\n         time: '18 Feb',\r\n       ),\r\n     ];\r\n"
+                },
+                {
+                    "date": 1651669825096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,11 +72,11 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'John',\r\n         lastName: 'Trujillo',\r\n-        chatText: 'How are you',\r\n+        chatText: 'How are you?',\r\n         profileImage: 'assets/profile_pic/userImage8.jpeg',\r\n         time: '18 Feb',\r\n       ),\r\n     ];\r\n"
+                },
+                {
+                    "date": 1651669832453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'John',\r\n-        lastName: 'Trujillo',\r\n+        lastName: 'Wick',\r\n         chatText: 'How are you?',\r\n         profileImage: 'assets/profile_pic/userImage8.jpeg',\r\n         time: '18 Feb',\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651669896731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n       Users(\r\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n+        chatText: 'Can you please share ',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651669907367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,10 +65,10 @@\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Cecily',\r\n-        lastName: 'Trujillo',\r\n-        chatText: 'Can you please share ',\r\n+        lastName: 'Jones',\r\n+        chatText: 'Can you please share the file?',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651669912781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'Andrey',\r\n         lastName: 'Jones',\r\n         chatText: 'Can you please share the file?',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n         time: 'Now',\r\n"
+                },
+                {
+                    "date": 1651669920851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n         firstName: 'Andrey',\r\n         lastName: 'Jones',\r\n         chatText: 'Can you please share the file?',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: 'Now',\r\n+        time: '24 Feb',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'John',\r\n"
+                },
+                {
+                    "date": 1651669927919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: 'Now',\r\n+        time: '23 March',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Andrey',\r\n"
+                },
+                {
+                    "date": 1651669934847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,16 +60,16 @@\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: '23 March',\r\n+        time: '23 Mar',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Andrey',\r\n         lastName: 'Jones',\r\n         chatText: 'Can you please share the file?',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        profileImage: 'assets/profile_pic/userImage7.jpeg',\r\n         time: '24 Feb',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n"
+                },
+                {
+                    "date": 1651669942826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,17 +51,17 @@\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        profileImage: 'assets/profile_pic/userImage6.jpeg',\r\n         time: '23 Mar',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n"
+                },
+                {
+                    "date": 1651669953421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       Users(\r\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n+        chatText: 'will update you in evening',\r\n         profileImage: 'assets/profile_pic/userImage6.jpeg',\r\n         time: '23 Mar',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651669960292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Cecily',\r\n-        lastName: 'Trujillo',\r\n+        lastName: 'Pena',\r\n         chatText: 'will update you in evening',\r\n         profileImage: 'assets/profile_pic/userImage6.jpeg',\r\n         time: '23 Mar',\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651669970962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,17 +48,17 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'Debra',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'Jacob',\r\n         lastName: 'Pena',\r\n         chatText: 'will update you in evening',\r\n         profileImage: 'assets/profile_pic/userImage6.jpeg',\r\n         time: '23 Mar',\r\n"
+                },
+                {
+                    "date": 1651669981044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Debra',\r\n-        lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n+        lastName: 'Hawkins',\r\n+        chatText: 'Thankyou, It's awesome',\r\n         profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651669997162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,11 +50,11 @@\n       Users(\r\n         id: 1,\r\n         firstName: 'Debra',\r\n         lastName: 'Hawkins',\r\n-        chatText: 'Thankyou, It's awesome',\r\n+        chatText: 'Thankyou, It\\'s awesome',\r\n         profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n-        time: 'Now',\r\n+        time: '28',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Jacob',\r\n"
+                },
+                {
+                    "date": 1651670008427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'Philip',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n         time: 'Now',\r\n@@ -52,9 +52,9 @@\n         firstName: 'Debra',\r\n         lastName: 'Hawkins',\r\n         chatText: 'Thankyou, It\\'s awesome',\r\n         profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n-        time: '28',\r\n+        time: '28 Mar',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Jacob',\r\n"
+                },
+                {
+                    "date": 1651670019446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Philip',\r\n-        lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n+        lastName: 'Fox',\r\n+        chatText: 'Busy! Call me in 20 mins',\r\n         profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651670025490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,17 +35,17 @@\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Philip',\r\n         lastName: 'Fox',\r\n         chatText: 'Busy! Call me in 20 mins',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        profileImage: 'assets/profile_pic/userImage4.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n"
+                },
+                {
+                    "date": 1651670060317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         id: 1,\r\n         firstName: 'Cecily',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+        profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n@@ -44,9 +44,9 @@\n         firstName: 'Philip',\r\n         lastName: 'Fox',\r\n         chatText: 'Busy! Call me in 20 mins',\r\n         profileImage: 'assets/profile_pic/userImage4.jpeg',\r\n-        time: 'Now',\r\n+        time: '31',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Debra',\r\n"
+                },
+                {
+                    "date": 1651670071645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'Jorge',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n         time: 'Now',\r\n@@ -44,9 +44,9 @@\n         firstName: 'Philip',\r\n         lastName: 'Fox',\r\n         chatText: 'Busy! Call me in 20 mins',\r\n         profileImage: 'assets/profile_pic/userImage4.jpeg',\r\n-        time: '31',\r\n+        time: '31 Mar',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Debra',\r\n"
+                },
+                {
+                    "date": 1651670082231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Jorge',\r\n-        lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n+        lastName: 'Henry',\r\n+        chatText: 'Hey where are you?',\r\n         profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651670091384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         firstName: 'Jorge',\r\n         lastName: 'Henry',\r\n         chatText: 'Hey where are you?',\r\n         profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n-        time: 'Now',\r\n+        time: '03',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Philip',\r\n"
+                },
+                {
+                    "date": 1651670107323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Cecily',\r\n+        firstName: 'Glady',\r\n         lastName: 'Trujillo',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n         time: 'Now',\r\n@@ -36,9 +36,9 @@\n         firstName: 'Jorge',\r\n         lastName: 'Henry',\r\n         chatText: 'Hey where are you?',\r\n         profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n-        time: '03',\r\n+        time: '03 Apr',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Philip',\r\n"
+                },
+                {
+                    "date": 1651670124022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n         time: 'Now',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n-        firstName: 'Glady',\r\n-        lastName: 'Trujillo',\r\n+        firstName: 'Glady\\'s',\r\n+        lastName: 'Murphy',\r\n         chatText: 'Awesome Setup',\r\n         profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n         time: 'Now',\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651670135136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       Users(\r\n         id: 1,\r\n         firstName: 'Glady\\'s',\r\n         lastName: 'Murphy',\r\n-        chatText: 'Awesome Setup',\r\n+        chatText: 'That's Great',\r\n         profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n         time: 'Now',\r\n       ),\r\n       Users(\r\n"
+                },
+                {
+                    "date": 1651670149702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,11 @@\n       Users(\r\n         id: 1,\r\n         firstName: 'Glady\\'s',\r\n         lastName: 'Murphy',\r\n-        chatText: 'That's Great',\r\n+        chatText: 'That\\'s Great',\r\n         profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n-        time: 'Now',\r\n+        time: '4',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Jorge',\r\n"
+                },
+                {
+                    "date": 1651670154945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         firstName: 'Glady\\'s',\r\n         lastName: 'Murphy',\r\n         chatText: 'That\\'s Great',\r\n         profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n-        time: '4',\r\n+        time: '4 Apr',\r\n       ),\r\n       Users(\r\n         id: 1,\r\n         firstName: 'Jorge',\r\n"
+                },
+                {
+                    "date": 1651670786552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,73 +12,73 @@\n       required this.lastName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time});\r\n-  static List<Users> generateUsers() {\r\n-    return [\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Cecily',\r\n-        lastName: 'Trujillo',\r\n-        chatText: 'Awesome Setup',\r\n-        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n-        time: 'Now',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Glady\\'s',\r\n-        lastName: 'Murphy',\r\n-        chatText: 'That\\'s Great',\r\n-        profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n-        time: '4 Apr',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Jorge',\r\n-        lastName: 'Henry',\r\n-        chatText: 'Hey where are you?',\r\n-        profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n-        time: '03 Apr',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Philip',\r\n-        lastName: 'Fox',\r\n-        chatText: 'Busy! Call me in 20 mins',\r\n-        profileImage: 'assets/profile_pic/userImage4.jpeg',\r\n-        time: '31 Mar',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Debra',\r\n-        lastName: 'Hawkins',\r\n-        chatText: 'Thankyou, It\\'s awesome',\r\n-        profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n-        time: '28 Mar',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Jacob',\r\n-        lastName: 'Pena',\r\n-        chatText: 'will update you in evening',\r\n-        profileImage: 'assets/profile_pic/userImage6.jpeg',\r\n-        time: '23 Mar',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'Andrey',\r\n-        lastName: 'Jones',\r\n-        chatText: 'Can you please share the file?',\r\n-        profileImage: 'assets/profile_pic/userImage7.jpeg',\r\n-        time: '24 Feb',\r\n-      ),\r\n-      Users(\r\n-        id: 1,\r\n-        firstName: 'John',\r\n-        lastName: 'Wick',\r\n-        chatText: 'How are you?',\r\n-        profileImage: 'assets/profile_pic/userImage8.jpeg',\r\n-        time: '18 Feb',\r\n-      ),\r\n-    ];\r\n-  }\r\n+  // static List<Users> generateUsers() {\r\n+  //   return [\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Cecily',\r\n+  //       lastName: 'Trujillo',\r\n+  //       chatText: 'Awesome Setup',\r\n+  //       profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n+  //       time: 'Now',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Glady\\'s',\r\n+  //       lastName: 'Murphy',\r\n+  //       chatText: 'That\\'s Great',\r\n+  //       profileImage: 'assets/profile_pic/userImage2.jpeg',\r\n+  //       time: '4 Apr',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Jorge',\r\n+  //       lastName: 'Henry',\r\n+  //       chatText: 'Hey where are you?',\r\n+  //       profileImage: 'assets/profile_pic/userImage3.jpeg',\r\n+  //       time: '03 Apr',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Philip',\r\n+  //       lastName: 'Fox',\r\n+  //       chatText: 'Busy! Call me in 20 mins',\r\n+  //       profileImage: 'assets/profile_pic/userImage4.jpeg',\r\n+  //       time: '31 Mar',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Debra',\r\n+  //       lastName: 'Hawkins',\r\n+  //       chatText: 'Thankyou, It\\'s awesome',\r\n+  //       profileImage: 'assets/profile_pic/userImage5.jpeg',\r\n+  //       time: '28 Mar',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Jacob',\r\n+  //       lastName: 'Pena',\r\n+  //       chatText: 'will update you in evening',\r\n+  //       profileImage: 'assets/profile_pic/userImage6.jpeg',\r\n+  //       time: '23 Mar',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'Andrey',\r\n+  //       lastName: 'Jones',\r\n+  //       chatText: 'Can you please share the file?',\r\n+  //       profileImage: 'assets/profile_pic/userImage7.jpeg',\r\n+  //       time: '24 Feb',\r\n+  //     ),\r\n+  //     Users(\r\n+  //       id: 1,\r\n+  //       firstName: 'John',\r\n+  //       lastName: 'Wick',\r\n+  //       chatText: 'How are you?',\r\n+  //       profileImage: 'assets/profile_pic/userImage8.jpeg',\r\n+  //       time: '18 Feb',\r\n+  //     ),\r\n+  //   ];\r\n+  // }\r\n }\r\n"
+                },
+                {
+                    "date": 1651671469142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class Users {\r\n-  num? id;\r\n+  // num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n   String? chatText;\r\n   String? profileImage;\r\n"
+                },
+                {
+                    "date": 1651671474930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n class Users {\r\n-  // num? id;\r\n+  \r\n   String? firstName;\r\n   String? lastName;\r\n   String? chatText;\r\n   String? profileImage;\r\n   String? time;\r\n \r\n   Users(\r\n-      {required this.id,\r\n+      {\r\n       required this.firstName,\r\n       required this.lastName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n"
+                },
+                {
+                    "date": 1651733401532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,13 @@\n class Users {\r\n-  \r\n   String? firstName;\r\n   String? lastName;\r\n   String? chatText;\r\n   String? profileImage;\r\n   String? time;\r\n \r\n   Users(\r\n-      {\r\n-      required this.firstName,\r\n+      {required this.firstName,\r\n       required this.lastName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time});\r\n"
+                }
+            ],
+            "date": 1651669737664,
+            "name": "Commit-0",
+            "content": "class Users {\r\n  num? id;\r\n  String? firstName;\r\n  String? lastName;\r\n  String? chatText;\r\n  String? profileImage;\r\n  String? time;\r\n\r\n  Users(\r\n      {required this.id,\r\n      required this.firstName,\r\n      required this.lastName,\r\n      required this.chatText,\r\n      required this.profileImage,\r\n      required this.time});\r\n  static List<Users> generateUsers() {\r\n    return [\r\n      Users(\r\n        id: 1,\r\n        firstName: 'Cecily',\r\n        lastName: 'Trujillo',\r\n        chatText: 'Awesome Setup',\r\n        profileImage: 'assets/profile_pic/userImage1.jpeg',\r\n        time: 'Now',\r\n      ),\r\n    ];\r\n  }\r\n}\r\n"
+        }
+    ]
+}

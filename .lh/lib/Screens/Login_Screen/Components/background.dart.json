@@ -1,0 +1,38 @@
+{
+    "sourceFile": "lib/Screens/Login_Screen/Components/background.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1651474676893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651474693855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class Background extends StatelessWidget {\r\n+  final \r\n   const Background({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651474698907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n import 'package:flutter/material.dart';\r\n \r\n class Background extends StatelessWidget {\r\n-  final \r\n-  const Background({ Key? key }) : super(key: key);\r\n+  final Widget childl;\r\n+  const Background({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n-    );\r\n\\ No newline at end of file\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651474704733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class Background extends StatelessWidget {\r\n-  final Widget childl;\r\n-  const Background({Key? key}) : super(key: key);\r\n+  final Widget child;\r\n+  const Background({Key? key, this.child}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651474713672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n   const Background({Key? key, required this.child}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Sized\r\n+    Size\r\n     return Container();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651474742884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return SizedBox(\r\n       width: double.infinity,\r\n-      height: size.,\r\n+      height: size.h,\r\n     );\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1651474676893,
+            "name": "Commit-0",
+            "content": "class Background extends StatelessWidget {\r\n  const Background({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

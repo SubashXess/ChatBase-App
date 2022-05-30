@@ -1,0 +1,718 @@
+{
+    "sourceFile": "lib/Screens/Home_Screen/home_screen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 175,
+            "patches": [
+                {
+                    "date": 1651566919237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651566927318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,15 @@\n-stl\n\\ No newline at end of file\n+class HomeScreen extends StatefulWidget {\r\n+  const HomeScreen({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  State<HomeScreen> createState() => _HomeScreenState();\r\n+}\r\n+\r\n+class _HomeScreenState extends State<HomeScreen> {\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651566937219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class HomeScreen extends StatefulWidget {\r\n-  const HomeScreen({ Key? key }) : super(key: key);\r\n+  const HomeScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return S();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651566943356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,9 @@\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return S();\r\n+    return Scaffold(\r\n+      body: ,\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651566952468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: ,\r\n+      body: SafeArea(child: Center),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651566958511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: SafeArea(child: Center),\r\n+      body: SafeArea(child: Center(child: Text(data),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651566963662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: SafeArea(child: Center(child: Text(data),)),\r\n+      body: SafeArea(child: Center(child: const Text('Welcome'),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651566969174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,13 @@\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Scaffold(\r\n-      body: SafeArea(child: Center(child: const Text('Welcome'),)),\r\n+    return const Scaffold(\r\n+      body: SafeArea(\r\n+        child: Center(\r\n+          child: Text('Welcome'),\r\n+        ),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651576008397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n+      b\r\n       body: SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651576013625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n-      b\r\n+      bottomNavigationBar: BottomNa,\r\n       body: SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651576021598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n-      bottomNavigationBar: BottomNa,\r\n+      bottomNavigationBar: BottomNavigationBar(items: []),\r\n       body: SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651576029756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Scaffold(\r\n+    return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: []),\r\n-      body: SafeArea(\r\n+      body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651576034832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      bottomNavigationBar: BottomNavigationBar(items: []),\r\n+      bottomNavigationBar: BottomNavigationBar(items: [\r\n+        Bottom\r\n+      ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651576068375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        Bottom\r\n+        BottomNavigationBarItem(icon: Icons)\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576075457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        BottomNavigationBarItem(icon: Icons)\r\n+        BottomNavigationBarItem(icon: Icon(Icons.mesaa))\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576085951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        BottomNavigationBarItem(icon: Icon(Icons.mesaa))\r\n+        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), tit)\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576092399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), tit)\r\n+        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), )\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576098363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), )\r\n+        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), label: '')\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576105842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), label: '')\r\n+        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576118936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,13 @@\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return  Scaffold(\r\n+    return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n-        BottomNavigationBarItem(icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+        BottomNavigationBarItem(\r\n+            icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+            Bott\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576128776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n-            Bott\r\n+            BottomNavigationBarItem(\r\n+            icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576134723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n             BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+            BottomNavigationBarItem(\r\n+            icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576159486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,14 @@\n class _HomeScreenState extends State<HomeScreen> {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavigationBar(items: [\r\n+      bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n-            BottomNavigationBarItem(\r\n+        BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n-            BottomNavigationBarItem(\r\n+        BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n"
+                },
+                {
+                    "date": 1651576178844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+            icon: Icon(Icons.group), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651576184127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.group), label: 'Chats'),\r\n+            icon: Icon(Icons.group_rou), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651576190965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.group_rou), label: 'Chats'),\r\n+            icon: Icon(Icons.groups_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651576202483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.groups_rounded), label: 'Chats'),\r\n+            icon: Icon(Icons.group_roun), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651576215412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.group_roun), label: 'Chats'),\r\n+            icon: Icon(Icons.group_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+            icon: Icon(Icons.), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576221477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.group_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.), label: 'Chats'),\r\n+            icon: Icon(Icons.account_circle_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651576228810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.group_rounded), label: 'Chats'),\r\n+            icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.account_circle_rounded), label: 'Chats'),\r\n       ]),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651577397529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n+  \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n@@ -16,9 +17,9 @@\n             icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n         BottomNavigationBarItem(\r\n-            icon: Icon(Icons.account_circle_rounded), label: 'Chats'),\r\n+            icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651577404027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n-  \r\n+  int _selected\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n"
+                },
+                {
+                    "date": 1651577409812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n-  int _selected\r\n+  int _selectedItem = ;\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n"
+                },
+                {
+                    "date": 1651577445535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n-  int _selectedItem = ;\r\n+  int _selectedItem = 0;\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(items: const [\r\n"
+                },
+                {
+                    "date": 1651577458744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n         BottomNavigationBarItem(\r\n             icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n+            \r\n       ]),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651577464681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,17 +11,18 @@\n   int _selectedItem = 0;\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavigationBar(items: const [\r\n-        BottomNavigationBarItem(\r\n-            icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n-        BottomNavigationBarItem(\r\n-            icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n-        BottomNavigationBarItem(\r\n-            icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n-            \r\n-      ]),\r\n+      bottomNavigationBar: BottomNavigationBar(\r\n+        items: const [\r\n+          BottomNavigationBarItem(\r\n+              icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+          BottomNavigationBarItem(\r\n+              icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n+          BottomNavigationBarItem(\r\n+              icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n+        ],\r\n+      ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651577469987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n               icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n         ],\r\n+        currentIndex: ,\r\n       ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651577478435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n               icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n         ],\r\n-        currentIndex: ,\r\n+        currentIndex: _selectedItem,\r\n+        onTap: () {},\r\n       ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651577487960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n         ],\r\n         currentIndex: _selectedItem,\r\n-        onTap: () {},\r\n+        onTap: (setValue) {},\r\n       ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651577496024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,13 @@\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n         ],\r\n         currentIndex: _selectedItem,\r\n-        onTap: (setValue) {},\r\n+        onTap: (setValue) {\r\n+          setState(() {\r\n+            \r\n+          });\r\n+        },\r\n       ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n           child: Text('Welcome'),\r\n"
+                },
+                {
+                    "date": 1651577502158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         ],\r\n         currentIndex: _selectedItem,\r\n         onTap: (setValue) {\r\n           setState(() {\r\n-            \r\n+            _selectedItem\r\n           });\r\n         },\r\n       ),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651577507354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         ],\r\n         currentIndex: _selectedItem,\r\n         onTap: (setValue) {\r\n           setState(() {\r\n-            _selectedItem\r\n+            _selectedItem = setValue;\r\n           });\r\n         },\r\n       ),\r\n       body: const SafeArea(\r\n"
+                },
+                {
+                    "date": 1651577971745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n+  var _pagesData\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavigationBar(\r\n"
+                },
+                {
+                    "date": 1651577985389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Screens/Chat_Screen/chat_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class HomeScreen extends StatefulWidget {\r\n   const HomeScreen({Key? key}) : super(key: key);\r\n@@ -8,9 +9,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData\r\n+  var _pagesData = [ChatScreen()];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651577991697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Screens/Chat_Screen/chat_screen.dart';\r\n+import 'package:chatbase_app/Screens/Group_Screen/group_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class HomeScreen extends StatefulWidget {\r\n   const HomeScreen({Key? key}) : super(key: key);\r\n@@ -9,9 +10,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [ChatScreen()];\r\n+  var _pagesData = [ChatScreen(), GroupScreen()];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651577998396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import 'package:chatbase_app/Screens/Chat_Screen/chat_screen.dart';\r\n import 'package:chatbase_app/Screens/Group_Screen/group_screen.dart';\r\n+import 'package:chatbase_app/Screens/Profile_Screen/profile_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class HomeScreen extends StatefulWidget {\r\n   const HomeScreen({Key? key}) : super(key: key);\r\n@@ -10,9 +11,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [ChatScreen(), GroupScreen()];\r\n+  var _pagesData = [ChatScreen(), GroupScreen(), ProfileScreen()];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651578006711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [ChatScreen(), GroupScreen(), ProfileScreen()];\r\n+  var _pagesData = [const ChatScreen(), GroupScreen(), ProfileScreen()];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651578011903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [const ChatScreen(), GroupScreen(), ProfileScreen()];\r\n+  var _pagesData = [const ChatScreen(), const GroupScreen(), ProfileScreen()];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651578046990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [const ChatScreen(), const GroupScreen(), ProfileScreen()];\r\n+  var _pagesData = [const ChatScreen(), const GroupScreen(), const ProfileScreen()];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n@@ -34,9 +34,9 @@\n         },\r\n       ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n-          child: Text('Welcome'),\r\n+          child: _pagesData,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651578052553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         },\r\n       ),\r\n       body: const SafeArea(\r\n         child: Center(\r\n-          child: _pagesData,\r\n+          child: _pagesData[],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651578058223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,13 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [const ChatScreen(), const GroupScreen(), const ProfileScreen()];\r\n+  var _pagesData = [\r\n+    const ChatScreen(),\r\n+    const GroupScreen(),\r\n+    const ProfileScreen()\r\n+  ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n@@ -32,11 +36,11 @@\n             _selectedItem = setValue;\r\n           });\r\n         },\r\n       ),\r\n-      body: const SafeArea(\r\n+      body: SafeArea(\r\n         child: Center(\r\n-          child: _pagesData[],\r\n+          child: _pagesData[_selectedItem],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651579595025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n   int _selectedItem = 0;\r\n-  var _pagesData = [\r\n+  final _pagesData = [\r\n     const ChatScreen(),\r\n     const GroupScreen(),\r\n     const ProfileScreen()\r\n   ];\r\n@@ -30,8 +30,9 @@\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n         ],\r\n         currentIndex: _selectedItem,\r\n+        \r\n         onTap: (setValue) {\r\n           setState(() {\r\n             _selectedItem = setValue;\r\n           });\r\n"
+                },
+                {
+                    "date": 1651579605934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,8 @@\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n         ],\r\n         currentIndex: _selectedItem,\r\n-        \r\n         onTap: (setValue) {\r\n           setState(() {\r\n             _selectedItem = setValue;\r\n           });\r\n"
+                },
+                {
+                    "date": 1651579769458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavigationBar(\r\n+      bottomNavigationBar:\r\n+       BottomNavigationBar(\r\n         items: const [\r\n           BottomNavigationBarItem(\r\n               icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n           BottomNavigationBarItem(\r\n"
+                },
+                {
+                    "date": 1651579778646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,24 +21,24 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar:\r\n-       BottomNavigationBar(\r\n-        items: const [\r\n-          BottomNavigationBarItem(\r\n-              icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n-          BottomNavigationBarItem(\r\n-              icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n-          BottomNavigationBarItem(\r\n-              icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n-        ],\r\n-        currentIndex: _selectedItem,\r\n-        onTap: (setValue) {\r\n-          setState(() {\r\n-            _selectedItem = setValue;\r\n-          });\r\n-        },\r\n-      ),\r\n+      //  BottomNavigationBar(\r\n+      //   items: const [\r\n+      //     BottomNavigationBarItem(\r\n+      //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n+      //     BottomNavigationBarItem(\r\n+      //         icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n+      //     BottomNavigationBarItem(\r\n+      //         icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n+      //   ],\r\n+      //   currentIndex: _selectedItem,\r\n+      //   onTap: (setValue) {\r\n+      //     setState(() {\r\n+      //       _selectedItem = setValue;\r\n+      //     });\r\n+      //   },\r\n+      // ),\r\n       body: SafeArea(\r\n         child: Center(\r\n           child: _pagesData[_selectedItem],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651579788738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar:\r\n+      bottomNavigationBar: BottomNa\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579811045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:bottom_navy_bar/bottom_navy_bar.dart';\r\n import 'package:chatbase_app/Screens/Chat_Screen/chat_screen.dart';\r\n import 'package:chatbase_app/Screens/Group_Screen/group_screen.dart';\r\n import 'package:chatbase_app/Screens/Profile_Screen/profile_screen.dart';\r\n import 'package:flutter/material.dart';\r\n@@ -20,9 +21,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNa\r\n+      bottomNavigationBar: BottomNavyBar()\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579822117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavyBar()\r\n+      bottomNavigationBar: BottomNavyBar(selectedIndex: ,)\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579832503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n-  int _selectedItem = 0;\r\n+  int _current = 0;\r\n   final _pagesData = [\r\n     const ChatScreen(),\r\n     const GroupScreen(),\r\n     const ProfileScreen()\r\n"
+                },
+                {
+                    "date": 1651579840218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   State<HomeScreen> createState() => _HomeScreenState();\r\n }\r\n \r\n class _HomeScreenState extends State<HomeScreen> {\r\n-  int _current = 0;\r\n+  int _currentIndex = 0;\r\n   final _pagesData = [\r\n     const ChatScreen(),\r\n     const GroupScreen(),\r\n     const ProfileScreen()\r\n"
+                },
+                {
+                    "date": 1651579849749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n       //   },\r\n       // ),\r\n       body: SafeArea(\r\n         child: Center(\r\n-          child: _pagesData[_selectedItem],\r\n+          child: _pagesData[_currentIndex],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651579869520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavyBar(selectedIndex: ,)\r\n+      bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex,)\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579874891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex,)\r\n+      bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex, onItemSelected: ,)\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579883298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,13 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex, onItemSelected: ,)\r\n+      bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex, onItemSelected: (index) {\r\n+        setState(() {\r\n+          \r\n+        });\r\n+      },)\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579890731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex, onItemSelected: (index) {\r\n         setState(() {\r\n-          \r\n+          _currentIndex = index;\r\n         });\r\n       },)\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579896001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,13 +21,16 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavyBar(selectedIndex: _currentIndex, onItemSelected: (index) {\r\n-        setState(() {\r\n-          _currentIndex = index;\r\n-        });\r\n-      },)\r\n+      bottomNavigationBar: BottomNavyBar(\r\n+        selectedIndex: _currentIndex,\r\n+        onItemSelected: (index) {\r\n+          setState(() {\r\n+            _currentIndex = index;\r\n+          });\r\n+        },\r\n+      ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n       //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n"
+                },
+                {
+                    "date": 1651579903291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n           setState(() {\r\n             _currentIndex = index;\r\n           });\r\n         },\r\n+        items\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n"
+                },
+                {
+                    "date": 1651579914764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,11 @@\n           setState(() {\r\n             _currentIndex = index;\r\n           });\r\n         },\r\n-        items\r\n+        items: [\r\n+          BottomNa\r\n+        ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n       //     BottomNavigationBarItem(\r\n"
+                },
+                {
+                    "date": 1651579922650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             _currentIndex = index;\r\n           });\r\n         },\r\n         items: [\r\n-          BottomNa\r\n+          BottomNavyBarItem(icon: Icon(Icons), title: title)\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579928971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             _currentIndex = index;\r\n           });\r\n         },\r\n         items: [\r\n-          BottomNavyBarItem(icon: Icon(Icons), title: title)\r\n+          BottomNavyBarItem(icon: Icon(Icons.chat_rounded), title: title)\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579935416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             _currentIndex = index;\r\n           });\r\n         },\r\n         items: [\r\n-          BottomNavyBarItem(icon: Icon(Icons.chat_rounded), title: title)\r\n+          BottomNavyBarItem(icon: Icon(Icons.chat_bubble_rounded), title: title)\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579943079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             _currentIndex = index;\r\n           });\r\n         },\r\n         items: [\r\n-          BottomNavyBarItem(icon: Icon(Icons.chat_bubble_rounded), title: title)\r\n+          BottomNavyBarItem(icon: Icon(Icons.chat_bubble_rounded), title: Text)\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579952855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             _currentIndex = index;\r\n           });\r\n         },\r\n         items: [\r\n-          BottomNavyBarItem(icon: Icon(Icons.chat_bubble_rounded), title: Text)\r\n+          BottomNavyBarItem(icon: const Icon(Icons.chat_bubble_rounded), title: Text('Chat'))\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579973004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,11 @@\n             _currentIndex = index;\r\n           });\r\n         },\r\n         items: [\r\n-          BottomNavyBarItem(icon: const Icon(Icons.chat_bubble_rounded), title: Text('Chat'))\r\n+          BottomNavyBarItem(\r\n+              icon: const Icon(Icons.chat_bubble_rounded),\r\n+              title: const Text('Chat'),)\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579978522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n               icon: const Icon(Icons.chat_bubble_rounded),\r\n-              title: const Text('Chat'),)\r\n+              title: const Text('Chat'), activeColor: ),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579985989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n               icon: const Icon(Icons.chat_bubble_rounded),\r\n-              title: const Text('Chat'), activeColor: ),\r\n+              title: const Text('Chat'), activeColor: Colors.blA),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579991717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n               icon: const Icon(Icons.chat_bubble_rounded),\r\n-              title: const Text('Chat'), activeColor: Colors.blA),\r\n+              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n+              ),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651579997792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n         items: [\r\n           BottomNavyBarItem(\r\n               icon: const Icon(Icons.chat_bubble_rounded),\r\n               title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n+              inactiveColor: \r\n               ),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n"
+                },
+                {
+                    "date": 1651580003609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         items: [\r\n           BottomNavyBarItem(\r\n               icon: const Icon(Icons.chat_bubble_rounded),\r\n               title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n-              inactiveColor: \r\n+              inactiveColor: Colors.black,\r\n               ),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n"
+                },
+                {
+                    "date": 1651580015865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,18 @@\n               icon: const Icon(Icons.chat_bubble_rounded),\r\n               title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n               inactiveColor: Colors.black,\r\n               ),\r\n+              BottomNavyBarItem(\r\n+              icon: const Icon(Icons.chat_bubble_rounded),\r\n+              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n+              inactiveColor: Colors.black,\r\n+              ),\r\n+              BottomNavyBarItem(\r\n+              icon: const Icon(Icons.chat_bubble_rounded),\r\n+              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n+              inactiveColor: Colors.black,\r\n+              ),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651580030583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,22 +30,25 @@\n           });\r\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n-              icon: const Icon(Icons.chat_bubble_rounded),\r\n-              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n-              inactiveColor: Colors.black,\r\n-              ),\r\n-              BottomNavyBarItem(\r\n-              icon: const Icon(Icons.chat_bubble_rounded),\r\n-              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n-              inactiveColor: Colors.black,\r\n-              ),\r\n-              BottomNavyBarItem(\r\n-              icon: const Icon(Icons.chat_bubble_rounded),\r\n-              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n-              inactiveColor: Colors.black,\r\n-              ),\r\n+            icon: const Icon(Icons.chat_bubble_rounded),\r\n+            title: const Text('Chat'),\r\n+            activeColor: Colors.blueAccent,\r\n+            inactiveColor: Colors.black,\r\n+          ),\r\n+          BottomNavyBarItem(\r\n+            icon: const Icon(Icons.Group),\r\n+            title: const Text('Chat'),\r\n+            activeColor: Colors.blueAccent,\r\n+            inactiveColor: Colors.black,\r\n+          ),\r\n+          BottomNavyBarItem(\r\n+            icon: const Icon(Icons.chat_bubble_rounded),\r\n+            title: const Text('Chat'),\r\n+            activeColor: Colors.blueAccent,\r\n+            inactiveColor: Colors.black,\r\n+          ),\r\n         ],\r\n       ),\r\n       //  BottomNavigationBar(\r\n       //   items: const [\r\n"
+                },
+                {
+                    "date": 1651580035957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.Group),\r\n+            icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651580043954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.chat_bubble_rounded),\r\n+            icon: const Icon(Icons.avata),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651580055963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.avata),\r\n+            icon: const Icon(Icons.account),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651580062261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.account),\r\n+            icon: const Icon(Icons.account_ci),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651580070186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           });\r\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.chat_bubble_rounded),\r\n+            icon: const Icon(Icons.chat),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n@@ -42,9 +42,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.account_ci),\r\n+            icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651580075953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           });\r\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.chat),\r\n+            icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651580089842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n-            title: const Text('Chat'),\r\n+            title: const Text('Group'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n"
+                },
+                {
+                    "date": 1651580099435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n-            title: const Text('Chat'),\r\n+            title: const Text('Profile'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651580133342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,13 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n+              icon: const Icon(Icons.chat_bubble_rounded),\r\n+              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n+              inactiveColor: Colors.black,\r\n+              ),\r\n+          BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Profile'),\r\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n"
+                },
+                {
+                    "date": 1651580139806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-              icon: const Icon(Icons.chat_bubble_rounded),\r\n+              icon: const Icon(Icons.call_r),\r\n               title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n               inactiveColor: Colors.black,\r\n               ),\r\n           BottomNavyBarItem(\r\n"
+                },
+                {
+                    "date": 1651580146024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-              icon: const Icon(Icons.call_r),\r\n+              icon: const Icon(Icons.call_rounded),\r\n               title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n               inactiveColor: Colors.black,\r\n               ),\r\n           BottomNavyBarItem(\r\n"
+                },
+                {
+                    "date": 1651580182296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   int _currentIndex = 0;\r\n   final _pagesData = [\r\n     const ChatScreen(),\r\n     const GroupScreen(),\r\n+    const \r\n     const ProfileScreen()\r\n   ];\r\n \r\n   @override\r\n@@ -42,12 +43,13 @@\n             activeColor: Colors.blueAccent,\r\n             inactiveColor: Colors.black,\r\n           ),\r\n           BottomNavyBarItem(\r\n-              icon: const Icon(Icons.call_rounded),\r\n-              title: const Text('Chat'), activeColor: Colors.blueAccent,\r\n-              inactiveColor: Colors.black,\r\n-              ),\r\n+            icon: const Icon(Icons.call_rounded),\r\n+            title: const Text('Call'),\r\n+            activeColor: Colors.blueAccent,\r\n+            inactiveColor: Colors.black,\r\n+          ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Profile'),\r\n             activeColor: Colors.blueAccent,\r\n"
+                },
+                {
+                    "date": 1651580188643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   int _currentIndex = 0;\r\n   final _pagesData = [\r\n     const ChatScreen(),\r\n     const GroupScreen(),\r\n-    const \r\n+    const CallScreen()\r\n     const ProfileScreen()\r\n   ];\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651580262624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   int _currentIndex = 0;\r\n   final _pagesData = [\r\n     const ChatScreen(),\r\n     const GroupScreen(),\r\n-    const CallScreen()\r\n+    const CallScreen(),\r\n     const ProfileScreen()\r\n   ];\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651580272686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:bottom_navy_bar/bottom_navy_bar.dart';\r\n+import 'package:chatbase_app/Screens/Call_Screen/call_screen.dart';\r\n import 'package:chatbase_app/Screens/Chat_Screen/chat_screen.dart';\r\n import 'package:chatbase_app/Screens/Group_Screen/group_screen.dart';\r\n import 'package:chatbase_app/Screens/Profile_Screen/profile_screen.dart';\r\n import 'package:flutter/material.dart';\r\n"
+                },
+                {
+                    "date": 1651580293049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,24 +57,8 @@\n             inactiveColor: Colors.black,\r\n           ),\r\n         ],\r\n       ),\r\n-      //  BottomNavigationBar(\r\n-      //   items: const [\r\n-      //     BottomNavigationBarItem(\r\n-      //         icon: Icon(Icons.message_rounded), label: 'Chats'),\r\n-      //     BottomNavigationBarItem(\r\n-      //         icon: Icon(Icons.group_rounded), label: 'Groups'),\r\n-      //     BottomNavigationBarItem(\r\n-      //         icon: Icon(Icons.account_circle_rounded), label: 'Profile'),\r\n-      //   ],\r\n-      //   currentIndex: _selectedItem,\r\n-      //   onTap: (setValue) {\r\n-      //     setState(() {\r\n-      //       _selectedItem = setValue;\r\n-      //     });\r\n-      //   },\r\n-      // ),\r\n       body: SafeArea(\r\n         child: Center(\r\n           child: _pagesData[_currentIndex],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651580341324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n+        animationDuration: ,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580347731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: ,\r\n+        animationDuration: Duration(mi),\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580352966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: Duration(mi),\r\n+        animationDuration: Duration(milliseconds: 800),\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580379927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: Duration(milliseconds: 800),\r\n+        animationDuration: const Duration(milliseconds: 800),\r\n+        cur\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580389168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 800),\r\n-        cur\r\n+        curve: Curves.,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580402518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 800),\r\n-        curve: Curves.,\r\n+        curve: Curves.eas,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580409779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 800),\r\n-        curve: Curves.eas,\r\n+        animationDuration: const Duration(milliseconds: 400),\r\n+        curve: Curves.easeIn,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580415560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 400),\r\n+        animationDuration: const Duration(milliseconds: 100),\r\n         curve: Curves.easeIn,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n"
+                },
+                {
+                    "date": 1651580422144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 100),\r\n+        animationDuration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeIn,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n"
+                },
+                {
+                    "date": 1651580427612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 400),\r\n+        animationDuration: const Duration(milliseconds: 200),\r\n         curve: Curves.easeIn,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n"
+                },
+                {
+                    "date": 1651580433485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 200),\r\n+        animationDuration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeIn,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n"
+                },
+                {
+                    "date": 1651580440309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n-        curve: Curves.easeIn,\r\n+        curve: Curves.,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580505106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n-        curve: Curves.,\r\n+        curve: Curves.slowMiddle,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580513415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n-        curve: Curves.slowMiddle,\r\n+        curve: Curves.,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580530931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n-        curve: Curves.,\r\n+        curve: Curves.eas,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580544161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 400),\r\n-        curve: Curves.eas,\r\n+        animationDuration: const Duration(milliseconds: 200),\r\n+        curve: Curves.easeInOut,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651580581810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 200),\r\n-        curve: Curves.easeInOut,\r\n+        animationDuration: const Duration(milliseconds: 400),\r\n+        curve: Curves.easeInOutCirc,\r\n         selectedIndex: _currentIndex,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n"
+                },
+                {
+                    "date": 1651583778424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n-            inactiveColor: Colors.black,\r\n+            inactiveColor: Colors.kP,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651583784665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import 'package:chatbase_app/Screens/Call_Screen/call_screen.dart';\r\n import 'package:chatbase_app/Screens/Chat_Screen/chat_screen.dart';\r\n import 'package:chatbase_app/Screens/Group_Screen/group_screen.dart';\r\n import 'package:chatbase_app/Screens/Profile_Screen/profile_screen.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class HomeScreen extends StatefulWidget {\r\n   const HomeScreen({Key? key}) : super(key: key);\r\n@@ -37,9 +38,9 @@\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: Colors.blueAccent,\r\n-            inactiveColor: Colors.kP,\r\n+            inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651583801416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n-            activeColor: Colors.blueAccent,\r\n+            activeColor: Colors.K,\r\n             inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n"
+                },
+                {
+                    "date": 1651583828859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n-            activeColor: Colors.K,\r\n+            activeColor: kPrimaryColor,\r\n             inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n"
+                },
+                {
+                    "date": 1651583851365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,10 +37,10 @@\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n-            activeColor: kPrimaryColor,\r\n-            inactiveColor: kPrimaryColor,\r\n+            activeColor: kP,\r\n+            inactiveColor: kPrimaryDeepLightColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651583856447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n-            activeColor: kP,\r\n+            activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryDeepLightColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n"
+                },
+                {
+                    "date": 1651583874391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,10 @@\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n-            activeColor: Colors.blueAccent,\r\n-            inactiveColor: Colors.black,\r\n+            activeColor: kPrimaryDeepColor,\r\n+            inactiveColor: kPrimaryDeepLightColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.call_rounded),\r\n             title: const Text('Call'),\r\n"
+                },
+                {
+                    "date": 1651583880540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.call_rounded),\r\n             title: const Text('Call'),\r\n-            activeColor: Colors.blueAccent,\r\n-            inactiveColor: Colors.black,\r\n+            activeColor: kPrimaryDeepColor,\r\n+            inactiveColor: kPrimaryDeepLightColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Profile'),\r\n"
+                },
+                {
+                    "date": 1651583900381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryDeepLightColor,\r\n+            inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n@@ -55,10 +55,10 @@\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Profile'),\r\n-            activeColor: Colors.blueAccent,\r\n-            inactiveColor: Colors.black,\r\n+            activeColor: kPrimaryDeepColor,\r\n+            inactiveColor: kPrimaryDeepLightColor,\r\n           ),\r\n         ],\r\n       ),\r\n       body: SafeArea(\r\n"
+                },
+                {
+                    "date": 1651583907599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryColor,\r\n+            inactiveColor: kP,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651583912864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,21 +38,21 @@\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kP,\r\n+            inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n             activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryDeepLightColor,\r\n+            inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.call_rounded),\r\n             title: const Text('Call'),\r\n             activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryDeepLightColor,\r\n+            inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Profile'),\r\n"
+                },
+                {
+                    "date": 1651583945301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n+            \r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n@@ -56,9 +57,9 @@\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.account_circle_rounded),\r\n             title: const Text('Profile'),\r\n             activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryDeepLightColor,\r\n+            inactiveColor: kPrimaryColor,\r\n           ),\r\n         ],\r\n       ),\r\n       body: SafeArea(\r\n"
+                },
+                {
+                    "date": 1651583954651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             icon: const Icon(Icons.chat_rounded),\r\n             title: const Text('Chat'),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n-            \r\n+            textAlign: TextA\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651583960804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,14 +35,13 @@\n           });\r\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n-            icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat'),\r\n-            activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryColor,\r\n-            textAlign: TextA\r\n-          ),\r\n+              icon: const Icon(Icons.chat_rounded),\r\n+              title: const Text('Chat'),\r\n+              activeColor: kPrimaryDeepColor,\r\n+              inactiveColor: kPrimaryColor,\r\n+              textAlign: TextAlign.center),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n             activeColor: kPrimaryDeepColor,\r\n"
+                },
+                {
+                    "date": 1651583970121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,13 +35,13 @@\n           });\r\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n-              icon: const Icon(Icons.chat_rounded),\r\n-              title: const Text('Chat'),\r\n-              activeColor: kPrimaryDeepColor,\r\n-              inactiveColor: kPrimaryColor,\r\n-              textAlign: TextAlign.center),\r\n+            icon: const Icon(Icons.chat_rounded),\r\n+            title: const Text('Chat'),\r\n+            activeColor: kPrimaryDeepColor,\r\n+            inactiveColor: kPrimaryColor,\r\n+          ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n             activeColor: kPrimaryDeepColor,\r\n"
+                },
+                {
+                    "date": 1651583980195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,11 +36,12 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat'),\r\n+            title: const Text('Chat', ),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n+\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651583991972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat', ),\r\n+            title: const Text('Chat', textAlign: ),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n \r\n           ),\r\n"
+                },
+                {
+                    "date": 1651583999127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,12 +36,11 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat', textAlign: ),\r\n+            title: const Text('Chat', textAlign: TextAlign.),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n-\r\n           ),\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.group_rounded),\r\n             title: const Text('Group'),\r\n"
+                },
+                {
+                    "date": 1651584005928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat', textAlign: TextAlign.),\r\n+            title: const Text('Chat', textAlign: TextAlign.start),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n"
+                },
+                {
+                    "date": 1651584012129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         },\r\n         items: [\r\n           BottomNavyBarItem(\r\n             icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat', textAlign: TextAlign.start),\r\n+            title: const Text('Chat'),\r\n             activeColor: kPrimaryDeepColor,\r\n             inactiveColor: kPrimaryColor,\r\n           ),\r\n           BottomNavyBarItem(\r\n"
+                },
+                {
+                    "date": 1651584023112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeInOutCirc,\r\n         selectedIndex: _currentIndex,\r\n+        \r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n           });\r\n"
+                },
+                {
+                    "date": 1651584050390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n       bottomNavigationBar: BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeInOutCirc,\r\n         selectedIndex: _currentIndex,\r\n-        \r\n+        showElevation: true,\r\n         onItemSelected: (index) {\r\n           setState(() {\r\n             _currentIndex = index;\r\n           });\r\n"
+                },
+                {
+                    "date": 1651584068605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: BottomNavyBar(\r\n+        \r\n         animationDuration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeInOutCirc,\r\n         selectedIndex: _currentIndex,\r\n         showElevation: true,\r\n"
+                },
+                {
+                    "date": 1651584191172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNavyBar(\r\n-        \r\n+      bottomNavigationBar: \r\n+      BottomNavyBar(\r\n         animationDuration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeInOutCirc,\r\n         selectedIndex: _currentIndex,\r\n         showElevation: true,\r\n"
+                },
+                {
+                    "date": 1651584231681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,45 +25,45 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: \r\n-      BottomNavyBar(\r\n-        animationDuration: const Duration(milliseconds: 400),\r\n-        curve: Curves.easeInOutCirc,\r\n-        selectedIndex: _currentIndex,\r\n-        showElevation: true,\r\n-        onItemSelected: (index) {\r\n-          setState(() {\r\n-            _currentIndex = index;\r\n-          });\r\n-        },\r\n-        items: [\r\n-          BottomNavyBarItem(\r\n-            icon: const Icon(Icons.chat_rounded),\r\n-            title: const Text('Chat'),\r\n-            activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryColor,\r\n-          ),\r\n-          BottomNavyBarItem(\r\n-            icon: const Icon(Icons.group_rounded),\r\n-            title: const Text('Group'),\r\n-            activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryColor,\r\n-          ),\r\n-          BottomNavyBarItem(\r\n-            icon: const Icon(Icons.call_rounded),\r\n-            title: const Text('Call'),\r\n-            activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryColor,\r\n-          ),\r\n-          BottomNavyBarItem(\r\n-            icon: const Icon(Icons.account_circle_rounded),\r\n-            title: const Text('Profile'),\r\n-            activeColor: kPrimaryDeepColor,\r\n-            inactiveColor: kPrimaryColor,\r\n-          ),\r\n-        ],\r\n-      ),\r\n+      // BottomNavyBar(\r\n+      //   animationDuration: const Duration(milliseconds: 400),\r\n+      //   curve: Curves.easeInOutCirc,\r\n+      //   selectedIndex: _currentIndex,\r\n+      //   showElevation: true,\r\n+      //   onItemSelected: (index) {\r\n+      //     setState(() {\r\n+      //       _currentIndex = index;\r\n+      //     });\r\n+      //   },\r\n+      //   items: [\r\n+      //     BottomNavyBarItem(\r\n+      //       icon: const Icon(Icons.chat_rounded),\r\n+      //       title: const Text('Chat'),\r\n+      //       activeColor: kPrimaryDeepColor,\r\n+      //       inactiveColor: kPrimaryColor,\r\n+      //     ),\r\n+      //     BottomNavyBarItem(\r\n+      //       icon: const Icon(Icons.group_rounded),\r\n+      //       title: const Text('Group'),\r\n+      //       activeColor: kPrimaryDeepColor,\r\n+      //       inactiveColor: kPrimaryColor,\r\n+      //     ),\r\n+      //     BottomNavyBarItem(\r\n+      //       icon: const Icon(Icons.call_rounded),\r\n+      //       title: const Text('Call'),\r\n+      //       activeColor: kPrimaryDeepColor,\r\n+      //       inactiveColor: kPrimaryColor,\r\n+      //     ),\r\n+      //     BottomNavyBarItem(\r\n+      //       icon: const Icon(Icons.account_circle_rounded),\r\n+      //       title: const Text('Profile'),\r\n+      //       activeColor: kPrimaryDeepColor,\r\n+      //       inactiveColor: kPrimaryColor,\r\n+      //     ),\r\n+      //   ],\r\n+      // ),\r\n       body: SafeArea(\r\n         child: Center(\r\n           child: _pagesData[_currentIndex],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651584240907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: \r\n+      bottomNavigationBar: BottomNav\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n       //   selectedIndex: _currentIndex,\r\n"
+                },
+                {
+                    "date": 1651584253822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: BottomNav\r\n+      bottomNavigationBar: G\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n       //   selectedIndex: _currentIndex,\r\n"
+                },
+                {
+                    "date": 1651584259321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import 'package:chatbase_app/Screens/Group_Screen/group_screen.dart';\r\n import 'package:chatbase_app/Screens/Profile_Screen/profile_screen.dart';\r\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n+import 'package:google_nav_bar/google_nav_bar.dart';\r\n \r\n class HomeScreen extends StatefulWidget {\r\n   const HomeScreen({Key? key}) : super(key: key);\r\n \r\n@@ -24,9 +25,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: G\r\n+      bottomNavigationBar: GNav(tabs: tabs)\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n       //   selectedIndex: _currentIndex,\r\n"
+                },
+                {
+                    "date": 1651584264768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: GNav(tabs: tabs)\r\n+      bottomNavigationBar: GNav(tabs: [\r\n+        \r\n+      ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n       //   selectedIndex: _currentIndex,\r\n"
+                },
+                {
+                    "date": 1651584271779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        \r\n+        GButton(icon: Ivo)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584277735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Ivo)\r\n+        GButton(icon: Icon(Icons))\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584283307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icon(Icons))\r\n+        GButton(icon: )\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584292242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: )\r\n+        GButton(icon: LineIcon)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584299636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: LineIcon)\r\n+        GButton(icon: LineIcons)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584326588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: LineIcons)\r\n+        GButton(icon: Icon)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584336103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icon)\r\n+        GButton(icon: Icon(Icons.chat_))\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584351887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icon(Icons.chat_))\r\n+        GButton(icon: Icon())\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584399526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icon())\r\n+        GButton(icon: IconData)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584405752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: IconData)\r\n+        GButton(icon: Icons.)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584412306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icons.)\r\n+        GButton(icon: Icons.chat)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584423388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icons.chat)\r\n+        GButton(icon: Icons.chat_rounded, text: ,)\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584432015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icons.chat_rounded, text: ,)\r\n+        GButton(icon: Icons.chat_rounded, text: 'Chat',),\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584441464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,12 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n-        GButton(icon: Icons.chat_rounded, text: 'Chat',),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584455495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n         GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Groups'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584461251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(tabs: [\r\n         GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Groups'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n+        GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n       ])\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584466791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: GNav(tabs: [\r\n+      bottomNavigationBar: const GNav(tabs: [\r\n         GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n"
+                },
+                {
+                    "date": 1651584476171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n         GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n         GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n-      ])\r\n+      ]),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n       //   selectedIndex: _currentIndex,\r\n"
+                },
+                {
+                    "date": 1651584496053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,14 +25,16 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: const GNav(tabs: [\r\n-        GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n-        GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n-      ]),\r\n+      bottomNavigationBar: const GNav(\r\n+        tabs: [\r\n+          GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n+          GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n+          GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n+          GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n+        ],\r\n+      ),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n       //   selectedIndex: _currentIndex,\r\n"
+                },
+                {
+                    "date": 1651584504854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n         ],\r\n+        selectedIndex: ,\r\n       ),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584521891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,16 +25,16 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar: const GNav(\r\n+      bottomNavigationBar:  GNav(\r\n         tabs: [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n         ],\r\n-        selectedIndex: ,\r\n+        selectedIndex: _currentIndex,\r\n       ),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584532277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,15 +26,16 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar:  GNav(\r\n-        tabs: [\r\n+        tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n         ],\r\n         selectedIndex: _currentIndex,\r\n+        onTa\r\n       ),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584539368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n         ],\r\n         selectedIndex: _currentIndex,\r\n-        onTa\r\n+        onTabChange: (index) {},\r\n       ),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584547097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,13 @@\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Profile'),\r\n         ],\r\n         selectedIndex: _currentIndex,\r\n-        onTabChange: (index) {},\r\n+        onTabChange: (index) {\r\n+          setState(() {\r\n+            _currentIndex = \r\n+          });\r\n+        },\r\n       ),\r\n       // BottomNavyBar(\r\n       //   animationDuration: const Duration(milliseconds: 400),\r\n       //   curve: Curves.easeInOutCirc,\r\n"
+                },
+                {
+                    "date": 1651584591656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      bottomNavigationBar:  GNav(\r\n+      bottomNavigationBar: GNav(\r\n+        \r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n@@ -35,9 +36,9 @@\n         ],\r\n         selectedIndex: _currentIndex,\r\n         onTabChange: (index) {\r\n           setState(() {\r\n-            _currentIndex = \r\n+            _currentIndex = index;\r\n           });\r\n         },\r\n       ),\r\n       // BottomNavyBar(\r\n"
+                },
+                {
+                    "date": 1651584598414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(\r\n-        \r\n+        gap: 8,\r\n+        ac\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584603571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: GNav(\r\n         gap: 8,\r\n-        ac\r\n+        activeColor: Colors.black,\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584612332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,10 @@\n     return Scaffold(\r\n       bottomNavigationBar: GNav(\r\n         gap: 8,\r\n         activeColor: Colors.black,\r\n+        iconSize: 20,\r\n+        d\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584621423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n       bottomNavigationBar: GNav(\r\n         gap: 8,\r\n         activeColor: Colors.black,\r\n         iconSize: 20,\r\n-        d\r\n+        duration: Duration(milliseconds: ),\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584629699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,10 @@\n       bottomNavigationBar: GNav(\r\n         gap: 8,\r\n         activeColor: Colors.black,\r\n         iconSize: 20,\r\n-        duration: Duration(milliseconds: ),\r\n+        duration: const Duration(milliseconds: 400),\r\n+        c\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584639016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n         gap: 8,\r\n         activeColor: Colors.black,\r\n         iconSize: 20,\r\n         duration: const Duration(milliseconds: 400),\r\n-        c\r\n+        curve: Curves.easeInOu,\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584649887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         activeColor: Colors.black,\r\n         iconSize: 20,\r\n         duration: const Duration(milliseconds: 400),\r\n         curve: Curves.easeInOutCirc,\r\n-        c\r\n+        color: ,\r\n         tabs: const [\r\n           GButton(icon: Icons.chat_rounded, text: 'Chat'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Group'),\r\n           GButton(icon: Icons.chat_rounded, text: 'Call'),\r\n"
+                },
+                {
+                    "date": 1651584717346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       bottomNavigationBar: Container(\r\n         decoration: BoxDecoration(\r\n-          color: Colors.white\r\n+          color: Colors.white,\r\n         ),\r\n         child: GNav(\r\n           gap: 8,\r\n           activeColor: Colors.black,\r\n"
+                }
+            ],
+            "date": 1651566919237,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

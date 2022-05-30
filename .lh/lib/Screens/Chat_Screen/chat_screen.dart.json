@@ -1,0 +1,522 @@
+{
+    "sourceFile": "lib/Screens/Chat_Screen/chat_screen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 126,
+            "patches": [
+                {
+                    "date": 1651577700348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651577707813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-st\n\\ No newline at end of file\n+class ChatScreen extends StatelessWidget {\r\n+  const ChatScreen({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651577716025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class ChatScreen extends StatelessWidget {\r\n   const ChatScreen({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n+    return Scaffold(\r\n       \r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651577722134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      \r\n+      body: Center,\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651577727204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: Center,\r\n+      body: Center(child: Text,),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651577733380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: Center(child: Text,),\r\n+      body: Center(child: Text('Chat Screen'),),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651577739868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatScreen extends StatelessWidget {\r\n-  const ChatScreen({ Key? key }) : super(key: key);\r\n+  const ChatScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Scaffold(\r\n-      body: Center(child: Text('Chat Screen'),),\r\n+    return const Scaffold(\r\n+      body: Center(\r\n\\ No newline at end of file\n+        child: Text('Chat Screen'),\r\n+      ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657183882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n-      body: Center(\r\n-        child: Text('Chat Screen'),\r\n-      ),\r\n+      body: Text('Chat Screen'),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657191861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n-      body: Text('Chat Screen'),\r\n+      body: SingleChildScrollView(),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657198127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n-      body: SingleChildScrollView(),\r\n+      body: SingleChildScrollView(\r\n+        physics: Boun,\r\n+      ),\r\n\\ No newline at end of file\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657203572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: SingleChildScrollView(\r\n-        physics: Boun,\r\n+        physics: BouncingScrollPhysics(),\r\n+        c\r\n       ),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657211549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: BouncingScrollPhysics(),\r\n-        c\r\n+        child: Column(children: [],),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657226335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,14 @@\n   const ChatScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Scaffold(\r\n+    return Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: BouncingScrollPhysics(),\r\n-        child: Column(children: [],),\r\n+        child: Column(\r\n+          children: [],\r\n+        ),\r\n\\ No newline at end of file\n       ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657235813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,11 @@\n     return Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n+          crossAxisAlignment: Cross,\r\n           children: [],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657242968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,13 @@\n     return Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n-          crossAxisAlignment: Cross,\r\n-          children: [],\r\n+          crossAxisAlignment: CrossAxisAlignment.start,\r\n+          children: [\r\n+            SafeArea(child: child)\r\n+          ],\r\n         ),\r\n\\ No newline at end of file\n       ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657248857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            SafeArea(child: child)\r\n+            SafeArea(child: Padding(padding: padding))\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657263925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            SafeArea(child: Padding(padding: padding))\r\n+            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0)))\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657272005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0)))\r\n+            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0 right: 16.0, top)))\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657277555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0 right: 16.0, top)))\r\n+            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0, right: 16.0, top 16.0)))\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657283988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0, right: 16.0, top 16.0)))\r\n+            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0, right: 16.0, top : 16.0)))\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657296667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,16 @@\n         physics: BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            SafeArea(child: Padding(padding: const EdgeInsets.only(left: 16.0, right: 16.0, top : 16.0)))\r\n+            SafeArea(\r\n+              child: Padding(\r\n+                padding:\r\n+                    const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n+              ),\r\n+            ),\r\n\\ No newline at end of file\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657304678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,13 @@\n             SafeArea(\r\n               child: Padding(\r\n                 padding:\r\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n+                    child: Row,\r\n               ),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657312391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,13 +14,15 @@\n             SafeArea(\r\n               child: Padding(\r\n                 padding:\r\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n-                    child: Row,\r\n+                    child: Row(\r\n+                      mainAxisAlignment: MainA,\r\n+                    ),\r\n               ),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n\\ No newline at end of file\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657319230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,15 @@\n               child: Padding(\r\n                 padding:\r\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n                     child: Row(\r\n-                      mainAxisAlignment: MainA,\r\n+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n+                      children: [],\r\n                     ),\r\n               ),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657326872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,16 @@\n                 padding:\r\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n                     child: Row(\r\n                       mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n-                      children: [],\r\n+                      children: [\r\n+                        Text('Chats')\r\n+                      ],\r\n                     ),\r\n               ),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n\\ No newline at end of file\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651657333718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n                     child: Row(\r\n                       mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n                       children: [\r\n-                        Text('Chats')\r\n+                        Text('Chats', style: text,)\r\n                       ],\r\n                     ),\r\n               ),\r\n             ),\r\n@@ -27,5 +27,5 @@\n         ),\r\n       ),\r\n     );\r\n   }\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1651657340616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatScreen extends StatelessWidget {\r\n   const ChatScreen({Key? key}) : super(key: key);\r\n@@ -17,9 +19,9 @@\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n                     child: Row(\r\n                       mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n                       children: [\r\n-                        Text('Chats', style: text,)\r\n+                        Text('Chats', style: textStyleSimple(kPrimaryColor, 20.0, fontWeight),)\r\n                       ],\r\n                     ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651657347485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,18 @@\n             SafeArea(\r\n               child: Padding(\r\n                 padding:\r\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n-                    child: Row(\r\n-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n-                      children: [\r\n-                        Text('Chats', style: textStyleSimple(kPrimaryColor, 20.0, fontWeight),)\r\n-                      ],\r\n+                child: Row(\r\n+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n+                  children: [\r\n+                    Text(\r\n+                      'Chats',\r\n+                      style:\r\n+                          textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n+                  ],\r\n+                ),\r\n               ),\r\n             ),\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651657361656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       body: SingleChildScrollView(\r\n-        physics: BouncingScrollPhysics(),\r\n+        physics: const BouncingScrollPhysics(),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             SafeArea(\r\n"
+                },
+                {
+                    "date": 1651659938821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,13 +19,11 @@\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n                 child: Row(\r\n                   mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n                   children: [\r\n-                    Text(\r\n-                      'Chats',\r\n-                      style:\r\n-                          textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n-                    ),\r\n+                    Text('Chats',\r\n+                        style: textStyleSimple(\r\n+                            kPrimaryColor, 20.0, FontWeight.bold)),\r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651659948043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,14 @@\n                     const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),\r\n                 child: Row(\r\n                   mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n                   children: [\r\n-                    Text('Chats',\r\n-                        style: textStyleSimple(\r\n-                            kPrimaryColor, 20.0, FontWeight.bold)),\r\n+                    Text(\r\n+                      'Chats',\r\n+                      style:\r\n+                          textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n+                    ),\r\n+                    \r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651659953345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    \r\n+                    Container()\r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651659960416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,11 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    Container()\r\n+                    Container(\r\n+                      padding: const ED,\r\n+                    ),\r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651659966355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const ED,\r\n+                      padding: const EdgeInsets.only(left: 8.0),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651659976229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.only(left: 8.0),\r\n+                      padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0,),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651659986718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0,),\r\n+                      padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n+                      height: ,\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651659992703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   const ChatScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size\r\n     return Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n         child: Column(\r\n"
+                },
+                {
+                    "date": 1651660000826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   const ChatScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size\r\n+    Size size = MediaQuery.of(contetx)\r\n     return Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n         child: Column(\r\n"
+                },
+                {
+                    "date": 1651660006731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   const ChatScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(contetx)\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n         child: Column(\r\n"
+                },
+                {
+                    "date": 1651660017000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n                       padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n-                      height: ,\r\n+                      height: 30.0,\r\n+                      decoration: ,\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660023135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n                     ),\r\n                     Container(\r\n                       padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n-                      decoration: ,\r\n+                      decoration: BoxDecoration(),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660028871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,11 @@\n                     ),\r\n                     Container(\r\n                       padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n-                      decoration: BoxDecoration(),\r\n+                      decoration: BoxDecoration(\r\n+                        borderRadius: BorR\r\n+                      ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660034050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n                     Container(\r\n                       padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n-                        borderRadius: BorR\r\n+                        borderRadius: BorderRadius.circular(29.0)\r\n                       ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660041719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,10 @@\n                     Container(\r\n                       padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n-                        borderRadius: BorderRadius.circular(29.0)\r\n+                        borderRadius: BorderRadius.circular(29.0),\r\n+                        color: Colors.red\r\n                       ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660113802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,16 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n+                      padding: const EdgeInsets.only(\r\n+                          left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n-                        color: Colors.red\r\n+                        color: Colors.red,\r\n                       ),\r\n+                      \r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660120053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n                       ),\r\n-                      \r\n+                      child: Row(),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660126393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,13 @@\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n                       ),\r\n-                      child: Row(),\r\n+                      child: Row(\r\n+                        children: [\r\n+                          Icon(Icons)\r\n+                        ],\r\n+                      ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660131857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          Icon(Icons)\r\n+                          Icon(Icons.add_rounded)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660138369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          Icon(Icons.add_rounded)\r\n+                          Icon(Icons.add_rounded, color: kPrimaryColor,)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660144301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          Icon(Icons.add_rounded, color: kPrimaryColor,)\r\n+                          Icon(Icons.add_rounded, color: kPrimaryColor)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660154540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,10 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          Icon(Icons.add_rounded, color: kPrimaryColor)\r\n+                          Icon(Icons.add_rounded, color: kPrimaryColor),\r\n+                          Si\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660161025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n-                          Si\r\n+                          SizedBox(height: ,)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660166181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n-                          SizedBox(height: ,)\r\n+                          SizedBox(height: 2,)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660171806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,10 @@\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n-                          SizedBox(height: 2,)\r\n+                          SizedBox(height: 2.0),\r\n+                          Text(data)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660178720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n                           SizedBox(height: 2.0),\r\n-                          Text(data)\r\n+                          Text('New', style: ,)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660185714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n                           SizedBox(height: 2.0),\r\n-                          Text('New', style: ,)\r\n+                          Text('New', style: textStyleSimple(k, fontSize, fontWeight),)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660190908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n                           SizedBox(height: 2.0),\r\n-                          Text('New', style: textStyleSimple(k, fontSize, fontWeight),)\r\n+                          Text('New', style: textStyleSimple(kPrimaryColor, 16, fontWeight),)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660195981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n                           SizedBox(height: 2.0),\r\n-                          Text('New', style: textStyleSimple(kPrimaryColor, 16, fontWeight),)\r\n+                          Text('New', style: textStyleSimple(kPrimaryColor, 16.0, Fon),)\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660218617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.only(\r\n-                          left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n+                      // padding: const EdgeInsets.only(\r\n+                      //     left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n@@ -37,9 +37,13 @@\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n                           SizedBox(height: 2.0),\r\n-                          Text('New', style: textStyleSimple(kPrimaryColor, 16.0, Fon),)\r\n+                          Text(\r\n+                            'New',\r\n+                            style: textStyleSimple(\r\n+                                kPrimaryColor, 16.0, FontWeight.bold),\r\n+                          )\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660228701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n                           SizedBox(height: 2.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n-                                kPrimaryColor, 16.0, FontWeight.bold),\r\n+                                kPrimaryColor, 16.0, FontWeight.w600),\r\n                           )\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651660246604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,13 +36,13 @@\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n-                          SizedBox(height: 2.0),\r\n+                          SizedBox(w: 2.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n-                                kPrimaryColor, 16.0, FontWeight.w600),\r\n+                                kPrimaryColor, 14.0, FontWeight.w600),\r\n                           )\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651660253131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n                           Icon(Icons.add_rounded, color: kPrimaryColor),\r\n-                          SizedBox(w: 2.0),\r\n+                          const SizedBox(width: 2.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryColor, 14.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660258363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          Icon(Icons.add_rounded, color: kPrimaryColor),\r\n+                          const Icon(Icons.add_rounded, color: kPrimaryColor, s),\r\n                           const SizedBox(width: 2.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n"
+                },
+                {
+                    "date": 1651660263463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,13 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          const Icon(Icons.add_rounded, color: kPrimaryColor, s),\r\n+                          const Icon(\r\n+                            Icons.add_rounded,\r\n+                            color: kPrimaryColor,\r\n+                            size: 16.0,\r\n+                          ),\r\n                           const SizedBox(width: 2.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n"
+                },
+                {
+                    "date": 1651660270343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,13 +35,10 @@\n                         color: Colors.red,\r\n                       ),\r\n                       child: Row(\r\n                         children: [\r\n-                          const Icon(\r\n-                            Icons.add_rounded,\r\n-                            color: kPrimaryColor,\r\n-                            size: 16.0,\r\n-                          ),\r\n+                          const Icon(Icons.add_rounded,\r\n+                              color: kPrimaryColor, size: 20.0),\r\n                           const SizedBox(width: 2.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n"
+                },
+                {
+                    "date": 1651660278843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      // padding: const EdgeInsets.only(\r\n-                      //     left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n+                      padding: const EdgeInsets.only(\r\n+                          left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n"
+                },
+                {
+                    "date": 1651660288106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.only(\r\n-                          left: 8.0, right: 8.0, top: 8.0, bottom: 8.0),\r\n+                      padding: const EdgeInsets.symmetric(vertical: ),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n"
+                },
+                {
+                    "date": 1651660294198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,10 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.symmetric(vertical: ),\r\n+                      padding: const EdgeInsets.symmetric(\r\n+                          vertical: 10.0, horizontal: 5.0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n"
+                },
+                {
+                    "date": 1651660306148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryColor, size: 20.0),\r\n                           const SizedBox(width: 2.0),\r\n                           Text(\r\n-                            'New',\r\n+                            'N',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryColor, 14.0, FontWeight.w600),\r\n                           )\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651660317711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n                       padding: const EdgeInsets.symmetric(\r\n-                          vertical: 10.0, horizontal: 5.0),\r\n+                          vertical: 10.0, horizontal: .0),\r\n                       height: 30.0,\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         color: Colors.red,\r\n@@ -39,9 +39,9 @@\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryColor, size: 20.0),\r\n                           const SizedBox(width: 2.0),\r\n                           Text(\r\n-                            'N',\r\n+                            'NEW',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryColor, 14.0, FontWeight.w600),\r\n                           )\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651660354086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,29 +25,9 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    Container(\r\n-                      padding: const EdgeInsets.symmetric(\r\n-                          vertical: 10.0, horizontal: .0),\r\n-                      height: 30.0,\r\n-                      decoration: BoxDecoration(\r\n-                        borderRadius: BorderRadius.circular(29.0),\r\n-                        color: Colors.red,\r\n-                      ),\r\n-                      child: Row(\r\n-                        children: [\r\n-                          const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryColor, size: 20.0),\r\n-                          const SizedBox(width: 2.0),\r\n-                          Text(\r\n-                            'NEW',\r\n-                            style: textStyleSimple(\r\n-                                kPrimaryColor, 14.0, FontWeight.w600),\r\n-                          )\r\n-                        ],\r\n-                      ),\r\n-                    ),\r\n+                    \r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651660362918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    \r\n+                    Container\r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651660368888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    Container\r\n+                    Container(),\r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651660374965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    Container(),\r\n+                    Container(\r\n+                      de\r\n+                    ),\r\n                   ],\r\n                 ),\r\n               ),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651660382453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      de\r\n+                      decoration: BoxDecoration(),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660387992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      decoration: BoxDecoration(),\r\n+                      decoration: BoxDecoration(borderRadius: BorderR),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660393202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,11 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      decoration: BoxDecoration(borderRadius: BorderR),\r\n+                      decoration: BoxDecoration(\r\n+                        borderRadius: BorderRadius.circular(29.0),\r\n+                      ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660399422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n                     ),\r\n                     Container(\r\n                       decoration: BoxDecoration(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n+                        color: kP\r\n                       ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660405566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n                       decoration: BoxDecoration(\r\n-                        borderRadius: BorderRadius.circular(29.0),\r\n-                        color: kP\r\n-                      ),\r\n+                          borderRadius: BorderRadius.circular(29.0),\r\n+                          color: kPrimaryLightColor),\r\n+                          \r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660413208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n                     Container(\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n-                          \r\n+                          child: Row(),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660419417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,11 @@\n                     Container(\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n-                          child: Row(),\r\n+                          child: Row(children: [\r\n+                            \r\n+                          ],),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660428301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                           child: Row(children: [\r\n-                            \r\n+                            Icon(Icons.add_rounded)\r\n                           ],),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660435398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                           child: Row(children: [\r\n-                            Icon(Icons.add_rounded)\r\n+                            Icon(Icons.add_rounded, color: kPrimaryColor, s)\r\n                           ],),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660441016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,10 @@\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                           child: Row(children: [\r\n-                            Icon(Icons.add_rounded, color: kPrimaryColor, s)\r\n+                            Icon(Icons.add_rounded, color: kPrimaryColor, size: 20.0),\r\n+                            \r\n                           ],),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660447583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                           child: Row(children: [\r\n                             Icon(Icons.add_rounded, color: kPrimaryColor, size: 20.0),\r\n-                            \r\n+                            Text('NEW')\r\n                           ],),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660457107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,12 +29,15 @@\n                     Container(\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n-                          child: Row(children: [\r\n-                            Icon(Icons.add_rounded, color: kPrimaryColor, size: 20.0),\r\n-                            Text('NEW')\r\n-                          ],),\r\n+                      child: Row(\r\n+                        children: const [\r\n+                          Icon(Icons.add_rounded,\r\n+                              color: kPrimaryColor, size: 20.0),\r\n+                          Text('NEW'),\r\n+                        ],\r\n+                      ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660464173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n                       child: Row(\r\n                         children: const [\r\n                           Icon(Icons.add_rounded,\r\n                               color: kPrimaryColor, size: 20.0),\r\n-                          Text('NEW'),\r\n+                          Text('NEW', s),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660470842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,12 @@\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n-                        children: const [\r\n+                        children:  [\r\n                           Icon(Icons.add_rounded,\r\n                               color: kPrimaryColor, size: 20.0),\r\n-                          Text('NEW', s),\r\n+                          Text('NEW', style: textStyleSimple(color, fontSize, fontWeight),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660475970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,11 +31,11 @@\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n                         children:  [\r\n-                          Icon(Icons.add_rounded,\r\n+                          const Icon(Icons.add_rounded,\r\n                               color: kPrimaryColor, size: 20.0),\r\n-                          Text('NEW', style: textStyleSimple(color, fontSize, fontWeight),),\r\n+                          Text('NEW', style: textStyleSimple(kPrimaryColor, fontSize, fontWeight),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660483190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n                       child: Row(\r\n                         children:  [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryColor, size: 20.0),\r\n-                          Text('NEW', style: textStyleSimple(kPrimaryColor, fontSize, fontWeight),),\r\n+                          Text('NEW', style: textStyleSimple(kPrimaryColor, 16.0, fon),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660493944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,16 @@\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n-                        children:  [\r\n+                        children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryColor, size: 20.0),\r\n-                          Text('NEW', style: textStyleSimple(kPrimaryColor, 16.0, fon),),\r\n+                              color: kPrimaryColor, size: 20.0, ),\r\n+                          Text(\r\n+                            'NEW',\r\n+                            style: textStyleSimple(\r\n+                                kPrimaryColor, 16.0, FontWeight.w600),\r\n+                          ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ],\r\n"
+                },
+                {
+                    "date": 1651660506902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,15 +26,16 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n+                      padding: ,\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryColor, size: 20.0, ),\r\n+                              color: kPrimaryColor, size: 20.0),\r\n                           Text(\r\n                             'NEW',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660513648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: ,\r\n+                      padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n"
+                },
+                {
+                    "date": 1651660519557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n+                      padding: const EdgeInsets.symmetric(vertical: 4.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n"
+                },
+                {
+                    "date": 1651660526414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,10 @@\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n-                      padding: const EdgeInsets.symmetric(vertical: 4.0),\r\n+                      padding: const EdgeInsets.symmetric(\r\n+                          vertical: 4.0, horizontal: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n"
+                },
+                {
+                    "date": 1651660543167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryColor, size: 20.0),\r\n+                              color: k, size: 20.0),\r\n                           Text(\r\n                             'NEW',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660553984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n                       padding: const EdgeInsets.symmetric(\r\n                           vertical: 4.0, horizontal: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n-                          color: kPrimaryLightColor),\r\n+                          color: kP),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: k, size: 20.0),\r\n+                              color: kPrimaryDeepColor, size: 20.0),\r\n                           Text(\r\n                             'NEW',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660559507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                       padding: const EdgeInsets.symmetric(\r\n                           vertical: 4.0, horizontal: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n-                          color: kP),\r\n+                          color: kPrimaryColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryDeepColor, size: 20.0),\r\n"
+                },
+                {
+                    "date": 1651660568960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,13 +34,13 @@\n                           color: kPrimaryColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryDeepColor, size: 20.0),\r\n+                              color: kPrimaryLightColor, size: 20.0),\r\n                           Text(\r\n                             'NEW',\r\n                             style: textStyleSimple(\r\n-                                kPrimaryColor, 16.0, FontWeight.w600),\r\n+                                kP, 16.0, FontWeight.w600),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651660576448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,11 +36,11 @@\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n                           Text(\r\n-                            'NEW',\r\n+                            'New',\r\n                             style: textStyleSimple(\r\n-                                kP, 16.0, FontWeight.w600),\r\n+                                kPrimaryLightColor, 16.0, FontWeight.w600),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651660594964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n                       padding: const EdgeInsets.symmetric(\r\n-                          vertical: 4.0, horizontal: 10.0),\r\n+                          vertical: 5.0, horizontal: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n                           color: kPrimaryColor),\r\n                       child: Row(\r\n"
+                },
+                {
+                    "date": 1651660614135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n+                              SizedBox()\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660620009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                              SizedBox()\r\n+                              SizedBox(width: size.w,)\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660628943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                              SizedBox(width: size.w,)\r\n+                              SizedBox(width: size.width * 0.01)\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660637563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                              SizedBox(width: size.width * 0.01)\r\n+                          SizedBox(width: size.width * 0.019),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660643685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.019),\r\n+                          SizedBox(width: size.width * 0.0),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660654896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.0),\r\n+                          SizedBox(width: size.width * 0.05),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660660492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.05),\r\n+                          SizedBox(width: size.width * 0.08),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660666050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.08),\r\n+                          SizedBox(width: size.width * 0.0080),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660673336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.0080),\r\n+                          SizedBox(width: size.width * 0.080),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660687408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.080),\r\n+                          SizedBox(width: size.width * 0.004080),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660699678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,14 +30,14 @@\n                       padding: const EdgeInsets.symmetric(\r\n                           vertical: 5.0, horizontal: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n-                          color: kPrimaryColor),\r\n+                          color: kP),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n                               color: kPrimaryLightColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.004080),\r\n+                          SizedBox(width: size.width * 0.0040),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n                                 kPrimaryLightColor, 16.0, FontWeight.w600),\r\n"
+                },
+                {
+                    "date": 1651660706132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n                       padding: const EdgeInsets.symmetric(\r\n                           vertical: 5.0, horizontal: 10.0),\r\n                       decoration: BoxDecoration(\r\n                           borderRadius: BorderRadius.circular(29.0),\r\n-                          color: kP),\r\n+                          color: kPrimaryLightColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryLightColor, size: 20.0),\r\n+                              color: kP, size: 20.0),\r\n                           SizedBox(width: size.width * 0.0040),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n"
+                },
+                {
+                    "date": 1651660713392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,14 +34,14 @@\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kP, size: 20.0),\r\n+                              color: kPrimaryDeepColor, size: 20.0),\r\n                           SizedBox(width: size.width * 0.0040),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n-                                kPrimaryLightColor, 16.0, FontWeight.w600),\r\n+                                kPrimaryDeepColor, 16.0, FontWeight.w600),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651660720499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                           color: kPrimaryLightColor),\r\n                       child: Row(\r\n                         children: [\r\n                           const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryDeepColor, size: 20.0),\r\n+                              color: kPrimaryColor, size: 20.0),\r\n                           SizedBox(width: size.width * 0.0040),\r\n                           Text(\r\n                             'New',\r\n                             style: textStyleSimple(\r\n"
+                },
+                {
+                    "date": 1651660736054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,25 +25,27 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    Container(\r\n-                      padding: const EdgeInsets.symmetric(\r\n-                          vertical: 5.0, horizontal: 10.0),\r\n-                      decoration: BoxDecoration(\r\n-                          borderRadius: BorderRadius.circular(29.0),\r\n-                          color: kPrimaryLightColor),\r\n-                      child: Row(\r\n-                        children: [\r\n-                          const Icon(Icons.add_rounded,\r\n-                              color: kPrimaryColor, size: 20.0),\r\n-                          SizedBox(width: size.width * 0.0040),\r\n-                          Text(\r\n-                            'New',\r\n-                            style: textStyleSimple(\r\n-                                kPrimaryDeepColor, 16.0, FontWeight.w600),\r\n-                          ),\r\n-                        ],\r\n+                    InkW(\r\n+                      child: Container(\r\n+                        padding: const EdgeInsets.symmetric(\r\n+                            vertical: 5.0, horizontal: 10.0),\r\n+                        decoration: BoxDecoration(\r\n+                            borderRadius: BorderRadius.circular(29.0),\r\n+                            color: kPrimaryLightColor),\r\n+                        child: Row(\r\n+                          children: [\r\n+                            const Icon(Icons.add_rounded,\r\n+                                color: kPrimaryColor, size: 20.0),\r\n+                            SizedBox(width: size.width * 0.0040),\r\n+                            Text(\r\n+                              'New',\r\n+                              style: textStyleSimple(\r\n+                                  kPrimaryColor, 16.0, FontWeight.w600),\r\n+                            ),\r\n+                          ],\r\n+                        ),\r\n                       ),\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660742780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                       'Chats',\r\n                       style:\r\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n-                    InkW(\r\n+                    InkWell(\r\n                       child: Container(\r\n                         padding: const EdgeInsets.symmetric(\r\n                             vertical: 5.0, horizontal: 10.0),\r\n                         decoration: BoxDecoration(\r\n@@ -45,8 +45,9 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n+                      \r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660748739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n-                      \r\n+                      onTap: (),\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660754189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,11 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n-                      onTap: (),\r\n+                      onTap: () {\r\n+                        pri\r\n+                      },\r\n                     ),\r\n                   ],\r\n                 ),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1651660761174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n                           ],\r\n                         ),\r\n                       ),\r\n                       onTap: () {\r\n-                        pri\r\n+                        print('object')\r\n                       },\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660766775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n                           ],\r\n                         ),\r\n                       ),\r\n                       onTap: () {\r\n-                        print('object')\r\n+                        print('New')\r\n                       },\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660772440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,10 @@\n                           ],\r\n                         ),\r\n                       ),\r\n                       onTap: () {\r\n-                        print('New')\r\n+                        // ignore: avoid_print\r\n+                        print('New');\r\n                       },\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                },
+                {
+                    "date": 1651660800588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n+                      \r\n                       onTap: () {\r\n                         // ignore: avoid_print\r\n                         print('New');\r\n                       },\r\n"
+                },
+                {
+                    "date": 1651660814969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n-                      \r\n+                      overlayColor: ,\r\n                       onTap: () {\r\n                         // ignore: avoid_print\r\n                         print('New');\r\n                       },\r\n"
+                },
+                {
+                    "date": 1651660823119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n-                      overlayColor: ,\r\n+                      overlayColor: Colors.transparent,\r\n                       onTap: () {\r\n                         // ignore: avoid_print\r\n                         print('New');\r\n                       },\r\n"
+                },
+                {
+                    "date": 1651660830078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                             ),\r\n                           ],\r\n                         ),\r\n                       ),\r\n-                      overlayColor: ,\r\n+                      overlayColor:,\r\n                       onTap: () {\r\n                         // ignore: avoid_print\r\n                         print('New');\r\n                       },\r\n"
+                },
+                {
+                    "date": 1651661172010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n                           textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n                     ),\r\n                     Container(\r\n                       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n-                      width: size.width * 0.,\r\n+                      width: size.width * 0.1,\r\n                       child: ClipRRect(\r\n                         borderRadius: BorderRadius.circular(29.0),\r\n                         child: TextButton(\r\n                           onPressed: () {},\r\n"
+                }
+            ],
+            "date": 1651577700348,
+            "name": "Commit-0",
+            "content": "st"
+        }
+    ]
+}

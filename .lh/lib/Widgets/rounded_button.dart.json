@@ -1,0 +1,258 @@
+{
+    "sourceFile": "lib/Widgets/rounded_button.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 60,
+            "patches": [
+                {
+                    "date": 1651460588698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651460595012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-st\n\\ No newline at end of file\n+class RoundedButton extends StatelessWidget {\r\n+  const RoundedButton({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651460613592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class RoundedButton extends StatelessWidget {\r\n-  const RoundedButton({ Key? key }) : super(key: key);\r\n+  const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651460619792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Container(\r\n+      \r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460627480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = \r\n     return Container(\r\n-      \r\n+\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460634657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = \r\n+    Size size = MediaQuery.of(context)\r\n     return Container(\r\n \r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651460644005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context)\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-\r\n+      margin: const ED,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460649986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      margin: const ED,\r\n+      margin: const EdgeInsets.symmetric(ve),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460657079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      margin: const EdgeInsets.symmetric(ve),\r\n+      margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n+      width: size,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460662166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n-      width: size,\r\n+      width: size.width * 0.8,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460669000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n+      child: ClipRRect(),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460675935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n-      child: ClipRRect(),\r\n+      child: ClipRRect(borderRadius: BorderRadius.circular(radius)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460681050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n-      child: ClipRRect(borderRadius: BorderRadius.circular(radius)),\r\n+      child: ClipRRect(\r\n+        borderRadius: BorderRadius.circular(29.0),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460686789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,8 @@\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n+      c\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460692569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n+        c\r\n       ),\r\n-      c\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460698057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        c\r\n+        child: TextButt,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460708421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        child: TextButt,\r\n+        child: TextButton(onPressed: () {}, child: TExt),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460780996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        child: TextButton(onPressed: () {}, child: TExt),\r\n+        child: TextButton(onPressed: () {}, child: Text('data')),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460789815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        child: TextButton(onPressed: () {}, child: Text('data')),\r\n+        child: TextButton(onPressed: () {}, child: Text('Sign')),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460796393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        child: TextButton(onPressed: () {}, child: Text('Sign')),\r\n+        child: TextButton(onPressed: () {}, child: const Text('SIGN IN')),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651462682183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        child: TextButton(onPressed: () {}, child: const Text('SIGN IN')),\r\n+        child: TextButton(onPressed: () {}, child: const Text('SIGN IN'),),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651462695816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,13 @@\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n-        child: TextButton(onPressed: () {}, child: const Text('SIGN IN'),),\r\n+        child: TextButton(\r\n+          onPressed: () {},\r\n+          child: const Text('SIGN IN'),\r\n+          \r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651462705071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462712490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462721026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          \r\n+          style: ButtonS,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462737997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonS,\r\n+          style: ButtonStyle(c),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462743126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(c),\r\n+          style: ButtonStyle(backgroundColor: ),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462749280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: ),\r\n+          style: ButtonStyle(backgroundColor: kP),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462768435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class RoundedButton extends StatelessWidget {\r\n   const RoundedButton({Key? key}) : super(key: key);\r\n@@ -13,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: kP),\r\n+          style: ButtonStyle(backgroundColor: Material),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462774912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: Material),\r\n+          style: ButtonStyle(backgroundColor: MaterialState),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462782488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialState),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462804611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty),\r\n+          style: const ButtonStyle(backgroundColor: MaterialStateProperty),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462817613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: const ButtonStyle(backgroundColor: MaterialStateProperty),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty<),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462838227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty<),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty<Color>?),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462850377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty<Color>?),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty<Color>),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462898258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty<Color>),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(value)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462903671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(value)),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.kP)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462909150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.kP)),\r\n+          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462917629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n-          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor)),\r\n+          style: ButtonStyle(\r\n+              backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor,)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462926022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n-              backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor,)),\r\n+            backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n+            \r\n+          ),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651462938756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n-            \r\n+            overlayColor: \r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651462945788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n-            overlayColor: \r\n+            overlayColor: MaterialState\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651462952945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n-            overlayColor: MaterialState\r\n+            overlayColor: MaterialStateProperty.a\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651462960685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n-            overlayColor: MaterialStateProperty.a\r\n+            overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n+            \r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651462988940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n             overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-            \r\n+            padding: \r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651463028095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n+      de\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n@@ -17,9 +18,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n             overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-            padding: \r\n+            padding: Material\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651463034151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n-      de\r\n+      decoration: ,\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n"
+                },
+                {
+                    "date": 1651463045320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,20 +8,18 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(vertical: 5.0),\r\n-      decoration: ,\r\n       width: size.width * 0.8,\r\n       child: ClipRRect(\r\n         borderRadius: BorderRadius.circular(29.0),\r\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n-            backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n-            overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-            padding: Material\r\n-          ),\r\n+              backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n+              overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n+              padding: Material),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463056764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n               backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n               overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: Material),\r\n+              padding: MaterialState),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463065525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n               backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n               overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: MaterialState),\r\n+              padding: MaterialStateProperty.all(value)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463071252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n               backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n               overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: MaterialStateProperty.all(value)),\r\n+              padding: MaterialStateProperty.all(20)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463080313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n               backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n               overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: MaterialStateProperty.all(20)),\r\n+              padding: MaterialStateProperty.all(ED)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463089274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n               backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n               overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: MaterialStateProperty.all(ED)),\r\n+              padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20))),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463102144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n               backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n               overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20))),\r\n+              padding: MaterialStateProperty.all(\r\n+                  const EdgeInsets.symmetric(vertical: 20))),\r\n+                  \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463110861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,13 @@\n         child: TextButton(\r\n           onPressed: () {},\r\n           child: const Text('SIGN IN'),\r\n           style: ButtonStyle(\r\n-              backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n-              overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n-              padding: MaterialStateProperty.all(\r\n-                  const EdgeInsets.symmetric(vertical: 20))),\r\n-                  \r\n+            backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n+            overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n+            padding: MaterialStateProperty.all(\r\n+                const EdgeInsets.symmetric(vertical: 20)),\r\n+          ),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651463120472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n             overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n             padding: MaterialStateProperty.all(\r\n                 const EdgeInsets.symmetric(vertical: 20)),\r\n+                foregroundColor: Mat\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651463128138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n             overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n             padding: MaterialStateProperty.all(\r\n                 const EdgeInsets.symmetric(vertical: 20)),\r\n-                foregroundColor: Mat\r\n+                foregroundColor: MaterialStateProperty.all(value)\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651463133530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n             overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n             padding: MaterialStateProperty.all(\r\n                 const EdgeInsets.symmetric(vertical: 20)),\r\n-                foregroundColor: MaterialStateProperty.all(value)\r\n+                foregroundColor: MaterialStateProperty.all(Colors.white)\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651463170679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class RoundedButton extends StatelessWidget {\r\n+  final\r\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -19,9 +20,9 @@\n             backgroundColor: MaterialStateProperty.all(kPrimaryDeepColor),\r\n             overlayColor: MaterialStateProperty.all(kPrimaryColor),\r\n             padding: MaterialStateProperty.all(\r\n                 const EdgeInsets.symmetric(vertical: 20)),\r\n-                foregroundColor: MaterialStateProperty.all(Colors.white)\r\n+            foregroundColor: MaterialStateProperty.all(Colors.white),\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651463179603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class RoundedButton extends StatelessWidget {\r\n-  final\r\n+  final String\r\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651463188383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class RoundedButton extends StatelessWidget {\r\n   final String buttonText;\r\n-  \r\n+  f\r\n   const RoundedButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                }
+            ],
+            "date": 1651460588698,
+            "name": "Commit-0",
+            "content": "st"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "sourceFile": "lib/Screens/Chat_Screen/Components/chatlist_option_menu.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1651834791078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651834805995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-st\n\\ No newline at end of file\n+Class\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651834812108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-Class\n\\ No newline at end of file\n+class ChatListOptionMenu {\r\n+  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651834826737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n class ChatListOptionMenu {\r\n-  \r\n+  String? \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651834832612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n class ChatListOptionMenu {\r\n-  String? \r\n-}\n\\ No newline at end of file\n+  String? title;\r\n+  String\r\n+}\r\n"
+                },
+                {
+                    "date": 1651834846137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n-  String\r\n+  Icons? icon;\r\n }\r\n"
+                },
+                {
+                    "date": 1651834855302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:flutter/cupertino.dart';\r\n+\r\n class ChatListOptionMenu {\r\n   String? title;\r\n-  Icons? icon;\r\n+  IconData? icons;\r\n }\r\n"
+                },
+                {
+                    "date": 1651834862723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n import 'package:flutter/cupertino.dart';\r\n+import 'package:flutter/material.dart';\r\n \r\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n+  MaterialColor? colors;\r\n }\r\n"
+                },
+                {
+                    "date": 1651834868743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n \r\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n-  MaterialColor? colors;\r\n+  MaterialColor? color;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651834877888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  \r\n+  ChatListOptionMenu({this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1651834885183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  ChatListOptionMenu({this.})\r\n+  ChatListOptionMenu({rethis.title})\r\n }\r\n"
+                },
+                {
+                    "date": 1651834890665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  ChatListOptionMenu({rethis.title})\r\n+  ChatListOptionMenu({required this.title, })\r\n }\r\n"
+                },
+                {
+                    "date": 1651834898676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  ChatListOptionMenu({required this.title, })\r\n+  ChatListOptionMenu({required this.title, required this.color})\r\n }\r\n"
+                },
+                {
+                    "date": 1651834906742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  ChatListOptionMenu({required this.title, required this.color})\r\n+  ChatListOptionMenu({required this.title, required this.color, requiredthis.})\r\n }\r\n"
+                },
+                {
+                    "date": 1651834912444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,7 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  ChatListOptionMenu({required this.title, required this.color, requiredthis.})\r\n+  ChatListOptionMenu(\r\n+      {required this.title, required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835881153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n+  \r\n   ChatListOptionMenu(\r\n       {required this.title, required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835887840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  \r\n+  Fo\r\n   ChatListOptionMenu(\r\n       {required this.title, required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835893495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  Fo\r\n+  FontWeight\r\n   ChatListOptionMenu(\r\n       {required this.title, required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835903505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n class ChatListOptionMenu {\r\n   String? title;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  FontWeight\r\n+  FontWeight? fontWeight;\r\n   ChatListOptionMenu(\r\n       {required this.title, required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835909105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   IconData? icons;\r\n   MaterialColor? color;\r\n   FontWeight? fontWeight;\r\n   ChatListOptionMenu(\r\n-      {required this.title, required this.color, required this.icons});\r\n+      {required this.title, ,required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835918816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   IconData? icons;\r\n   MaterialColor? color;\r\n   FontWeight? fontWeight;\r\n   ChatListOptionMenu(\r\n-      {required this.title, ,required this.color, required this.icons});\r\n+      {required this.title, fontWeight ,required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835925818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   IconData? icons;\r\n   MaterialColor? color;\r\n   FontWeight? fontWeight;\r\n   ChatListOptionMenu(\r\n-      {required this.title, fontWeight ,required this.color, required this.icons});\r\n+      {required this.title,this.fontWeight ,required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835932114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,11 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatListOptionMenu {\r\n   String? title;\r\n+  FontWeight? fontWeight;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  FontWeight? fontWeight;\r\n+  \r\n   ChatListOptionMenu(\r\n       {required this.title,this.fontWeight ,required this.color, required this.icons});\r\n }\r\n"
+                },
+                {
+                    "date": 1651835942571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \r\n class ChatListOptionMenu {\r\n   String? title;\r\n   FontWeight? fontWeight;\r\n+  Color? text\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n   \r\n   ChatListOptionMenu(\r\n"
+                },
+                {
+                    "date": 1651835951093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,15 @@\n \r\n class ChatListOptionMenu {\r\n   String? title;\r\n   FontWeight? fontWeight;\r\n-  Color? text\r\n+  Color? textColor;\r\n   IconData? icons;\r\n   MaterialColor? color;\r\n-  \r\n+\r\n   ChatListOptionMenu(\r\n-      {required this.title,this.fontWeight ,required this.color, required this.icons});\r\n+      {required this.title,\r\n+      this.fontWeight,\r\n+      this.\r\n+      required this.color,\r\n+      required this.icons});\r\n }\r\n"
+                }
+            ],
+            "date": 1651834791078,
+            "name": "Commit-0",
+            "content": "st"
+        }
+    ]
+}

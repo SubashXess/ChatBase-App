@@ -1,0 +1,106 @@
+{
+    "sourceFile": "lib/Models/User_List/users.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1651669100933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651669113052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-class Users\n\\ No newline at end of file\n+class Users {\r\n+  nu\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651669119771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n class Users {\r\n-  nu\r\n-}\n\\ No newline at end of file\n+  num? id;\r\n+}\r\n"
+                },
+                {
+                    "date": 1651669126815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n class Users {\r\n   num? id;\r\n+  String first\r\n }\r\n"
+                },
+                {
+                    "date": 1651669132835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n class Users {\r\n   num? id;\r\n-  String first\r\n+  String firstName;\r\n }\r\n"
+                },
+                {
+                    "date": 1651669138701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n class Users {\r\n   num? id;\r\n-  String firstName;\r\n+  String? firstName;\r\n+  String\r\n }\r\n"
+                },
+                {
+                    "date": 1651669147749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n-  String\r\n+  String? last\r\n }\r\n"
+                },
+                {
+                    "date": 1651669159811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n-  String? last\r\n+  String? lastName\r\n }\r\n"
+                },
+                {
+                    "date": 1651669168512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n-  String? lastName\r\n+  String? lastName;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651669182123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n-  \r\n+  String\r\n }\r\n"
+                },
+                {
+                    "date": 1651669187766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n-  String\r\n+  String? pri\r\n }\r\n"
+                },
+                {
+                    "date": 1651669195198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n-  String? pri\r\n+  String? profilePic\r\n }\r\n"
+                },
+                {
+                    "date": 1651669236685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n class Users {\r\n   num? id;\r\n   String? firstName;\r\n-  String? lastName;\r\n-  String? profilePic\r\n+  // String? lastName;\r\n+  String? profilePicture;\r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1651669244172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class Users {\r\n   num? id;\r\n-  String? firstName;\r\n+  String? name;\r\n   // String? lastName;\r\n   String? profilePicture;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1651669257986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n class Users {\r\n-  num? id;\r\n-  String? name;\r\n-  // String? lastName;\r\n-  String? profilePicture;\r\n+  final String name;\r\n+  final String chatText;\r\n+  final String profileImage;\r\n+  final String time;\r\n+  final bool isMessageRead;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1651669264318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n class Users {\r\n   final String name;\r\n   final String chatText;\r\n-  final String profileImage;\r\n-  final String time;\r\n-  final bool isMessageRead;\r\n+   String profileImage;\r\n+   String time;\r\n+   bool isMessageRead;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1651669276118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n class Users {\r\n-  final String name;\r\n-  final String chatText;\r\n+   String name;\r\n+   String chatText;\r\n    String profileImage;\r\n    String time;\r\n-   bool isMessageRead;\r\n+   \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1651669282896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n class Users {\r\n-   String name;\r\n-   String chatText;\r\n-   String profileImage;\r\n-   String time;\r\n-   \r\n-\r\n+  num id;\r\n+  String name;\r\n+  String chatText;\r\n+  String profileImage;\r\n+  String time;\r\n }\r\n"
+                },
+                {
+                    "date": 1651669290116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class Users {\r\n-  num id;\r\n+  num? id;\r\n   String name;\r\n   String chatText;\r\n   String profileImage;\r\n   String time;\r\n"
+                },
+                {
+                    "date": 1651669295806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class Users {\r\n   num? id;\r\n-  String name;\r\n-  String chatText;\r\n-  String profileImage;\r\n+  String? name;\r\n+  String? chatText;\r\n+  String? profileImage;\r\n   String time;\r\n }\r\n"
+                },
+                {
+                    "date": 1651669311714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n   num? id;\r\n   String? name;\r\n   String? chatText;\r\n   String? profileImage;\r\n-  String time;\r\n+  String? time;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651669318430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   String? chatText;\r\n   String? profileImage;\r\n   String? time;\r\n \r\n-  Users()\r\n+  Users({})\r\n }\r\n"
+                },
+                {
+                    "date": 1651669343536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   String? chatText;\r\n   String? profileImage;\r\n   String? time;\r\n \r\n-  Users({required this.name, required this.chat})\r\n+  Users({required this.name, required this.chatText})\r\n }\r\n"
+                }
+            ],
+            "date": 1651669100933,
+            "name": "Commit-0",
+            "content": "class Users"
+        }
+    ]
+}

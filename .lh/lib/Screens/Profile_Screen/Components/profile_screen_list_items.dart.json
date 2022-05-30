@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/profile_screen_list_items.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1651944349347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651944358786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n import 'package:flutter/material.dart';\r\n \r\n-static class ProfileScreenListItem {\r\n+class ProfileScreenListItem {\r\n   IconData? icon;\r\n   String? title;\r\n   Color? color;\r\n \r\n   ProfileScreenListItem({this.icon, this.title, this.color});\r\n \r\n-  static List<ProfileScreenListItem> generateSettingsList() {\r\n+  List<ProfileScreenListItem> generateSettingsList() {\r\n     return [\r\n       ProfileScreenListItem(\r\n           title: \"Edit Profile\",\r\n           icon: Icons.person_rounded,\r\n"
+                },
+                {
+                    "date": 1651944620961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   Color? color;\r\n \r\n   ProfileScreenListItem({this.icon, this.title, this.color});\r\n \r\n-  List<ProfileScreenListItem> generateSettingsList() {\r\n+ static List<ProfileScreenListItem> generateSettingsList() {\r\n     return [\r\n       ProfileScreenListItem(\r\n           title: \"Edit Profile\",\r\n           icon: Icons.person_rounded,\r\n"
+                },
+                {
+                    "date": 1651945397498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ProfileScreenListItem {\r\n   IconData? icon;\r\n   String? title;\r\n-  Color? color;\r\n+  MaterialColor? color;\r\n \r\n   ProfileScreenListItem({this.icon, this.title, this.color});\r\n \r\n  static List<ProfileScreenListItem> generateSettingsList() {\r\n"
+                }
+            ],
+            "date": 1651944349347,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nstatic class ProfileScreenListItem {\r\n  IconData? icon;\r\n  String? title;\r\n  Color? color;\r\n\r\n  ProfileScreenListItem({this.icon, this.title, this.color});\r\n\r\n  static List<ProfileScreenListItem> generateSettingsList() {\r\n    return [\r\n      ProfileScreenListItem(\r\n          title: \"Edit Profile\",\r\n          icon: Icons.person_rounded,\r\n          color: Colors.pink),\r\n      ProfileScreenListItem(\r\n          title: \"Chats\",\r\n          icon: Icons.chat_bubble_rounded,\r\n          color: Colors.deepOrange),\r\n      ProfileScreenListItem(\r\n          title: \"Subscriptions\", icon: Icons.pix_rounded, color: Colors.amber),\r\n      ProfileScreenListItem(\r\n          title: \"Account Settings\",\r\n          icon: Icons.manage_accounts_rounded,\r\n          color: Colors.green),\r\n      ProfileScreenListItem(\r\n          title: \"Privacy Settings\",\r\n          icon: Icons.shield_rounded,\r\n          color: Colors.teal),\r\n      ProfileScreenListItem(\r\n          title: \"Settings\",\r\n          icon: Icons.settings_rounded,\r\n          color: Colors.purple),\r\n      ProfileScreenListItem(\r\n          title: \"Help\", icon: Icons.help_rounded, color: Colors.blue),\r\n      ProfileScreenListItem(\r\n          title: \"Tell a Friend\",\r\n          icon: Icons.person_add_alt_rounded,\r\n          color: Colors.red),\r\n    ];\r\n  }\r\n}\r\n"
+        }
+    ]
+}

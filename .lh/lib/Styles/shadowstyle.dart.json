@@ -1,0 +1,138 @@
+{
+    "sourceFile": "lib/Styles/shadowstyle.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 30,
+            "patches": [
+                {
+                    "date": 1651473354897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651473361196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n-BoxShadow\n\\ No newline at end of file\n+BoxShadow boxShadow\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651473368128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n-BoxShadow boxShadow\n\\ No newline at end of file\n+BoxShadow boxShadowStyle ()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651473376017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n-BoxShadow boxShadowStyle ()\n\\ No newline at end of file\n+BoxShadow boxShadowStyle () {\r\n+  return BoxSha\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651473382583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n-BoxShadow boxShadowStyle () {\r\n-  return BoxSha\r\n-}\n\\ No newline at end of file\n+BoxShadow boxShadowStyle() {\r\n+  return BoxShadow();\r\n+}\r\n"
+                },
+                {
+                    "date": 1651473635442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n-  return BoxShadow();\r\n+  return BoxShadow(\r\n+    c\r\n+  );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473641047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n-    c\r\n+    color: Colors.bla\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473648717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n-    color: Colors.bla\r\n+    color: Colors.\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473656874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import 'package:flutter/cupertino.dart';\r\n+import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n-    color: Colors.\r\n+    color: Colors.black\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473663779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n-    color: Colors.black\r\n+    color: Colors.black12.withOpacity(0.2)\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473670502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n-    color: Colors.black12.withOpacity(0.2)\r\n+    color: Colors.black12.withOpacity(0.2),\r\n+    spreadRadius: 2.0\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473680681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,9 @@\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n-    spreadRadius: 2.0\r\n+    spreadRadius: 2.0,\r\n+    blurRadius: 4.0,\r\n+    offset: \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473686266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n-    offset: \r\n+    offset: const Offset(dx, dy)\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473692210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n-    offset: const Offset(dx, dy)\r\n+    offset: const Offset(1.5, 2.5)\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651473698602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n-import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle() {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n-    offset: const Offset(1.5, 2.5)\r\n+    offset: const Offset(1.5, 2.5),\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651474276392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n-BoxShadow boxShadowStyle() {\r\n+BoxShadow boxShadowStyle(Color) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n"
+                },
+                {
+                    "date": 1651474281520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n-BoxShadow boxShadowStyle(Color) {\r\n+BoxShadow boxShadowStyle(Colors color, ) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n"
+                },
+                {
+                    "date": 1651474292265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n-BoxShadow boxShadowStyle(Colors color, ) {\r\n+BoxShadow boxShadowStyle(Colors color, double) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n"
+                },
+                {
+                    "date": 1651474299797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n-BoxShadow boxShadowStyle(Colors color, double) {\r\n+BoxShadow boxShadowStyle(Colors color, double spreadRadius) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n"
+                },
+                {
+                    "date": 1651474306308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n-BoxShadow boxShadowStyle(Colors color, double spreadRadius) {\r\n+BoxShadow boxShadowStyle(Colors color) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n"
+                },
+                {
+                    "date": 1651475330136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n-BoxShadow boxShadowStyle(Colors color) {\r\n+BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 2.0,\r\n     blurRadius: 4.0,\r\n"
+                },
+                {
+                    "date": 1651486074019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n-    spreadRadius: 2.0,\r\n+    spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n     offset: const Offset(1.5, 2.5),\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651486083952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n-    offset: const Offset(1.5, 2.5),\r\n+    offset: const Offset(.5, 2.5),\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651486089097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n-    offset: const Offset(.5, 2.5),\r\n+    offset: const Offset(1.5, 2.5),\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651486098703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   return BoxShadow(\r\n     color: Colors.black12.withOpacity(0.2),\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n-    offset: const Offset(1.5, 2.5),\r\n+    offset: const Offset(1.5, .5),\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651486122147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n-    color: Colors.black12.withOpacity(0.2),\r\n+    color: Colors.kP.withOpacity(0.2),\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n-    offset: const Offset(1.5, .5),\r\n+    offset: const Offset(1.5, 2.5),\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1651486129446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n-    color: Colors.kP.withOpacity(0.2),\r\n+    color: kPrimaryColor.withOpacity(0.2),\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n     offset: const Offset(1.5, 2.5),\r\n   );\r\n"
+                },
+                {
+                    "date": 1651486143923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n-    color: kPrimaryColor.withOpacity(0.2),\r\n+    color: kPrimaryColo,\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n     offset: const Offset(1.5, 2.5),\r\n   );\r\n"
+                },
+                {
+                    "date": 1651486151072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n-    color: kPrimaryColo,\r\n+    color: kP,\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n     offset: const Offset(1.5, 2.5),\r\n   );\r\n"
+                },
+                {
+                    "date": 1651486158092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n-    color: kP,\r\n+    color: kPrimaryLightColor,\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n     offset: const Offset(1.5, 2.5),\r\n   );\r\n"
+                },
+                {
+                    "date": 1651486164769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n BoxShadow boxShadowStyle(Color color) {\r\n   return BoxShadow(\r\n-    color: kPrimaryS,\r\n+    color: kPrimary,\r\n     spreadRadius: 0.0,\r\n     blurRadius: 4.0,\r\n     offset: const Offset(1.5, 2.5),\r\n   );\r\n"
+                }
+            ],
+            "date": 1651473354897,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/cupertino.dart';\r\n\r\nBoxShadow"
+        }
+    ]
+}

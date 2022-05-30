@@ -1,0 +1,46 @@
+{
+    "sourceFile": "lib/Components/showSnackBar.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1651474534491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651474541572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n-void showSnackBar(BuildContext context)\n\\ No newline at end of file\n+void showSnackBar(BuildContext context, String message)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651474548370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n import 'package:flutter/cupertino.dart';\r\n+import 'package:flutter/material.dart';\r\n \r\n\\ No newline at end of file\n-void showSnackBar(BuildContext context, String message)\n+void showSnackBar(BuildContext context, String message) {\r\n+  ScaffoldMessenger\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651474554227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n void showSnackBar(BuildContext context, String message) {\r\n-  ScaffoldMessenger\r\n+  ScaffoldMessenger.of(context)..re\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651474560050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n void showSnackBar(BuildContext context, String message) {\r\n-  ScaffoldMessenger.of(context)..re\r\n+  ScaffoldMessenger.of(context)..removeCurrentSnackBar()..s\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651474566548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n void showSnackBar(BuildContext context, String message) {\r\n-  ScaffoldMessenger.of(context)..removeCurrentSnackBar()..s\r\n+  ScaffoldMessenger.of(context)..removeCurrentSnackBar()..showSnackBar(SnackBar(content: content))\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651474572103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n void showSnackBar(BuildContext context, String message) {\r\n-  ScaffoldMessenger.of(context)..removeCurrentSnackBar()..showSnackBar(SnackBar(content: content))\r\n+  ScaffoldMessenger.of(context)..removeCurrentSnackBar()..showSnackBar(SnackBar(content: Text(message)))\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651474579374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n void showSnackBar(BuildContext context, String message) {\r\n-  ScaffoldMessenger.of(context)..removeCurrentSnackBar()..showSnackBar(SnackBar(content: Text(message)))\r\n-}\n\\ No newline at end of file\n+  ScaffoldMessenger.of(context)\r\n+    ..removeCurrentSnackBar()\r\n+    ..showSnackBar(SnackBar(content: Text(message)));\r\n+}\r\n"
+                }
+            ],
+            "date": 1651474534491,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/cupertino.dart';\r\n\r\nvoid showSnackBar(BuildContext context)"
+        }
+    ]
+}

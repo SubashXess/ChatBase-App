@@ -1,0 +1,190 @@
+{
+    "sourceFile": "lib/Components/divider.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1651481586355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651481594149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+import 'package:flutter/material.dart';\r\n \r\n+class OrDivider extends StatelessWidget {\r\n+  const OrDivider({ Key? key }) : super(key: key);\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       \r\n"
+                },
+                {
+                    "date": 1651481602018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   const OrDivider({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       \r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651481611211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      \r\n+      margin: const Ed,\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651481617969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      margin: const Ed,\r\n+      margin: const EdgeInsets.symmetric(),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651481624657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      margin: const EdgeInsets.symmetric(),\r\n+      margin: const EdgeInsets.symmetric(vertical: size.height),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651481632331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n import 'package:flutter/material.dart';\r\n \r\n class OrDivider extends StatelessWidget {\r\n-  const OrDivider({ Key? key }) : super(key: key);\r\n+  const OrDivider({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      margin: const EdgeInsets.symmetric(vertical: size.height),\r\n+      margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481640336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n+      width: size.height,\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481645933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n-      width: size.height,\r\n+      width: size.width * 0.8,\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481651154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n+      child: Row(),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481658232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,12 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n-      child: Row(),\r\n+      child: Row(\r\n+        children: [\r\n+          buildD\r\n\\ No newline at end of file\n+        ],\r\n+      ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481670854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          buildD\r\n+          buildDivider\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481679332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          buildDivider\r\n+          Expa\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481688453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          Expa\r\n+          Expanded(child: Divider)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481698062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          Expanded(child: Divider)\r\n+          Expanded(child: Divider(color: Color(),))\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481706184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          Expanded(child: Divider(color: Color(),))\r\n+          Expanded(child: Divider(color: Color(0xFFD9D9D9),))\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481712618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          Expanded(child: Divider(color: Color(0xFFD9D9D9),))\r\n+          Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5,))\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481722710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,11 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5,))\r\n+          Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n+          c\r\n         ],\r\n       ),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481728101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          c\r\n+          Padding(padding: padding)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481734528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: padding)\r\n+          Padding(padding: EdgeInsets.symmetric())\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481745905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: EdgeInsets.symmetric())\r\n+          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), c)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481752261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), c)\r\n+          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR'),)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481758397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class OrDivider extends StatelessWidget {\r\n   const OrDivider({Key? key}) : super(key: key);\r\n@@ -11,10 +12,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR'),)\r\n+          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR', style: textStyleSimple(color, fontSize, fontWeight),),)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481766551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Styles/textstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class OrDivider extends StatelessWidget {\r\n   const OrDivider({Key? key}) : super(key: key);\r\n@@ -12,10 +13,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR', style: textStyleSimple(color, fontSize, fontWeight),),)\r\n+          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR', style: textStyleSimple(kPrimaryColor, , fontWeight),),)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481777834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR', style: textStyleSimple(kPrimaryColor, , fontWeight),),)\r\n+          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR', style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),),)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481789113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,16 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n-          Padding(padding: EdgeInsets.symmetric(vertical: 10.0), child: Text('OR', style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),),)\r\n+          Padding(\r\n+            padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n+            child: Text(\r\n+              'OR',\r\n+              style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n\\ No newline at end of file\n+            ),\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481853936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,17 +12,18 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n+          const Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n           Padding(\r\n             padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n             child: Text(\r\n               'OR',\r\n               style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n             ),\r\n           ),\r\n+          const Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n         ],\r\n       ),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481868873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n               'OR',\r\n               style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n             ),\r\n           ),\r\n-          const Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n+          const Expanded(child: Divider(color: Color.fromARGB(255, 112, 6, 6), height: 1.5)),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481882220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n               'OR',\r\n               style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n             ),\r\n           ),\r\n-          const Expanded(child: Divider(color: Color.fromARGB(255, 112, 6, 6), height: 1.5)),\r\n+          \r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651481889334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,6 @@\n         ],\r\n       ),\r\n     );\r\n   }\r\n-}\n\\ No newline at end of file\n+  Expanded\r\n+}\r\n"
+                },
+                {
+                    "date": 1651481896586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n         ],\r\n       ),\r\n     );\r\n   }\r\n-  Expanded\r\n+  Expanded buildDivider\r\n }\r\n"
+                },
+                {
+                    "date": 1651481904805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,8 @@\n         ],\r\n       ),\r\n     );\r\n   }\r\n-  Expanded buildDivider\r\n+  Expanded buildDivider() {\r\n+    return const Expa\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1651481912641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,7 +26,7 @@\n       ),\r\n     );\r\n   }\r\n   Expanded buildDivider() {\r\n-    return const Expa\r\n+    return const Expanded(child: Divider(color: Color,))\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651481919221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,7 +26,7 @@\n       ),\r\n     );\r\n   }\r\n   Expanded buildDivider() {\r\n-    return const Expanded(child: Divider(color: Color,))\r\n+    return const Expanded(child: Divider(color: Color(0xFFD9D),))\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651481933161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,21 +12,24 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          const Expanded(child: Divider(color: Color(0xFFD9D9D9), height: 1.5)),\r\n+          bui\r\n           Padding(\r\n             padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n             child: Text(\r\n               'OR',\r\n               style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n             ),\r\n           ),\r\n-          \r\n         ],\r\n       ),\r\n     );\r\n   }\r\n+\r\n   Expanded buildDivider() {\r\n-    return const Expanded(child: Divider(color: Color(0xFFD9D),))\r\n+    return const Expanded(\r\n+        child: Divider(\r\n+      color: Color(0xFFD9D9D9),\r\n+    ));\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651481941174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,16 +12,17 @@\n       margin: EdgeInsets.symmetric(vertical: size.height * 0.01),\r\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n-          bui\r\n+          buildDivider(),\r\n           Padding(\r\n             padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n             child: Text(\r\n               'OR',\r\n               style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n             ),\r\n           ),\r\n+          buildDivider()\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482011058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n               'OR',\r\n               style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n             ),\r\n           ),\r\n-          buildDivider()\r\n+          buildDivider(),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n@@ -30,7 +30,8 @@\n   Expanded buildDivider() {\r\n     return const Expanded(\r\n         child: Divider(\r\n       color: Color(0xFFD9D9D9),\r\n+      height: 1.5,\r\n     ));\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482016856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,8 @@\n   Expanded buildDivider() {\r\n     return const Expanded(\r\n         child: Divider(\r\n       color: Color(0xFFD9D9D9),\r\n-      height: 1.5,\r\n+      height: 5.5,\r\n     ));\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482038077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,8 @@\n   Expanded buildDivider() {\r\n     return const Expanded(\r\n         child: Divider(\r\n       color: Color(0xFFD9D9D9),\r\n-      height: 5.5,\r\n+      height: 1.5,\r\n     ));\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482050389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-import 'package:chatbase_app/Styles/textstyle.dart';\r\n-import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class OrDivider extends StatelessWidget {\r\n   const OrDivider({Key? key}) : super(key: key);\r\n@@ -13,13 +11,18 @@\n       width: size.width * 0.8,\r\n       child: Row(\r\n         children: [\r\n           buildDivider(),\r\n-          Padding(\r\n-            padding: const EdgeInsets.symmetric(vertical: 10.0),\r\n+          const Padding(\r\n+            padding: EdgeInsets.symmetric(\r\n+              vertical: 10,\r\n+            ),\r\n             child: Text(\r\n               'OR',\r\n-              style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w600),\r\n+              style: TextStyle(\r\n+                color: kPrimaryColor,\r\n+                fontWeight: FontWeight.w600,\r\n+              ),\r\n             ),\r\n           ),\r\n           buildDivider(),\r\n         ],\r\n@@ -28,10 +31,11 @@\n   }\r\n \r\n   Expanded buildDivider() {\r\n     return const Expanded(\r\n-        child: Divider(\r\n-      color: Color(0xFFD9D9D9),\r\n-      height: 1.5,\r\n-    ));\r\n+      child: Divider(\r\n+        color: Color(0xFFD9D9D9),\r\n+        height: 1.5,\r\n+      ),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482097964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class OrDivider extends StatelessWidget {\r\n   const OrDivider({Key? key}) : super(key: key);\r\n@@ -13,9 +14,9 @@\n         children: [\r\n           buildDivider(),\r\n           const Padding(\r\n             padding: EdgeInsets.symmetric(\r\n-              vertical: 10,\r\n+              vertical: 10, horizontal: 10\r\n             ),\r\n             child: Text(\r\n               'OR',\r\n               style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651482111293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,9 @@\n       child: Row(\r\n         children: [\r\n           buildDivider(),\r\n           const Padding(\r\n-            padding: EdgeInsets.symmetric(\r\n-              vertical: 10, horizontal: 10\r\n-            ),\r\n+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),\r\n             child: Text(\r\n               'OR',\r\n               style: TextStyle(\r\n                 color: kPrimaryColor,\r\n@@ -33,9 +31,9 @@\n \r\n   Expanded buildDivider() {\r\n     return const Expanded(\r\n       child: Divider(\r\n-        color: Color(0xFFD9D9D9),\r\n+        color: Color.fromARGB(255, 173, 30, 30),\r\n         height: 1.5,\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482120223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       child: Row(\r\n         children: [\r\n           buildDivider(),\r\n           const Padding(\r\n-            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),\r\n+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),\r\n             child: Text(\r\n               'OR',\r\n               style: TextStyle(\r\n                 color: kPrimaryColor,\r\n"
+                },
+                {
+                    "date": 1651482126937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       child: Row(\r\n         children: [\r\n           buildDivider(),\r\n           const Padding(\r\n-            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),\r\n+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),\r\n             child: Text(\r\n               'OR',\r\n               style: TextStyle(\r\n                 color: kPrimaryColor,\r\n@@ -31,9 +31,9 @@\n \r\n   Expanded buildDivider() {\r\n     return const Expanded(\r\n       child: Divider(\r\n-        color: Color.fromARGB(255, 173, 30, 30),\r\n+        color: Color(0xFFD9D9D9),\r\n         height: 1.5,\r\n       ),\r\n     );\r\n   }\r\n"
+                }
+            ],
+            "date": 1651481586355,
+            "name": "Commit-0",
+            "content": "class  extends StatelessWidget {\r\n  const ({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

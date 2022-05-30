@@ -1,0 +1,162 @@
+{
+    "sourceFile": "lib/Models/Users/messages.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1651849197429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651850014608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-class Message\n\\ No newline at end of file\n+class Messages {\r\n+  User\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651850020277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n class Messages {\r\n-  User\r\n+  User user\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651850029161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n+import 'package:chatbase_app/Models/Users/user.dart';\r\n+\r\n class Messages {\r\n   User user\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651850034495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import 'package:chatbase_app/Models/Users/user.dart';\r\n \r\n class Messages {\r\n-  User user\r\n-}\n\\ No newline at end of file\n+  User? user;\r\n+}\r\n"
+                },
+                {
+                    "date": 1651850039819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Models/Users/user.dart';\r\n \r\n class Messages {\r\n   User? user;\r\n+  String\r\n }\r\n"
+                },
+                {
+                    "date": 1651850046615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import 'package:chatbase_app/Models/Users/user.dart';\r\n \r\n class Messages {\r\n   User? user;\r\n-  String\r\n+  String? lastMessage\r\n }\r\n"
+                },
+                {
+                    "date": 1651850053215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import 'package:chatbase_app/Models/Users/user.dart';\r\n \r\n class Messages {\r\n   User? user;\r\n-  String? lastMessage\r\n+  String? lastMessage;\r\n+  String?\r\n }\r\n"
+                },
+                {
+                    "date": 1651850061727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n class Messages {\r\n   User? user;\r\n   String? lastMessage;\r\n-  String?\r\n+  String? lastTime\r\n }\r\n"
+                },
+                {
+                    "date": 1651850067647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n \r\n class Messages {\r\n   User? user;\r\n   String? lastMessage;\r\n-  String? lastTime\r\n+  String? lastTime;\r\n+  bool?\r\n }\r\n"
+                },
+                {
+                    "date": 1651850074114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n class Messages {\r\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n-  bool?\r\n+  bool isCon\r\n }\r\n"
+                },
+                {
+                    "date": 1651850081438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n class Messages {\r\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n-  bool isCon\r\n+  bool? isContinue;\r\n }\r\n"
+                },
+                {
+                    "date": 1651850105588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n+  Me\r\n }\r\n"
+                },
+                {
+                    "date": 1651850112713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Me\r\n+  Messages({this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1651850117946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Messages({this.})\r\n+  Messages({this.user, this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1651850123032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Messages({this.user, this.})\r\n+  Messages({this.user, this.lastMessage, this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1651850128210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Messages({this.user, this.lastMessage, this.})\r\n+  Messages({this.user, this.lastMessage, this.lastTime, this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1651850137590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Messages({this.user, this.lastMessage, this.lastTime, this.})\r\n+  Messages({this.user, this.lastMessage, this.lastTime, this.isContinue});\r\n }\r\n"
+                },
+                {
+                    "date": 1651850142903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,8 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Messages({this.user, this.lastMessage, this.lastTime, this.isContinue});\r\n+  Messages({this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n+\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651850152101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   String? lastTime;\r\n   bool? isContinue;\r\n   Messages({this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n-  \r\n+  static List<Messages> generate\r\n }\r\n"
+                },
+                {
+                    "date": 1651850190710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   String? lastTime;\r\n   bool? isContinue;\r\n   Messages({this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n-  static List<Messages> generate\r\n+  static List<Messages> generateHomePage\r\n }\r\n"
+                },
+                {
+                    "date": 1651850196662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   String? lastTime;\r\n   bool? isContinue;\r\n   Messages({this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n-  static List<Messages> generateHomePage\r\n+  static List<Messages> generateHomePageMessages()\r\n }\r\n"
+                },
+                {
+                    "date": 1651850204595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n   User? user;\r\n   String? lastMessage;\r\n   String? lastTime;\r\n   bool? isContinue;\r\n-  Messages({this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n+  Messages(\r\n+      {this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n-  static List<Messages> generateHomePageMessages()\r\n+  static List<Messages> generateHomePageMessages() {\r\n+    return [\r\n+      Messages()\r\n+    ];\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1651850211143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n       {this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n   static List<Messages> generateHomePageMessages() {\r\n     return [\r\n-      Messages()\r\n+      Messages(user: [0])\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651850235329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n       {this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n   static List<Messages> generateHomePageMessages() {\r\n     return [\r\n-      Messages(user: [0])\r\n+      Messages(user: users[0])\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651850258538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,4 +13,6 @@\n       Messages(user: users[0])\r\n     ];\r\n   }\r\n }\r\n+\r\n+var\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651850264535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n     ];\r\n   }\r\n }\r\n \r\n-var\n\\ No newline at end of file\n+var users\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651850270003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n     ];\r\n   }\r\n }\r\n \r\n-var users\n\\ No newline at end of file\n+var users = User.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651850280514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,10 @@\n   Messages(\r\n       {this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n \r\n   static List<Messages> generateHomePageMessages() {\r\n-    return [\r\n-      Messages(user: users[0])\r\n-    ];\r\n+    return [Messages(user: users[0])];\r\n   }\r\n }\r\n \r\n\\ No newline at end of file\n-var users = User.\n+var users = User.generateUsers();\r\n+var\r\n"
+                },
+                {
+                    "date": 1651850289293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var\n\\ No newline at end of file\n+var me = User()\r\n"
+                },
+                {
+                    "date": 1651850296167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var me = User()\r\n+var me = User();\r\n"
+                },
+                {
+                    "date": 1651850301381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var me = User();\r\n+var me = User(id: 0);\r\n"
+                },
+                {
+                    "date": 1651850309157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var me = User(id: 0);\r\n+var me = User(id: 0, firstName: \"Sylvanus\");\r\n"
+                },
+                {
+                    "date": 1651850315400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var me = User(id: 0, firstName: \"Sylvanus\");\r\n+var me = User(id: 0, firstName: \"Sylvanus\", lastName: \"Xess\", );\r\n"
+                },
+                {
+                    "date": 1651850321310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var me = User(id: 0, firstName: \"Sylvanus\", lastName: \"Xess\", );\r\n+var me = User(id: 0, firstName: \"Sylvanus\", lastName: \"Xess\", profileImage: \"\");\r\n"
+                },
+                {
+                    "date": 1651850330354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n   }\r\n }\r\n \r\n var users = User.generateUsers();\r\n-var me = User(id: 0, firstName: \"Sylvanus\", lastName: \"Xess\", profileImage: \"assets/profilepic\");\r\n+var me = User(id: 0, firstName: \"Sylvanus\", lastName: \"Xess\", profileImage: \"assets/profilepic/\");\r\n"
+                },
+                {
+                    "date": 1651853481836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,49 @@\n+import 'package:chatbase_app/Models/Users/user.dart';\r\n+\r\n+class Messages {\r\n+  User? user;\r\n+  String? lastMessage;\r\n+  String? lastTime;\r\n+  bool? isContinue;\r\n+  Messages(\r\n+      {this.user, this.lastMessage, this.lastTime, this.isContinue = false});\r\n+\r\n+  static List<Messages> generateHomePageMessages() {\r\n+    return [\r\n+      Messages(user: users[0], lastMessage: \"Hi John\", lastTime: \"18:32\"),\r\n+      Messages(\r\n+          user: users[1],\r\n+          lastMessage: \"Hey there! What's up?\",\r\n+          lastTime: \"18:06\"),\r\n+      Messages(\r\n+          user: users[2],\r\n+          lastMessage: \"What are you doing now?\",\r\n+          lastTime: \"15:58\"),\r\n+      Messages(\r\n+          user: users[3],\r\n+          lastMessage: \"Can I call you back? I'm in the hospital now.\",\r\n+          lastTime: \"15:57\"),\r\n+      Messages(\r\n+          user: users[4],\r\n+          lastMessage: \"Yeah, Do you have any good songs to suggest?\",\r\n+          lastTime: \"15:32\"),\r\n+      Messages(\r\n+          user: users[5],\r\n+          lastMessage: \"Hi! I went shopping today and I missed your message!\",\r\n+          lastTime: \"15:31\"),\r\n+    ];\r\n+  }\r\n+\r\n+  static List<Messages> generateMessagesFromUser() {\r\n+    return [\r\n+      Messages()\r\n+    ];\r\n+  }\r\n+}\r\n+\r\n+var users = User.generateUsers();\r\n+var me = User(\r\n+    id: 0,\r\n+    firstName: \"Sylvanus\",\r\n+    lastName: \"Xess\",\r\n+    profileImage: \"assets/profilepic/userImage4.jpeg\");\r\n"
+                }
+            ],
+            "date": 1651849197429,
+            "name": "Commit-0",
+            "content": "class Message"
+        }
+    ]
+}

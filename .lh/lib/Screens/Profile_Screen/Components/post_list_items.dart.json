@@ -1,0 +1,106 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/post_list_items.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1652005660076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652005667094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-class\n\\ No newline at end of file\n+class PostListItems\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1652005674789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-class PostListItems\n\\ No newline at end of file\n+class PostListItems {\r\n+  String\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1652005684781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n+import 'package:flutter/cupertino.dart';\r\n+\r\n class PostListItems {\r\n\\ No newline at end of file\n-  String\r\n-}\n+  String? title;\r\n+  IconData\r\n+}\r\n"
+                },
+                {
+                    "date": 1652005707048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n-  IconData\r\n-}\n\\ No newline at end of file\n+  Iamge? icon;\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1652005715154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n-  Iamge? icon;\r\n+  Image? icon;\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1652005736865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n \r\n class PostListItems {\r\n   String? title;\r\n   Image? icon;\r\n-\r\n+  IconData? icon;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1652005745668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n-  Image? icon;\r\n+  Image? image;\r\n   IconData? icon;\r\n   \r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1652005757054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n+  String\r\n   Image? image;\r\n   IconData? icon;\r\n-  \r\n \r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1652005772409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n import 'package:flutter/cupertino.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n-  String\r\n+  String? name;\r\n+  String? des\r\n   Image? image;\r\n   IconData? icon;\r\n-\r\n-\r\n }\r\n"
+                },
+                {
+                    "date": 1652005778720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n class PostListItems {\r\n   String? title;\r\n   String? name;\r\n-  String? des\r\n+  String? desc;\r\n   Image? image;\r\n   IconData? icon;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1652005785278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? name;\r\n   String? desc;\r\n   Image? image;\r\n   IconData? icon;\r\n-  \r\n+  IconData? \r\n }\r\n"
+                },
+                {
+                    "date": 1652005790443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? name;\r\n   String? desc;\r\n   Image? image;\r\n   IconData? icon;\r\n-  IconData? \r\n+  IconData? trai\r\n }\r\n"
+                },
+                {
+                    "date": 1652005796893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,7 @@\n   String? name;\r\n   String? desc;\r\n   Image? image;\r\n   IconData? icon;\r\n-  IconData? trai\r\n+  IconData? trailingIcon;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1652005806276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import 'package:flutter/cupertino.dart';\r\n+import 'package:flutter/material.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n   String? name;\r\n   String? desc;\r\n   Image? image;\r\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n-  \r\n+  MaterialColor? color\r\n }\r\n"
+                },
+                {
+                    "date": 1652005813117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import 'package:flutter/cupertino.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class PostListItems {\r\n   String? title;\r\n@@ -7,6 +6,6 @@\n   String? desc;\r\n   Image? image;\r\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n-  MaterialColor? color\r\n+  MaterialColor? color;\r\n }\r\n"
+                },
+                {
+                    "date": 1652005818280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,7 @@\n   Image? image;\r\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n+\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1652005823660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n \r\n-  \r\n+  PostListItems\r\n }\r\n"
+                },
+                {
+                    "date": 1652005829936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n \r\n-  PostListItems\r\n+  PostListItems({this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1652005836014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n \r\n-  PostListItems({this.})\r\n+  PostListItems({this.title, this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1652005843593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n \r\n-  PostListItems({this.title, this.})\r\n+  PostListItems({this.title, this.name})\r\n }\r\n"
+                },
+                {
+                    "date": 1652005851764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n \r\n-  PostListItems({this.title, this.name, this.image, this})\r\n+  PostListItems({this.title, this.name, this.image, this.})\r\n }\r\n"
+                },
+                {
+                    "date": 1652005862505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n   IconData? icon;\r\n   IconData? trailingIcon;\r\n   MaterialColor? color;\r\n \r\n-  PostListItems({this.title, this.name, this.image, this.desc, this.icon})\r\n+  PostListItems({this.title, this.name, this.image, this.desc, this.icon,})\r\n }\r\n"
+                }
+            ],
+            "date": 1652005660076,
+            "name": "Commit-0",
+            "content": "class"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "sourceFile": "lib/Screens/SignUp_Screen/signup_screen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1651474412520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651474420445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+class SignUpScreen extends StatelessWidget {\r\n+  const SignUpScreen({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651479897875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class SignUpScreen extends StatelessWidget {\r\n-  const SignUpScreen({ Key? key }) : super(key: key);\r\n+  const SignUpScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n+    return Scaffold(\r\n+      body: ,\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651479904950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: ,\r\n+      body: Background(),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651479913680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: Background(),\r\n+      body: Background(child: Column()),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651479959808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,17 @@\n+import 'package:chatbase_app/Screens/SignUp_Screen/Components/background.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class SignUpScreen extends StatelessWidget {\r\n   const SignUpScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: Background(child: Column()),\r\n+      body: Background(\r\n+        child: Column(\r\n+          children: [],\r\n+        ),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480006321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   const SignUpScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       body: Background(\r\n         child: Column(\r\n           children: [],\r\n"
+                },
+                {
+                    "date": 1651480204172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n      Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       body: Background(\r\n         child: Column(\r\n-          children: [],\r\n+          children: [\r\n+            \r\n+          ],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480211610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,13 @@\n   const SignUpScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-     Size size = MediaQuery.of(context).size;\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       body: Background(\r\n         child: Column(\r\n-          children: [\r\n-            \r\n-          ],\r\n+          children: [Text('SIGN UP')],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480219661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       body: Background(\r\n         child: Column(\r\n-          children: [Text('SIGN UP')],\r\n+          children:  [Text('SIGN UP')],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480225746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Screens/SignUp_Screen/Components/background.dart';\r\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class SignUpScreen extends StatelessWidget {\r\n   const SignUpScreen({Key? key}) : super(key: key);\r\n@@ -9,9 +10,9 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       body: Background(\r\n         child: Column(\r\n-          children:  [Text('SIGN UP', style: text,)],\r\n+          children:  [Text('SIGN UP', style: textStyleSimple(color, fontSize, fontWeight),)],\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480343824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                 Text('SIGN UP',\r\n                     style:\r\n                         textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold)),\r\n                 SizedBox(height: size.height * 0.03),\r\n-                SvgPicture.asset('assets/icons/signup.png', )\r\n+                SvgPicture.asset('assets/icons/signup.png', he)\r\n               ],\r\n             ),\r\n           ),\r\n         ),\r\n"
+                }
+            ],
+            "date": 1651474412520,
+            "name": "Commit-0",
+            "content": "class  extends StatelessWidget {\r\n  const ({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

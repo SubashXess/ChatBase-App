@@ -1,0 +1,58 @@
+{
+    "sourceFile": "lib/Screens/Forgot_Password_Screen/Components/background.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1651507578845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651507588916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+import 'package:flutter/material.dart';\r\n \r\n+class Background extends StatelessWidget {\r\n+  const Background({ Key? key }) : super(key: key);\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       \r\n"
+                },
+                {
+                    "date": 1651507601726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   const Background({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context)\r\n     return Container(\r\n       \r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651507611627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n   const Background({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context)\r\n-    return Container(\r\n+    Size size = MediaQuery.of(context).size;\r\n+    return SizedBox(\r\n       \r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507624816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return SizedBox(\r\n-      \r\n+      height: size.height,\r\n+      width: double.infinity,\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507631291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n     Size size = MediaQuery.of(context).size;\r\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n+      child: Stack(alignment: ),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507637858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n     Size size = MediaQuery.of(context).size;\r\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n-      child: Stack(alignment: ),\r\n+      child: Stack(alignment: Alignment.center, children: [\r\n+        \r\n+      ],),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507645625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n       child: Stack(alignment: Alignment.center, children: [\r\n-        \r\n+        Positioned(child: Image.asset(name))\r\n       ],),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507652292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n       child: Stack(alignment: Alignment.center, children: [\r\n-        Positioned(child: Image.asset(name))\r\n+        Positioned(child: Image.asset('assets/images/login'))\r\n       ],),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507659024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n       child: Stack(alignment: Alignment.center, children: [\r\n-        Positioned(child: Image.asset('assets/images/login'))\r\n+        Positioned(child: Image.asset('assets/images/login_bottom.png'))\r\n       ],),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651507664878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n       child: Stack(alignment: Alignment.center, children: [\r\n-        Positioned(child: Image.asset('assets/images/login_bottom.png', width: size.width,))\r\n+        Positioned(child: Image.asset('assets/images/login_bottom.png', width: size.width*,))\r\n       ],),\r\n     );\r\n   }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1651507578845,
+            "name": "Commit-0",
+            "content": "class  extends StatelessWidget {\r\n  const ({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

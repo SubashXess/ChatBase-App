@@ -1,0 +1,554 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/bio_menu.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 134,
+            "patches": [
+                {
+                    "date": 1651994418886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651994433919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class BioMenu extends StatelessWidget {\r\n-  const BioMenu({ Key? key }) : super(key: key);\r\n+  const BioMenu({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       \r\n\\ No newline at end of file\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994440631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      \r\n+      child: Column(),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994447733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,12 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: Column(),\r\n+      child: Column(\r\n+        children: [\r\n+          Text(data)\r\n\\ No newline at end of file\n+        ],\r\n+      ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994459513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         children: [\r\n-          Text(data)\r\n+          Text(\"dia\")\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994466238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         children: [\r\n-          Text(\"dia\")\r\n+          Text(\"diaframton\")\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994472038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         children: [\r\n-          Text(\"diaframton\")\r\n+          Text(\"diaframton89\")\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994487904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         children: [\r\n-          Text(\"diaframton89\")\r\n+          Text(\"diaframton895\", style: TextSt,)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994497649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         children: [\r\n-          Text(\"diaframton895\", style: TextSt,)\r\n+          Text(\"diaframton895\", style: TextStyle(fontSize: 18.0, color: ),)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994503979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         children: [\r\n-          Text(\"diaframton895\", style: TextStyle(fontSize: 18.0, color: ),)\r\n+          Text(\"diaframton895\", style: TextStyle(fontSize: 18.0, fontWeight: FontW),)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994513445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,17 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n-        children: [\r\n-          Text(\"diaframton895\", style: TextStyle(fontSize: 18.0, fontWeight: FontW),)\r\n+        children: const [\r\n+          Text(\r\n+            \"diaframton895\",\r\n+            style: TextStyle(\r\n+              fontSize: 18.0,\r\n\\ No newline at end of file\n+              fontWeight: FontWeight.w800,\r\n+            ),\r\n+          )\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994535838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,15 +8,15 @@\n     return Container(\r\n       child: Column(\r\n         children: const [\r\n           Text(\r\n-            \"diaframton895\",\r\n+            \"@diaframton895\",\r\n             style: TextStyle(\r\n-              fontSize: 18.0,\r\n+              fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n           )\r\n         ],\r\n       ),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994542625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n-          )\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994554237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,18 +5,14 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: Column(\r\n-        children: const [\r\n-          Text(\r\n-            \"@diaframton895\",\r\n-            style: TextStyle(\r\n-              fontSize: 16.0,\r\n-              fontWeight: FontWeight.w800,\r\n-            ),\r\n-          ),\r\n-        ],\r\n+      child: Text(\r\n+        \"@diaframton895\",\r\n+        style: TextStyle(\r\n+          fontSize: 16.0,\r\n\\ No newline at end of file\n+          fontWeight: FontWeight.w800,\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994563880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,15 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: Text(\r\n+      child: \r\n+      Text(\r\n         \"@diaframton895\",\r\n         style: TextStyle(\r\n           fontSize: 16.0,\r\n           fontWeight: FontWeight.w800,\r\n         ),\r\n       ),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994570369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,15 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: \r\n-      Text(\r\n-        \"@diaframton895\",\r\n-        style: TextStyle(\r\n-          fontSize: 16.0,\r\n-          fontWeight: FontWeight.w800,\r\n-        ),\r\n-      ),\r\n+      child: TextSpa\r\n+      // Text(\r\n+      //   \"@diaframton895\",\r\n\\ No newline at end of file\n+      //   style: TextStyle(\r\n+      //     fontSize: 16.0,\r\n+      //     fontWeight: FontWeight.w800,\r\n+      //   ),\r\n+      // ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651994575924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: TextSpa\r\n+      child: TextSpan(\r\n+        \r\n+      )\r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n       //     fontSize: 16.0,\r\n@@ -15,5 +17,5 @@\n       //   ),\r\n       // ),\r\n     );\r\n   }\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1651994581089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: TextSpan(\r\n-        \r\n-      )\r\n+      child: \r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n       //     fontSize: 16.0,\r\n"
+                },
+                {
+                    "date": 1651994611099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: \r\n+      child: Text.\r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n       //     fontSize: 16.0,\r\n"
+                },
+                {
+                    "date": 1651994617242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: Text.\r\n+      child: Text.rich(\r\n+        \r\n+      )\r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n       //     fontSize: 16.0,\r\n"
+                },
+                {
+                    "date": 1651994623399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n-        \r\n+        TExt\r\n       )\r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651994628563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n-        TExt\r\n+        TextSpan()\r\n       )\r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651994636908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,12 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n-        TextSpan()\r\n+        TextSpan(\r\n+           \r\n+        ),\r\n+         \r\n       )\r\n       // Text(\r\n       //   \"@diaframton895\",\r\n       //   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651994650141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           \r\n+           children: [\r\n+             Text(data)\r\n+           ]\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994663298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           children: [\r\n-             Text(data)\r\n-           ]\r\n+           children: Text\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994671806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           children: Text\r\n+           \r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994676973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           \r\n+           text: \r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994688216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           text: \r\n+           text: \"\"\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994694025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           text: \"\"\r\n+           text: \"@diafram\"\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994701447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n-           text: \"@diafram\"\r\n+           text: \"@diaframton895\",\r\n+            \r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994708662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n            text: \"@diaframton895\",\r\n-            \r\n+            style: TextStyle(co)\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994715800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n            text: \"@diaframton895\",\r\n-            style: TextStyle(co)\r\n+            style: TextStyle(fontSize: )\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994724505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n            text: \"@diaframton895\",\r\n-            style: TextStyle(fontSize: )\r\n+            style: TextStyle(fontSize: 16.0, fontWeight: FonW)\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994730694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     return Container(\r\n       child: Text.rich(\r\n         TextSpan(\r\n            text: \"@diaframton895\",\r\n-            style: TextStyle(fontSize: 16.0, fontWeight: FonW)\r\n+            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800,)\r\n         ),\r\n          \r\n       )\r\n       // Text(\r\n"
+                },
+                {
+                    "date": 1651994737060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,21 +5,23 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: Text.rich(\r\n-        TextSpan(\r\n-           text: \"@diaframton895\",\r\n-            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800,)\r\n+        child: Text.rich(\r\n+      TextSpan(\r\n+        text: \"@diaframton895\",\r\n+        style: const TextStyle(\r\n+          fontSize: 16.0,\r\n+          fontWeight: FontWeight.w800,\r\n         ),\r\n-         \r\n-      )\r\n-      // Text(\r\n-      //   \"@diaframton895\",\r\n-      //   style: TextStyle(\r\n-      //     fontSize: 16.0,\r\n-      //     fontWeight: FontWeight.w800,\r\n-      //   ),\r\n-      // ),\r\n-    );\r\n+      ),\r\n+    )\r\n+        // Text(\r\n+        //   \"@diaframton895\",\r\n+        //   style: TextStyle(\r\n+        //     fontSize: 16.0,\r\n+        //     fontWeight: FontWeight.w800,\r\n+        //   ),\r\n+        // ),\r\n+        );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651994746262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,16 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-        child: Text.rich(\r\n+        child: const Text.rich(\r\n       TextSpan(\r\n         text: \"@diaframton895\",\r\n-        style: const TextStyle(\r\n+        style: TextStyle(\r\n           fontSize: 16.0,\r\n           fontWeight: FontWeight.w800,\r\n         ),\r\n+        \r\n       ),\r\n     )\r\n         // Text(\r\n         //   \"@diaframton895\",\r\n"
+                },
+                {
+                    "date": 1651994751392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         style: TextStyle(\r\n           fontSize: 16.0,\r\n           fontWeight: FontWeight.w800,\r\n         ),\r\n-        \r\n+        children: \r\n       ),\r\n     )\r\n         // Text(\r\n         //   \"@diaframton895\",\r\n"
+                },
+                {
+                    "date": 1651994758123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,11 @@\n         style: TextStyle(\r\n           fontSize: 16.0,\r\n           fontWeight: FontWeight.w800,\r\n         ),\r\n-        children: \r\n+        children: [\r\n+          TextSpan()\r\n+        ]\r\n       ),\r\n     )\r\n         // Text(\r\n         //   \"@diaframton895\",\r\n"
+                },
+                {
+                    "date": 1651994766846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,11 @@\n           fontSize: 16.0,\r\n           fontWeight: FontWeight.w800,\r\n         ),\r\n         children: [\r\n-          TextSpan()\r\n+          TextSpan(\r\n+            text: \r\n+          ),\r\n         ]\r\n       ),\r\n     )\r\n         // Text(\r\n"
+                },
+                {
+                    "date": 1651994778546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           fontWeight: FontWeight.w800,\r\n         ),\r\n         children: [\r\n           TextSpan(\r\n-            text: \r\n+            text: \"Creator\"\r\n           ),\r\n         ]\r\n       ),\r\n     )\r\n"
+                },
+                {
+                    "date": 1651994793363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n           fontWeight: FontWeight.w800,\r\n         ),\r\n         children: [\r\n           TextSpan(\r\n-            text: \"Creator\"\r\n+            text: \"Digital Creator\",\r\n+            style: TextStyle(font)\r\n           ),\r\n         ]\r\n       ),\r\n     )\r\n"
+                },
+                {
+                    "date": 1651994800252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         ),\r\n         children: [\r\n           TextSpan(\r\n             text: \"Digital Creator\",\r\n-            style: TextStyle(font)\r\n+            style: TextStyle(fontSize: 15.0, )\r\n           ),\r\n         ]\r\n       ),\r\n     )\r\n"
+                },
+                {
+                    "date": 1651994806787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         ),\r\n         children: [\r\n           TextSpan(\r\n             text: \"Digital Creator\",\r\n-            style: TextStyle(fontSize: 15.0, )\r\n+            style: TextStyle(fontSize: 15.0, color: Colors)\r\n           ),\r\n         ]\r\n       ),\r\n     )\r\n"
+                },
+                {
+                    "date": 1651994813435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         ),\r\n         children: [\r\n           TextSpan(\r\n             text: \"Digital Creator\",\r\n-            style: TextStyle(fontSize: 15.0, color: Colors)\r\n+            style: TextStyle(fontSize: 15.0, color: Colors.black38)\r\n           ),\r\n         ]\r\n       ),\r\n     )\r\n"
+                },
+                {
+                    "date": 1651994823508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,20 +7,20 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n         child: const Text.rich(\r\n       TextSpan(\r\n-        text: \"@diaframton895\",\r\n-        style: TextStyle(\r\n-          fontSize: 16.0,\r\n-          fontWeight: FontWeight.w800,\r\n-        ),\r\n-        children: [\r\n-          TextSpan(\r\n-            text: \"Digital Creator\",\r\n-            style: TextStyle(fontSize: 15.0, color: Colors.black38)\r\n+          text: \"@diaframton895\",\r\n+          style: TextStyle(\r\n+            fontSize: 16.0,\r\n+            fontWeight: FontWeight.w800,\r\n           ),\r\n-        ]\r\n-      ),\r\n+          children: [\r\n+            TextSpan(\r\n+              \r\n+              text: \"Digital Creator\",\r\n+              style: TextStyle(fontSize: 15.0, color: Colors.black38),\r\n+            ),\r\n+          ]),\r\n     )\r\n         // Text(\r\n         //   \"@diaframton895\",\r\n         //   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651994835569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,22 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-        child: const Text.rich(\r\n-      TextSpan(\r\n-          text: \"@diaframton895\",\r\n-          style: TextStyle(\r\n-            fontSize: 16.0,\r\n-            fontWeight: FontWeight.w800,\r\n-          ),\r\n-          children: [\r\n-            TextSpan(\r\n-              \r\n-              text: \"Digital Creator\",\r\n-              style: TextStyle(fontSize: 15.0, color: Colors.black38),\r\n-            ),\r\n-          ]),\r\n+        child: \r\n     )\r\n         // Text(\r\n         //   \"@diaframton895\",\r\n         //   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651994841117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,16 +5,14 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-        child: \r\n-    )\r\n-        // Text(\r\n-        //   \"@diaframton895\",\r\n-        //   style: TextStyle(\r\n-        //     fontSize: 16.0,\r\n-        //     fontWeight: FontWeight.w800,\r\n-        //   ),\r\n-        // ),\r\n-        );\r\n+      child: Text(\r\n+        \"@diaframton895\",\r\n+        style: TextStyle(\r\n+          fontSize: 16.0,\r\n+          fontWeight: FontWeight.w800,\r\n+        ),\r\n+      ),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651994849094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,18 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: Text(\r\n-        \"@diaframton895\",\r\n-        style: TextStyle(\r\n-          fontSize: 16.0,\r\n-          fontWeight: FontWeight.w800,\r\n-        ),\r\n+      child: Column(\r\n+        children: [\r\n+          Text(\r\n+            \"@diaframton895\",\r\n+            style: TextStyle(\r\n+              fontSize: 16.0,\r\n+              fontWeight: FontWeight.w800,\r\n+            ),\r\n+          ),\r\n+        ],\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651994860383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,15 @@\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n           ),\r\n+          Text(\r\n+            \"@diaframton895\",\r\n+            style: TextStyle(\r\n+              fontSize: 16.0,\r\n+              fontWeight: FontWeight.w800,\r\n+            ),\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651994874148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,18 +6,18 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n-        children: [\r\n+        children: const [\r\n           Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n           ),\r\n           Text(\r\n-            \"@diaframton895\",\r\n+            \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n"
+                },
+                {
+                    "date": 1651994879711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n           ),\r\n           Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n-              fontSize: 16.0,\r\n-              fontWeight: FontWeight.w800,\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.w00,\r\n             ),\r\n           ),\r\n         ],\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651994886710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n           Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n-              fontWeight: FontWeight.w00,\r\n+              fontWeight: FontWeight.normal,\r\n             ),\r\n           ),\r\n         ],\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651994897747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n+        crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: const [\r\n           Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651994906896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n+              color: Colors.bl\r\n             ),\r\n           ),\r\n         ],\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651994918635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,43 @@\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n-              color: Colors.bl\r\n+              color: Colors.black45,\r\n             ),\r\n           ),\r\n+          Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651994952364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text(\r\n-            \"Digital Creator\",\r\n+            \"Wor\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n"
+                },
+                {
+                    "date": 1651994957588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text(\r\n-            \"Wor\",\r\n+            \"Works at \",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n"
+                },
+                {
+                    "date": 1651994964633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text(\r\n-            \"Works at \",\r\n+            \"Works at MNC\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n"
+                },
+                {
+                    "date": 1651994970184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text(\r\n-            \"Works at MNC\",\r\n+            \"Works at Info\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n"
+                },
+                {
+                    "date": 1651994975628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text(\r\n-            \"Works at Info\",\r\n+            \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n"
+                },
+                {
+                    "date": 1651994986203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n+          TextS\r\n           Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651994992467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          TextS\r\n+          Text.rich(),\r\n           Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651994999254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children: const [\r\n-          Text(\r\n+        children:  [\r\n+          const Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n"
+                },
+                {
+                    "date": 1651995005704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,26 +15,26 @@\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text.rich(),\r\n-          Text(\r\n+          const Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995011214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,17 +40,17 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995018307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,11 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text.rich(),\r\n+          Text.rich(\r\n+            tit\r\n+          ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995023579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text.rich(\r\n-            tit\r\n+            TextS\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995029846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,11 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text.rich(\r\n-            TextS\r\n+            TextSpan(\r\n+               tit\r\n+            )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995041786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             ),\r\n           ),\r\n           Text.rich(\r\n             TextSpan(\r\n-               tit\r\n+               text: Works at\r\n             )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995048780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             ),\r\n           ),\r\n           Text.rich(\r\n             TextSpan(\r\n-               text: Works at\r\n+               text: \"Works at \"\r\n             )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995054305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n             ),\r\n           ),\r\n           Text.rich(\r\n             TextSpan(\r\n-               text: \"Works at \"\r\n+               text: \"Works at \",\r\n+               style: \r\n             )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995061690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,13 @@\n           ),\r\n           Text.rich(\r\n             TextSpan(\r\n                text: \"Works at \",\r\n-               style: \r\n+               style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ), \r\n             )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995070660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ), \r\n+            \r\n             )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995083946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,11 @@\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ), \r\n-            \r\n+            children: [\r\n+              TextSpan()\r\n+            ]\r\n             )\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995091019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,11 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ), \r\n             children: [\r\n-              TextSpan()\r\n+              TextSpan(\r\n+                text: \"\"\r\n+              ),\r\n             ]\r\n             )\r\n           ),\r\n           const Text(\r\n"
+                },
+                {
+                    "date": 1651995098533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n               color: Colors.black45,\r\n             ), \r\n             children: [\r\n               TextSpan(\r\n-                text: \"\"\r\n+                text: \"InfoSys\"\r\n               ),\r\n             ]\r\n             )\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651995106766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,14 @@\n               color: Colors.black45,\r\n             ), \r\n             children: [\r\n               TextSpan(\r\n-                text: \"InfoSys\"\r\n+                text: \"InfoSys\", \r\n+                style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n               ),\r\n             ]\r\n             )\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651995116933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n               TextSpan(\r\n                 text: \"InfoSys\", \r\n                 style: TextStyle(\r\n               fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n+              fontWeight: FontWeight.bold,\r\n               color: Colors.black45,\r\n             ),\r\n               ),\r\n             ]\r\n"
+                },
+                {
+                    "date": 1651995123494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,17 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children:  [\r\n-          const Text(\r\n+        children:  const [\r\n+          Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n           ),\r\n-          const Text(\r\n+          Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n@@ -31,9 +31,9 @@\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ), \r\n-            children: [\r\n+            children: const [\r\n               TextSpan(\r\n                 text: \"InfoSys\", \r\n                 style: TextStyle(\r\n               fontSize: 14.0,\r\n@@ -43,33 +43,33 @@\n               ),\r\n             ]\r\n             )\r\n           ),\r\n-          const Text(\r\n+          Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          const Text(\r\n+          Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          const Text(\r\n+          Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          const Text(\r\n+          Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995128943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ), \r\n-            children: const [\r\n+            children: [\r\n               TextSpan(\r\n                 text: \"InfoSys\", \r\n                 style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995139235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children:  const [\r\n+        children: const [\r\n           Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n@@ -25,25 +25,25 @@\n             ),\r\n           ),\r\n           Text.rich(\r\n             TextSpan(\r\n-               text: \"Works at \",\r\n-               style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ), \r\n-            children: [\r\n-              TextSpan(\r\n-                text: \"InfoSys\", \r\n-                style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.bold,\r\n-              color: Colors.black45,\r\n+              text: \"Works at \",\r\n+              style: TextStyle(\r\n+                fontSize: 14.0,\r\n+                fontWeight: FontWeight.normal,\r\n+                color: Colors.black45,\r\n+              ),\r\n+              children: [\r\n+                TextSpan(\r\n+                  text: \"InfoSys\",\r\n+                  style: TextStyle(\r\n+                    fontSize: 14.0,\r\n+                    fontWeight: FontWeight.bold,\r\n+                    color: Colors.black,\r\n+                  ),\r\n+                ),\r\n+              ],\r\n             ),\r\n-              ),\r\n-            ]\r\n-            )\r\n           ),\r\n           Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995145408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n               text: \"Works at \",\r\n               style: TextStyle(\r\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n-                color: Colors.black45,\r\n+                color: Colors.black,\r\n               ),\r\n               children: [\r\n                 TextSpan(\r\n                   text: \"InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995154182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n               text: \"Works at \",\r\n               style: TextStyle(\r\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n-                color: Colors.black,\r\n+                color: Colors.bl,\r\n               ),\r\n               children: [\r\n                 TextSpan(\r\n                   text: \"InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995244188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,14 +24,15 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text.rich(\r\n+            \r\n             TextSpan(\r\n               text: \"Works at \",\r\n               style: TextStyle(\r\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n-                color: Colors.bl,\r\n+                color: Colors.black54,\r\n               ),\r\n               children: [\r\n                 TextSpan(\r\n                   text: \"InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995249531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text.rich(\r\n-            \r\n+            TextSpan()\r\n             TextSpan(\r\n               text: \"Works at \",\r\n               style: TextStyle(\r\n                 fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995258039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,12 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Text.rich(\r\n-            TextSpan()\r\n             TextSpan(\r\n+              text: Icon(icon)\r\n+            ),\r\n+            TextSpan(\r\n               text: \"Works at \",\r\n               style: TextStyle(\r\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995267021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,8 @@\n             ),\r\n           ),\r\n           Text.rich(\r\n             TextSpan(\r\n-              text: Icon(icon)\r\n-            ),\r\n-            TextSpan(\r\n               text: \"Works at \",\r\n               style: TextStyle(\r\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995285322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,28 +23,28 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text.rich(\r\n-            TextSpan(\r\n-              text: \"Works at \",\r\n-              style: TextStyle(\r\n-                fontSize: 14.0,\r\n-                fontWeight: FontWeight.normal,\r\n-                color: Colors.black54,\r\n-              ),\r\n-              children: [\r\n-                TextSpan(\r\n-                  text: \"InfoSys\",\r\n-                  style: TextStyle(\r\n-                    fontSize: 14.0,\r\n-                    fontWeight: FontWeight.bold,\r\n-                    color: Colors.black,\r\n-                  ),\r\n-                ),\r\n-              ],\r\n-            ),\r\n-          ),\r\n+          // Text.rich(\r\n+          //   TextSpan(\r\n+          //     text: \"Works at \",\r\n+          //     style: TextStyle(\r\n+          //       fontSize: 14.0,\r\n+          //       fontWeight: FontWeight.normal,\r\n+          //       color: Colors.black54,\r\n+          //     ),\r\n+          //     children: [\r\n+          //       TextSpan(\r\n+          //         text: \"InfoSys\",\r\n+          //         style: TextStyle(\r\n+          //           fontSize: 14.0,\r\n+          //           fontWeight: FontWeight.bold,\r\n+          //           color: Colors.black,\r\n+          //         ),\r\n+          //       ),\r\n+          //     ],\r\n+          //   ),\r\n+          // ),\r\n           Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995293020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n+          \r\n           // Text.rich(\r\n           //   TextSpan(\r\n           //     text: \"Works at \",\r\n           //     style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995299058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          \r\n+          Row(),\r\n           // Text.rich(\r\n           //   TextSpan(\r\n           //     text: \"Works at \",\r\n           //     style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995306981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,13 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Row(),\r\n+          Row(\r\n+            children: [\r\n+              Icon\r\n+            ],\r\n+          ),\r\n           // Text.rich(\r\n           //   TextSpan(\r\n           //     text: \"Works at \",\r\n           //     style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995312510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             ),\r\n           ),\r\n           Row(\r\n             children: [\r\n-              Icon\r\n+              Icon(Icons.work)\r\n             ],\r\n           ),\r\n           // Text.rich(\r\n           //   TextSpan(\r\n"
+                },
+                {
+                    "date": 1651995330727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             ),\r\n           ),\r\n           Row(\r\n             children: [\r\n-              Icon(Icons.work)\r\n+              Icon(Icons.work_rounded)\r\n             ],\r\n           ),\r\n           // Text.rich(\r\n           //   TextSpan(\r\n"
+                },
+                {
+                    "date": 1651995345871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,31 +25,13 @@\n             ),\r\n           ),\r\n           Row(\r\n             children: [\r\n-              Icon(Icons.work_rounded)\r\n+              Icon(Icons.work_rounded),\r\n+               \r\n             ],\r\n           ),\r\n-          // Text.rich(\r\n-          //   TextSpan(\r\n-          //     text: \"Works at \",\r\n-          //     style: TextStyle(\r\n-          //       fontSize: 14.0,\r\n-          //       fontWeight: FontWeight.normal,\r\n-          //       color: Colors.black54,\r\n-          //     ),\r\n-          //     children: [\r\n-          //       TextSpan(\r\n-          //         text: \"InfoSys\",\r\n-          //         style: TextStyle(\r\n-          //           fontSize: 14.0,\r\n-          //           fontWeight: FontWeight.bold,\r\n-          //           color: Colors.black,\r\n-          //         ),\r\n-          //       ),\r\n-          //     ],\r\n-          //   ),\r\n-          // ),\r\n+         \r\n           Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995352824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,28 @@\n           ),\r\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded),\r\n-               \r\n+                Text.rich(\r\n+            TextSpan(\r\n+              text: \"Works at \",\r\n+              style: TextStyle(\r\n+                fontSize: 14.0,\r\n+                fontWeight: FontWeight.normal,\r\n+                color: Colors.black54,\r\n+              ),\r\n+              children: [\r\n+                TextSpan(\r\n+                  text: \"InfoSys\",\r\n+                  style: TextStyle(\r\n+                    fontSize: 14.0,\r\n+                    fontWeight: FontWeight.bold,\r\n+                    color: Colors.black,\r\n+                  ),\r\n+                ),\r\n+              ],\r\n+            ),\r\n+          ),\r\n             ],\r\n           ),\r\n          \r\n           Text(\r\n"
+                },
+                {
+                    "date": 1651995362236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children: const [\r\n+        children:  [\r\n           Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n@@ -24,9 +24,9 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Row(\r\n-            children: [\r\n+            children: const [\r\n               Icon(Icons.work_rounded),\r\n                 Text.rich(\r\n             TextSpan(\r\n               text: \"Works at \",\r\n@@ -34,9 +34,9 @@\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n                 color: Colors.black54,\r\n               ),\r\n-              children: [\r\n+              children: const [\r\n                 TextSpan(\r\n                   text: \"InfoSys\",\r\n                   style: TextStyle(\r\n                     fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995367499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                 fontSize: 14.0,\r\n                 fontWeight: FontWeight.normal,\r\n                 color: Colors.black54,\r\n               ),\r\n-              children: const [\r\n+              children:  [\r\n                 TextSpan(\r\n                   text: \"InfoSys\",\r\n                   style: TextStyle(\r\n                     fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995373874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,16 +8,16 @@\n     return Container(\r\n       child: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children:  [\r\n-          Text(\r\n+          const Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n               fontWeight: FontWeight.w800,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n@@ -49,33 +49,33 @@\n           ),\r\n             ],\r\n           ),\r\n          \r\n-          Text(\r\n+          const Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Text(\r\n+          const Text(\r\n             \"Digital Creator\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n               fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995396677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children:  [\r\n+        children: [\r\n           const Text(\r\n             \"@diaframton895\",\r\n             style: TextStyle(\r\n               fontSize: 16.0,\r\n@@ -25,32 +25,31 @@\n             ),\r\n           ),\r\n           Row(\r\n             children: const [\r\n-              Icon(Icons.work_rounded),\r\n-                Text.rich(\r\n-            TextSpan(\r\n-              text: \"Works at \",\r\n-              style: TextStyle(\r\n-                fontSize: 14.0,\r\n-                fontWeight: FontWeight.normal,\r\n-                color: Colors.black54,\r\n-              ),\r\n-              children:  [\r\n+              Icon(Icons.work_rounded, color: Colors.bl,),\r\n+              Text.rich(\r\n                 TextSpan(\r\n-                  text: \"InfoSys\",\r\n+                  text: \"Works at \",\r\n                   style: TextStyle(\r\n                     fontSize: 14.0,\r\n-                    fontWeight: FontWeight.bold,\r\n-                    color: Colors.black,\r\n+                    fontWeight: FontWeight.normal,\r\n+                    color: Colors.black54,\r\n                   ),\r\n+                  children: [\r\n+                    TextSpan(\r\n+                      text: \"InfoSys\",\r\n+                      style: TextStyle(\r\n+                        fontSize: 14.0,\r\n+                        fontWeight: FontWeight.bold,\r\n+                        color: Colors.black,\r\n+                      ),\r\n+                    ),\r\n+                  ],\r\n                 ),\r\n-              ],\r\n-            ),\r\n-          ),\r\n+              ),\r\n             ],\r\n           ),\r\n-         \r\n           const Text(\r\n             \"Works at InfoSys\",\r\n             style: TextStyle(\r\n               fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995404964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             ),\r\n           ),\r\n           Row(\r\n             children: const [\r\n-              Icon(Icons.work_rounded, color: Colors.bl,),\r\n+              Icon(Icons.work_rounded, color: Colors.grey.s),\r\n               Text.rich(\r\n                 TextSpan(\r\n                   text: \"Works at \",\r\n                   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995412136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n           Row(\r\n-            children: const [\r\n-              Icon(Icons.work_rounded, color: Colors.grey.s),\r\n+            children: [\r\n+              Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               Text.rich(\r\n                 TextSpan(\r\n                   text: \"Works at \",\r\n                   style: TextStyle(\r\n"
+                },
+                {
+                    "date": 1651995417286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,12 +26,12 @@\n           ),\r\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n-              Text.rich(\r\n+              const Text.rich(\r\n                 TextSpan(\r\n                   text: \"Works at \",\r\n-                  style: TextStyle(\r\n+                  style: const TextStyle(\r\n                     fontSize: 14.0,\r\n                     fontWeight: FontWeight.normal,\r\n                     color: Colors.black54,\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651995439095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text.rich(\r\n                 TextSpan(\r\n-                  text: \"Works at \",\r\n-                  style: const TextStyle(\r\n+                  text: \" Works at \",\r\n+                  style: TextStyle(\r\n                     fontSize: 14.0,\r\n                     fontWeight: FontWeight.normal,\r\n                     color: Colors.black54,\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651995459904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text.rich(\r\n+                \r\n                 TextSpan(\r\n                   text: \" Works at \",\r\n                   style: TextStyle(\r\n                     fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995475473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,9 @@\n           ),\r\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n-              const Text.rich(\r\n-                \r\n+              const Text(\r\n                 TextSpan(\r\n                   text: \" Works at \",\r\n                   style: TextStyle(\r\n                     fontSize: 14.0,\r\n"
+                },
+                {
+                    "date": 1651995483545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,26 +27,9 @@\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text(\r\n-                TextSpan(\r\n-                  text: \" Works at \",\r\n-                  style: TextStyle(\r\n-                    fontSize: 14.0,\r\n-                    fontWeight: FontWeight.normal,\r\n-                    color: Colors.black54,\r\n-                  ),\r\n-                  children: [\r\n-                    TextSpan(\r\n-                      text: \"InfoSys\",\r\n-                      style: TextStyle(\r\n-                        fontSize: 14.0,\r\n-                        fontWeight: FontWeight.bold,\r\n-                        color: Colors.black,\r\n-                      ),\r\n-                    ),\r\n-                  ],\r\n-                ),\r\n+                \"\"\r\n               ),\r\n             ],\r\n           ),\r\n           const Text(\r\n"
+                },
+                {
+                    "date": 1651995489965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text(\r\n-                \"\"\r\n+                \"Works at\"\r\n               ),\r\n             ],\r\n           ),\r\n           const Text(\r\n"
+                },
+                {
+                    "date": 1651995495250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text(\r\n-                \"Works at\"\r\n+                \"Works at \", st\r\n               ),\r\n             ],\r\n           ),\r\n           const Text(\r\n"
+                },
+                {
+                    "date": 1651995500918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,13 @@\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text(\r\n-                \"Works at \", st\r\n+                \"Works at \", style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n               ),\r\n             ],\r\n           ),\r\n           const Text(\r\n"
+                },
+                {
+                    "date": 1651995513544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,13 +27,15 @@\n           Row(\r\n             children: [\r\n               Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n               const Text(\r\n-                \"Works at \", style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n+                \"Works at \",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.normal,\r\n+                  color: Colors.black45,\r\n+                ),\r\n               ),\r\n             ],\r\n           ),\r\n           const Text(\r\n"
+                },
+                {
+                    "date": 1651995774914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,17 @@\n                   fontWeight: FontWeight.normal,\r\n                   color: Colors.black45,\r\n                 ),\r\n               ),\r\n+              const Text(\r\n+                \"Works at \",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.normal,\r\n+                  color: Colors.black45,\r\n+                ),\r\n+              ),\r\n             ],\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995781650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n                   color: Colors.black45,\r\n                 ),\r\n               ),\r\n               const Text(\r\n-                \"Works at \",\r\n+                \"Info\",\r\n                 textAlign: TextAlign.center,\r\n                 style: TextStyle(\r\n                   fontSize: 14.0,\r\n                   fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995798115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,14 +36,14 @@\n                   color: Colors.black45,\r\n                 ),\r\n               ),\r\n               const Text(\r\n-                \"Info\",\r\n+                \"InfoSys\",\r\n                 textAlign: TextAlign.center,\r\n                 style: TextStyle(\r\n                   fontSize: 14.0,\r\n                   fontWeight: FontWeight.normal,\r\n-                  color: Colors.black45,\r\n+                  color: Colors.black,\r\n                 ),\r\n               ),\r\n             ],\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651995817363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             ),\r\n           ),\r\n           Row(\r\n             children: [\r\n-              Icon(Icons.work_rounded, color: Colors.grey.shade600),\r\n+              Icon(Icons.work_rounded, color: Colors.grey.shade600, s),\r\n               const Text(\r\n                 \"Works at \",\r\n                 textAlign: TextAlign.center,\r\n                 style: TextStyle(\r\n@@ -40,9 +40,9 @@\n                 \"InfoSys\",\r\n                 textAlign: TextAlign.center,\r\n                 style: TextStyle(\r\n                   fontSize: 14.0,\r\n-                  fontWeight: FontWeight.normal,\r\n+                  fontWeight: FontWeight.bold,\r\n                   color: Colors.black,\r\n                 ),\r\n               ),\r\n             ],\r\n"
+                },
+                {
+                    "date": 1651995843422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,29 +23,37 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Row(\r\n+          Column(\r\n             children: [\r\n-              Icon(Icons.work_rounded, color: Colors.grey.shade600, s),\r\n-              const Text(\r\n-                \"Works at \",\r\n-                textAlign: TextAlign.center,\r\n-                style: TextStyle(\r\n-                  fontSize: 14.0,\r\n-                  fontWeight: FontWeight.normal,\r\n-                  color: Colors.black45,\r\n-                ),\r\n+              Row(\r\n+                children: [\r\n+                  Icon(\r\n+                    Icons.work_rounded,\r\n+                    color: Colors.grey.shade600,\r\n+                    size: 18.0,\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Works at \",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.normal,\r\n+                      color: Colors.black45,\r\n+                    ),\r\n+                  ),\r\n+                  const Text(\r\n+                    \"InfoSys\",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.bold,\r\n+                      color: Colors.black,\r\n+                    ),\r\n+                  ),\r\n+                ],\r\n               ),\r\n-              const Text(\r\n-                \"InfoSys\",\r\n-                textAlign: TextAlign.center,\r\n-                style: TextStyle(\r\n-                  fontSize: 14.0,\r\n-                  fontWeight: FontWeight.bold,\r\n-                  color: Colors.black,\r\n-                ),\r\n-              ),\r\n             ],\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995850445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,35 @@\n                     ),\r\n                   ),\r\n                 ],\r\n               ),\r\n+              Row(\r\n+                children: [\r\n+                  Icon(\r\n+                    Icons.work_rounded,\r\n+                    color: Colors.grey.shade600,\r\n+                    size: 18.0,\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Works at \",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.normal,\r\n+                      color: Colors.black45,\r\n+                    ),\r\n+                  ),\r\n+                  const Text(\r\n+                    \"InfoSys\",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.bold,\r\n+                      color: Colors.black,\r\n+                    ),\r\n+                  ),\r\n+                ],\r\n+              ),\r\n             ],\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995864143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n-                    \"Works at \",\r\n+                    \"Lives in \",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651995870627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n                       color: Colors.black45,\r\n                     ),\r\n                   ),\r\n                   const Text(\r\n-                    \"InfoSys\",\r\n+                    \"Rourkela\",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.bold,\r\n"
+                },
+                {
+                    "date": 1651995882576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n               ),\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.work_rounded,\r\n+                    Icons.home,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n"
+                },
+                {
+                    "date": 1651995889218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,121 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class BioMenu extends StatelessWidget {\r\n+  const BioMenu({Key? key}) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      child: Column(\r\n+        crossAxisAlignment: CrossAxisAlignment.start,\r\n+        children: [\r\n+          const Text(\r\n+            \"@diaframton895\",\r\n+            style: TextStyle(\r\n+              fontSize: 16.0,\r\n+              fontWeight: FontWeight.w800,\r\n+            ),\r\n+          ),\r\n+          const Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          Column(\r\n+            children: [\r\n+              Row(\r\n+                children: [\r\n+                  Icon(\r\n+                    Icons.work_rounded,\r\n+                    color: Colors.grey.shade600,\r\n+                    size: 18.0,\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Works at \",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.normal,\r\n+                      color: Colors.black45,\r\n+                    ),\r\n+                  ),\r\n+                  const Text(\r\n+                    \"InfoSys\",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.bold,\r\n+                      color: Colors.black,\r\n+                    ),\r\n+                  ),\r\n+                ],\r\n+              ),\r\n+              Row(\r\n+                children: [\r\n+                  Icon(\r\n+                    Icons.home_rounded,\r\n+                    color: Colors.grey.shade600,\r\n+                    size: 18.0,\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Lives in \",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.normal,\r\n+                      color: Colors.black45,\r\n+                    ),\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Rourkela\",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.bold,\r\n+                      color: Colors.black,\r\n+                    ),\r\n+                  ),\r\n+                ],\r\n+              ),\r\n+            ],\r\n+          ),\r\n+          const Text(\r\n+            \"Works at InfoSys\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          const Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          const Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+          const Text(\r\n+            \"Digital Creator\",\r\n+            style: TextStyle(\r\n+              fontSize: 14.0,\r\n+              fontWeight: FontWeight.normal,\r\n+              color: Colors.black45,\r\n+            ),\r\n+          ),\r\n+        ],\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1651995899658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             children: [\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.work_rounded,\r\n+                    Icons.home,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n@@ -118,125 +118,4 @@\n       ),\r\n     );\r\n   }\r\n }\r\n-import 'package:flutter/material.dart';\r\n-\r\n-class BioMenu extends StatelessWidget {\r\n-  const BioMenu({Key? key}) : super(key: key);\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return Container(\r\n-      child: Column(\r\n-        crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children: [\r\n-          const Text(\r\n-            \"@diaframton895\",\r\n-            style: TextStyle(\r\n-              fontSize: 16.0,\r\n-              fontWeight: FontWeight.w800,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          Column(\r\n-            children: [\r\n-              Row(\r\n-                children: [\r\n-                  Icon(\r\n-                    Icons.work_rounded,\r\n-                    color: Colors.grey.shade600,\r\n-                    size: 18.0,\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Works at \",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.normal,\r\n-                      color: Colors.black45,\r\n-                    ),\r\n-                  ),\r\n-                  const Text(\r\n-                    \"InfoSys\",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.bold,\r\n-                      color: Colors.black,\r\n-                    ),\r\n-                  ),\r\n-                ],\r\n-              ),\r\n-              Row(\r\n-                children: [\r\n-                  Icon(\r\n-                    Icons.home,\r\n-                    color: Colors.grey.shade600,\r\n-                    size: 18.0,\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Lives in \",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.normal,\r\n-                      color: Colors.black45,\r\n-                    ),\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Rourkela\",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.bold,\r\n-                      color: Colors.black,\r\n-                    ),\r\n-                  ),\r\n-                ],\r\n-              ),\r\n-            ],\r\n-          ),\r\n-          const Text(\r\n-            \"Works at InfoSys\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-        ],\r\n-      ),\r\n-    );\r\n-  }\r\n-}\r\n"
+                },
+                {
+                    "date": 1651995909774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             children: [\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.home,\r\n+                    Icons.home_work_r\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n"
+                },
+                {
+                    "date": 1651995983918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             children: [\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.home_work_r\r\n+                    Icons.home_work_rounded,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n@@ -79,8 +79,35 @@\n                     ),\r\n                   ),\r\n                 ],\r\n               ),\r\n+              Row(\r\n+                children: [\r\n+                  Icon(\r\n+                    Icons.home_rounded,\r\n+                    color: Colors.grey.shade600,\r\n+                    size: 18.0,\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Lives in \",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.normal,\r\n+                      color: Colors.black45,\r\n+                    ),\r\n+                  ),\r\n+                  const Text(\r\n+                    \"Rourkela\",\r\n+                    textAlign: TextAlign.center,\r\n+                    style: TextStyle(\r\n+                      fontSize: 14.0,\r\n+                      fontWeight: FontWeight.bold,\r\n+                      color: Colors.black,\r\n+                    ),\r\n+                  ),\r\n+                ],\r\n+              ),\r\n             ],\r\n           ),\r\n           const Text(\r\n             \"Works at InfoSys\",\r\n"
+                },
+                {
+                    "date": 1651995989051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               ),\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.home_rounded,\r\n+                    Icons.birth,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n"
+                },
+                {
+                    "date": 1651995994680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               ),\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.birth,\r\n+                    Icons.dob,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n"
+                },
+                {
+                    "date": 1651996007715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n               ),\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.dob,\r\n+                    Icons.cake,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n"
+                },
+                {
+                    "date": 1651996022672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,14 +82,14 @@\n               ),\r\n               Row(\r\n                 children: [\r\n                   Icon(\r\n-                    Icons.cake,\r\n+                    Icons.cake_rounded,\r\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n-                    \"Lives in \",\r\n+                    \"Bir \",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.normal,\r\n"
+                },
+                {
+                    "date": 1651996033017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,18 +87,18 @@\n                     color: Colors.grey.shade600,\r\n                     size: 18.0,\r\n                   ),\r\n                   const Text(\r\n-                    \"Bir \",\r\n+                    \"Birthday \",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.normal,\r\n                       color: Colors.black45,\r\n                     ),\r\n                   ),\r\n                   const Text(\r\n-                    \"Rourkela\",\r\n+                    \"August\",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.bold,\r\n"
+                },
+                {
+                    "date": 1651996040476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n                       color: Colors.black45,\r\n                     ),\r\n                   ),\r\n                   const Text(\r\n-                    \"August\",\r\n+                    \"August 26 \",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.bold,\r\n"
+                },
+                {
+                    "date": 1651996116370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n                       color: Colors.black45,\r\n                     ),\r\n                   ),\r\n                   const Text(\r\n-                    \"August 26 \",\r\n+                    \"August 26 1999\",\r\n                     textAlign: TextAlign.center,\r\n                     style: TextStyle(\r\n                       fontSize: 14.0,\r\n                       fontWeight: FontWeight.bold,\r\n@@ -108,40 +108,9 @@\n                 ],\r\n               ),\r\n             ],\r\n           ),\r\n-          const Text(\r\n-            \"Works at InfoSys\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n-          const Text(\r\n-            \"Digital Creator\",\r\n-            style: TextStyle(\r\n-              fontSize: 14.0,\r\n-              fontWeight: FontWeight.normal,\r\n-              color: Colors.black45,\r\n-            ),\r\n-          ),\r\n+         \r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651996135402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n                 ],\r\n               ),\r\n             ],\r\n           ),\r\n-         \r\n+          \r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651996159650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,94 +23,89 @@\n               fontWeight: FontWeight.normal,\r\n               color: Colors.black45,\r\n             ),\r\n           ),\r\n-          Column(\r\n+          Row(\r\n             children: [\r\n-              Row(\r\n-                children: [\r\n-                  Icon(\r\n-                    Icons.home_work_rounded,\r\n-                    color: Colors.grey.shade600,\r\n-                    size: 18.0,\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Works at \",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.normal,\r\n-                      color: Colors.black45,\r\n-                    ),\r\n-                  ),\r\n-                  const Text(\r\n-                    \"InfoSys\",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.bold,\r\n-                      color: Colors.black,\r\n-                    ),\r\n-                  ),\r\n-                ],\r\n+              Icon(\r\n+                Icons.home_work_rounded,\r\n+                color: Colors.grey.shade600,\r\n+                size: 18.0,\r\n               ),\r\n-              Row(\r\n-                children: [\r\n-                  Icon(\r\n-                    Icons.home_rounded,\r\n-                    color: Colors.grey.shade600,\r\n-                    size: 18.0,\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Lives in \",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.normal,\r\n-                      color: Colors.black45,\r\n-                    ),\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Rourkela\",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.bold,\r\n-                      color: Colors.black,\r\n-                    ),\r\n-                  ),\r\n-                ],\r\n+              const Text(\r\n+                \"Works at \",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.normal,\r\n+                  color: Colors.black45,\r\n+                ),\r\n               ),\r\n-              Row(\r\n-                children: [\r\n-                  Icon(\r\n-                    Icons.cake_rounded,\r\n-                    color: Colors.grey.shade600,\r\n-                    size: 18.0,\r\n-                  ),\r\n-                  const Text(\r\n-                    \"Birthday \",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.normal,\r\n-                      color: Colors.black45,\r\n-                    ),\r\n-                  ),\r\n-                  const Text(\r\n-                    \"August 26 1999\",\r\n-                    textAlign: TextAlign.center,\r\n-                    style: TextStyle(\r\n-                      fontSize: 14.0,\r\n-                      fontWeight: FontWeight.bold,\r\n-                      color: Colors.black,\r\n-                    ),\r\n-                  ),\r\n-                ],\r\n+              const Text(\r\n+                \"InfoSys\",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.bold,\r\n+                  color: Colors.black,\r\n+                ),\r\n               ),\r\n             ],\r\n           ),\r\n-          \r\n+          Row(\r\n+            children: [\r\n+              Icon(\r\n+                Icons.home_rounded,\r\n+                color: Colors.grey.shade600,\r\n+                size: 18.0,\r\n+              ),\r\n+              const Text(\r\n+                \"Lives in \",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.normal,\r\n+                  color: Colors.black45,\r\n+                ),\r\n+              ),\r\n+              const Text(\r\n+                \"Rourkela\",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.bold,\r\n+                  color: Colors.black,\r\n+                ),\r\n+              ),\r\n+            ],\r\n+          ),\r\n+          Row(\r\n+            children: [\r\n+              Icon(\r\n+                Icons.cake_rounded,\r\n+                color: Colors.grey.shade600,\r\n+                size: 18.0,\r\n+              ),\r\n+              const Text(\r\n+                \"Birthday \",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.normal,\r\n+                  color: Colors.black45,\r\n+                ),\r\n+              ),\r\n+              const Text(\r\n+                \"August 26 1999\",\r\n+                textAlign: TextAlign.center,\r\n+                style: TextStyle(\r\n+                  fontSize: 14.0,\r\n+                  fontWeight: FontWeight.bold,\r\n+                  color: Colors.black,\r\n+                ),\r\n+              ),\r\n+            ],\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651996166678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,8 +104,9 @@\n                 ),\r\n               ),\r\n             ],\r\n           ),\r\n+          \r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651996195017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,9 +104,9 @@\n                 ),\r\n               ),\r\n             ],\r\n           ),\r\n-          Container()\r\n+          Container(),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651996989654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   State<BioMenu> createState() => _BioMenuState();\r\n }\r\n \r\n-class _BioMenuState extends State<BioMenu> with {\r\n+class _BioMenuState extends State<BioMenu> w {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     bool isExpanded = false;\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                }
+            ],
+            "date": 1651994418886,
+            "name": "Commit-0",
+            "content": "class BioMenu extends StatelessWidget {\r\n  const BioMenu({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

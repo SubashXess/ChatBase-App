@@ -1,0 +1,310 @@
+{
+    "sourceFile": "lib/Models/Users/user.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 73,
+            "patches": [
+                {
+                    "date": 1651849211805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651849219166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-class User\n\\ No newline at end of file\n+class User {\r\n+  num id;\r\n+}\r\n"
+                },
+                {
+                    "date": 1651849225452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n class User {\r\n-  num id;\r\n+  num? id;\r\n+  String\r\n }\r\n"
+                },
+                {
+                    "date": 1651849234006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n class User {\r\n   num? id;\r\n-  String\r\n+  String firstName;\r\n }\r\n"
+                },
+                {
+                    "date": 1651849244897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n class User {\r\n   num? id;\r\n-  String firstName;\r\n+  String? firstName;\r\n+  String? lastName;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651849251100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n class User {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n-  \r\n+  String? \r\n }\r\n"
+                },
+                {
+                    "date": 1651849257697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n class User {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n-  String? \r\n+  String? iconUrl;\r\n+  Color\r\n }\r\n"
+                },
+                {
+                    "date": 1651849264266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n   String? iconUrl;\r\n-  Color\r\n+  Color? bg\r\n }\r\n"
+                },
+                {
+                    "date": 1651849270594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n   String? iconUrl;\r\n-  Color? bg\r\n+  Color? bgColor;\r\n }\r\n"
+                },
+                {
+                    "date": 1651849279729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class User {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n"
+                },
+                {
+                    "date": 1651849287057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? iconUrl;\r\n   Color? bgColor;\r\n+  User(this.)\r\n }\r\n"
+                },
+                {
+                    "date": 1651849296838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? iconUrl;\r\n   Color? bgColor;\r\n-  User(this.)\r\n+  User(this.id, this.firstName, this.)\r\n }\r\n"
+                },
+                {
+                    "date": 1651849304918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? iconUrl;\r\n   Color? bgColor;\r\n-  User(this.id, this.firstName, this.)\r\n+  User(this.id, this.firstName, this.lastName, this.icon)\r\n }\r\n"
+                },
+                {
+                    "date": 1651849322493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n class User {\r\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n-  String? iconUrl;\r\n+  String? profileImage;\r\n   Color? bgColor;\r\n   User(this.id, this.firstName, this.lastName, this.icon)\r\n }\r\n"
+                },
+                {
+                    "date": 1651849329080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n-  User(this.id, this.firstName, this.lastName, this.icon)\r\n+  User(this.id, this.firstName, this.lastName, this.profileImage)\r\n }\r\n"
+                },
+                {
+                    "date": 1651849335780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n-  User(this.id, this.firstName, this.lastName, this.profileImage)\r\n+  User(this.id, this.firstName, this.lastName, this.profileImage, this.bgColor)\r\n }\r\n"
+                },
+                {
+                    "date": 1651849345695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n-  User(this.id, this.firstName, this.lastName, this.profileImage, this.bgColor)\r\n+  User({this.id, this.firstName, this.lastName, this.profileImage, this.bgColor});\r\n }\r\n"
+                },
+                {
+                    "date": 1651849356336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n   User({this.id, this.firstName, this.lastName, this.profileImage, this.bgColor});\r\n+\r\n+  static List\r\n }\r\n"
+                },
+                {
+                    "date": 1651849362178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n   String? profileImage;\r\n   Color? bgColor;\r\n   User({this.id, this.firstName, this.lastName, this.profileImage, this.bgColor});\r\n \r\n-  static List\r\n+  static List<User> generate\r\n }\r\n"
+                },
+                {
+                    "date": 1651849369779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,8 @@\n   String? profileImage;\r\n   Color? bgColor;\r\n   User({this.id, this.firstName, this.lastName, this.profileImage, this.bgColor});\r\n \r\n-  static List<User> generate\r\n+  static List<User> generateUsers() {\r\n+    return []\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849375743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,17 @@\n   String? firstName;\r\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n-  User({this.id, this.firstName, this.lastName, this.profileImage, this.bgColor});\r\n+  User(\r\n+      {this.id,\r\n+      this.firstName,\r\n+      this.lastName,\r\n+      this.profileImage,\r\n+      this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n-    return []\r\n+    return [\r\n+      User()\r\n+    ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849381067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User()\r\n+      User(1,)\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849429197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1,)\r\n+      User(1, \"Jane\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849448041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\")\r\n+      User(1, \"Jane\", \"\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849454619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"\")\r\n+      User(1, \"Jane\", \"Russel\", )\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849461392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", )\r\n+      User(1, \"Jane\", \"Russel\", \"\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849472141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"\")\r\n+      User(1, \"Jane\", \"Russel\", \"asse\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849486171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"asse\")\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profile\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849496070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profile\")\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849504373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage\")\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", )\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849577311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", )\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color)\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849582384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color)\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0))\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849589186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0))\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8))\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849605257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,12 @@\n       {this.id,\r\n       this.firstName,\r\n       this.lastName,\r\n       this.profileImage,\r\n-      this.bgColor});\r\n+      this.bgColor);\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8))\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849622309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       {this.id,\r\n       this.firstName,\r\n       this.lastName,\r\n       this.profileImage,\r\n-      this.bgColor);\r\n+      this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n"
+                },
+                {
+                    "date": 1651849628379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n+      User(id: 1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849636375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n       this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(id: 1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n+      User(id: 1,firstName: \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849642683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,16 @@\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n   User(\r\n-      {this.id,\r\n+      [this.id,\r\n       this.firstName,\r\n       this.lastName,\r\n       this.profileImage,\r\n-      this.bgColor});\r\n+      this.bgColor]);\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(id: 1,firstName: \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n+      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849650411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n+      User()\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849664677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,16 @@\n   String? lastName;\r\n   String? profileImage;\r\n   Color? bgColor;\r\n   User(\r\n-      [this.id,\r\n+      {this.id,\r\n       this.firstName,\r\n       this.lastName,\r\n       this.profileImage,\r\n-      this.bgColor]);\r\n+      this.bgColor});\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User()\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849670478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n+      User(id: )\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849680785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: )\r\n+      User(id: 1, )\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849686136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, )\r\n+      User(id: 1, firstName: \"\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849692525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"\")\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849699919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"\")\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: )\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849705969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: )\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849714793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets\")\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.je\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849720771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.je\")\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\", )\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849726711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\", )\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\", bgColor: const Color)\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849738040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n   String? profileImage;\r\n-  Color? bgColor;\r\n+  \r\n   User(\r\n       {this.id,\r\n       this.firstName,\r\n       this.lastName,\r\n@@ -15,8 +15,8 @@\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\", bgColor: const Color)\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\", bgColor: const Color(0xFFFD))\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849746488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,13 @@\n       {this.id,\r\n       this.firstName,\r\n       this.lastName,\r\n       this.profileImage,\r\n-      this.bgColor});\r\n+      });\r\n \r\n   static List<User> generateUsers() {\r\n     return [\r\n       User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\", bgColor: const Color(0xFFFD))\r\n+      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\")\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849756735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,19 +4,22 @@\n   num? id;\r\n   String? firstName;\r\n   String? lastName;\r\n   String? profileImage;\r\n-  \r\n-  User(\r\n-      {this.id,\r\n-      this.firstName,\r\n-      this.lastName,\r\n-      this.profileImage,\r\n-      });\r\n \r\n+  User({\r\n+    this.id,\r\n+    this.firstName,\r\n+    this.lastName,\r\n+    this.profileImage,\r\n+  });\r\n+\r\n   static List<User> generateUsers() {\r\n     return [\r\n-      User(1, \"Jane\", \"Russel\", \"assets/profilepic/userImage1.jpeg\", const Color(0xFFFDBEC8)),\r\n-      User(id: 1, firstName: \"Jane\", lastName: \"Russel\", profileImage: \"assets/profilepic/userImage1.jpeg\")\r\n+      User(\r\n+          id: 1,\r\n+          firstName: \"Jane\",\r\n+          lastName: \"Russel\",\r\n+          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849764336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,12 @@\n           id: 1,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          User(\r\n+          id: 1,\r\n+          firstName: \"Jane\",\r\n+          lastName: \"Russel\",\r\n+          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849779940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,12 @@\n           id: 1,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          User(\r\n+          id: 1,\r\n+          firstName: \"Jane\",\r\n+          lastName: \"Russel\",\r\n+          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849797010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,13 @@\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n+          id: 2,\r\n+          firstName: \"Jane\",\r\n+          lastName: \"Russel\",\r\n+          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          User(\r\n           id: 1,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n@@ -29,7 +34,12 @@\n           id: 1,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          User(\r\n+          id: 1,\r\n+          firstName: \"Jane\",\r\n+          lastName: \"Russel\",\r\n+          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849805479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n           id: 2,\r\n-          firstName: \"Jane\",\r\n+          firstName: \"Glady's\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n           id: 1,\r\n"
+                },
+                {
+                    "date": 1651849817286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n           id: 2,\r\n           firstName: \"Glady's\",\r\n-          lastName: \"Russel\",\r\n-          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          lastName: \"Murphy\",\r\n+          profileImage: \"assets/profilepic/userImage2.jpeg\"),\r\n           User(\r\n           id: 1,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n"
+                },
+                {
+                    "date": 1651849823448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           lastName: \"Murphy\",\r\n           profileImage: \"assets/profilepic/userImage2.jpeg\"),\r\n           User(\r\n           id: 1,\r\n-          firstName: \"Jane\",\r\n+          firstName: \"Jorge\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n           id: 1,\r\n"
+                },
+                {
+                    "date": 1651849838057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,11 @@\n           firstName: \"Glady's\",\r\n           lastName: \"Murphy\",\r\n           profileImage: \"assets/profilepic/userImage2.jpeg\"),\r\n           User(\r\n-          id: 1,\r\n+          id: 3,\r\n           firstName: \"Jorge\",\r\n-          lastName: \"Russel\",\r\n+          lastName: \"Henry\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n           id: 1,\r\n           firstName: \"Jane\",\r\n"
+                },
+                {
+                    "date": 1651849846995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,12 +28,12 @@\n           User(\r\n           id: 3,\r\n           firstName: \"Jorge\",\r\n           lastName: \"Henry\",\r\n-          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          profileImage: \"assets/profilepic/userImage3.jpeg\"),\r\n           User(\r\n           id: 1,\r\n-          firstName: \"Jane\",\r\n+          firstName: \"Philip\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n           User(\r\n           id: 1,\r\n"
+                },
+                {
+                    "date": 1651849853784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,10 +32,10 @@\n           profileImage: \"assets/profilepic/userImage3.jpeg\"),\r\n           User(\r\n           id: 1,\r\n           firstName: \"Philip\",\r\n-          lastName: \"Russel\",\r\n-          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          lastName: \"Fox\",\r\n+          profileImage: \"assets/profilepic/userImage4.jpeg\"),\r\n           User(\r\n           id: 1,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n"
+                },
+                {
+                    "date": 1651849864907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,14 +30,14 @@\n           firstName: \"Jorge\",\r\n           lastName: \"Henry\",\r\n           profileImage: \"assets/profilepic/userImage3.jpeg\"),\r\n           User(\r\n-          id: 1,\r\n+          id: 4,\r\n           firstName: \"Philip\",\r\n           lastName: \"Fox\",\r\n           profileImage: \"assets/profilepic/userImage4.jpeg\"),\r\n           User(\r\n-          id: 1,\r\n+          id: ,\r\n           firstName: \"Jane\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n     ];\r\n"
+                },
+                {
+                    "date": 1651849872901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n           firstName: \"Philip\",\r\n           lastName: \"Fox\",\r\n           profileImage: \"assets/profilepic/userImage4.jpeg\"),\r\n           User(\r\n-          id: ,\r\n-          firstName: \"Jane\",\r\n+          id: 5,\r\n+          firstName: \"Debra\",\r\n           lastName: \"Russel\",\r\n           profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n     ];\r\n   }\r\n"
+                },
+                {
+                    "date": 1651849880056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n           profileImage: \"assets/profilepic/userImage4.jpeg\"),\r\n           User(\r\n           id: 5,\r\n           firstName: \"Debra\",\r\n-          lastName: \"Russel\",\r\n-          profileImage: \"assets/profilepic/userImage1.jpeg\"),\r\n+          lastName: \"Hawkins\",\r\n+          profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849887731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,7 +39,12 @@\n           id: 5,\r\n           firstName: \"Debra\",\r\n           lastName: \"Hawkins\",\r\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n+          User(\r\n+          id: 5,\r\n+          firstName: \"Debra\",\r\n+          lastName: \"Hawkins\",\r\n+          profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849894836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,11 +40,16 @@\n           firstName: \"Debra\",\r\n           lastName: \"Hawkins\",\r\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n           User(\r\n-          id: 5,\r\n+          id: 6,\r\n           firstName: \"Debra\",\r\n           lastName: \"Hawkins\",\r\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n+          User(\r\n+          id: 7,\r\n+          firstName: \"Debra\",\r\n+          lastName: \"Hawkins\",\r\n+          profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849905502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n           lastName: \"Hawkins\",\r\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n           User(\r\n           id: 6,\r\n-          firstName: \"Debra\",\r\n+          firstName: \"Jacob\",\r\n           lastName: \"Hawkins\",\r\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n           User(\r\n           id: 7,\r\n"
+                },
+                {
+                    "date": 1651849911567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n           User(\r\n           id: 6,\r\n           firstName: \"Jacob\",\r\n-          lastName: \"Hawkins\",\r\n+          lastName: \"Pena\",\r\n           profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n           User(\r\n           id: 7,\r\n           firstName: \"Debra\",\r\n"
+                },
+                {
+                    "date": 1651849919249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n           User(\r\n           id: 6,\r\n           firstName: \"Jacob\",\r\n           lastName: \"Pena\",\r\n-          profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n+          profileImage: \"assets/profilepic/userImage.jpeg\"),\r\n           User(\r\n           id: 7,\r\n           firstName: \"Debra\",\r\n           lastName: \"Hawkins\",\r\n"
+                },
+                {
+                    "date": 1651849927093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,13 +43,13 @@\n           User(\r\n           id: 6,\r\n           firstName: \"Jacob\",\r\n           lastName: \"Pena\",\r\n-          profileImage: \"assets/profilepic/userImage.jpeg\"),\r\n+          profileImage: \"assets/profilepic/userImage6.jpeg\"),\r\n           User(\r\n           id: 7,\r\n           firstName: \"Debra\",\r\n           lastName: \"Hawkins\",\r\n-          profileImage: \"assets/profilepic/userImage5.jpeg\"),\r\n+          profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849933930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           lastName: \"Pena\",\r\n           profileImage: \"assets/profilepic/userImage6.jpeg\"),\r\n           User(\r\n           id: 7,\r\n-          firstName: \"Debra\",\r\n+          firstName: \"Andrey\",\r\n           lastName: \"Hawkins\",\r\n           profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n     ];\r\n   }\r\n"
+                },
+                {
+                    "date": 1651849944127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,14 @@\n           profileImage: \"assets/profilepic/userImage6.jpeg\"),\r\n           User(\r\n           id: 7,\r\n           firstName: \"Andrey\",\r\n-          lastName: \"Hawkins\",\r\n+          lastName: \"Jones\",\r\n           profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n+          User(\r\n+          id: 7,\r\n+          firstName: \"Andrey\",\r\n+          lastName: \"Jones\",\r\n+          profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651849953419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,10 @@\n           firstName: \"Andrey\",\r\n           lastName: \"Jones\",\r\n           profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n           User(\r\n-          id: 7,\r\n-          firstName: \"Andrey\",\r\n+          id: 8,\r\n+          firstName: \"John\",\r\n           lastName: \"Jones\",\r\n           profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n     ];\r\n   }\r\n"
+                },
+                {
+                    "date": 1651849961445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n           profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n           User(\r\n           id: 8,\r\n           firstName: \"John\",\r\n-          lastName: \"Jones\",\r\n-          profileImage: \"assets/profilepic/userImage7.jpeg\"),\r\n+          lastName: \"Wick\",\r\n+          profileImage: \"assets/profilepic/userImage8.jpeg\"),\r\n     ];\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1651849211805,
+            "name": "Commit-0",
+            "content": "class User"
+        }
+    ]
+}

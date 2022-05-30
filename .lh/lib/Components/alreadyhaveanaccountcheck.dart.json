@@ -1,0 +1,162 @@
+{
+    "sourceFile": "lib/Components/alreadyhaveanaccountcheck.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1651478539925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651478550525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stl\n\\ No newline at end of file\n+class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n+  const AlreadyHaveAnAccountCheck({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651478555860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n-  const AlreadyHaveAnAccountCheck({ Key? key }) : super(key: key);\r\n+  const AlreadyHaveAnAccountCheck({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651478567447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n+  final bool login\r\n   const AlreadyHaveAnAccountCheck({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651478573967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n-  final bool login\r\n+  final bool login;\r\n+  final Function\r\n   const AlreadyHaveAnAccountCheck({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651478579302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n   final bool login;\r\n-  final Function\r\n+  final Function() onTap;\r\n   const AlreadyHaveAnAccountCheck({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651478587646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n   final bool login;\r\n   final Function() onTap;\r\n-  const AlreadyHaveAnAccountCheck({Key? key}) : super(key: key);\r\n+  const AlreadyHaveAnAccountCheck({Key? key, this.login, required this.onTap}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651478624666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,13 @@\n \r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n   final bool login;\r\n   final Function() onTap;\r\n-  const AlreadyHaveAnAccountCheck({Key? key, this.login, required this.onTap}) : super(key: key);\r\n+  const AlreadyHaveAnAccountCheck(\r\n+      {Key? key, required this.login, required this.onTap})\r\n+      : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Row();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478629942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Row();\r\n+    return Row(\r\n+      mainAxisAlignment: MainAxisAlignment.center,\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478637689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n+      children: [\r\n+        Text(data)\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478645585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(data)\r\n+        Text(log)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478655932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(log)\r\n+        Text(login ? )\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478661932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? )\r\n+        Text(login ? 'Don't )\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478667741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don't )\r\n+        Text(login ? 'Don\\')\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478676162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\')\r\n+        Text(login ? 'Don\\'t have')\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478683339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have')\r\n+        Text(login ? 'Don\\'t have an account?')\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478689461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?')\r\n+        Text(login ? 'Don\\'t have an account?' : ;a)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478704598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?' : ;a)\r\n+        Text(login ? 'Don\\'t have an account?' : 'Already have an account?')\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478711074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?' : 'Already have an account?')\r\n+        Text(login ? 'Don\\'t have an account?' : 'Already have an account?', style: textS,)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478720593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n   final bool login;\r\n@@ -11,9 +13,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?' : 'Already have an account?', style: textS,)\r\n+        Text(login ? 'Don\\'t have an account?' : 'Already have an account?', style: textStyleSimple(kPrimaryColor, 16.0, fontWeight),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478727639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?' : 'Already have an account?', style: textStyleSimple(kPrimaryColor, 16.0, fontWeight),)\r\n+        Text(login ? 'Don\\'t have an account?' : 'Already have an account?', style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478742260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,12 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?' : 'Already have an account?', style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),)\r\n+        Text(\r\n+          login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n+          style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400),\r\n+        )\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478761133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,10 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(\r\n-          login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n-          style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400),\r\n-        )\r\n+        Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n+            style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400))\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478768137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n-            style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400))\r\n+            style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n+            GestureDetector()\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478775863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector()\r\n+            GestureDetector(onTap: onTap,)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478782413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap,)\r\n+            GestureDetector(onTap: onTap, child: Text(data),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478790584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(data),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign'),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478796194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign'),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : ),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478802905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : ),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', sty),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478809111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', sty),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(color, fontSize, fontWeight),),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478817636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(color, fontSize, fontWeight),),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(kPrimaryColor, , fontWeight),),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478824839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(kPrimaryColor, , fontWeight),),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(kPrimaryColor, 18.0, fontWeight),),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478831273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(kPrimaryColor, 18.0, fontWeight),),)\r\n+            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),),)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478839004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,17 @@\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n-        Text(login ? 'Don\\'t have an account?' : 'Already have an account?',\r\n+        Text(login ? 'Don\\'t have an account? ' : 'Already have an account? ',\r\n             style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n-            GestureDetector(onTap: onTap, child: Text(login ? 'Sign Up' : 'Login', style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),),)\r\n+        GestureDetector(\r\n+          onTap: onTap,\r\n+          child: Text(\r\n+            login ? 'Sign Up' : 'Login',\r\n+            style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n+          ),\r\n+        )\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651478851905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account? ' : 'Already have an account? ',\r\n-            style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.w400)),\r\n+            style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400)),\r\n         GestureDetector(\r\n           onTap: onTap,\r\n           child: Text(\r\n             login ? 'Sign Up' : 'Login',\r\n"
+                },
+                {
+                    "date": 1651478973043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n   final bool login;\r\n   final Function() onTap;\r\n   const AlreadyHaveAnAccountCheck(\r\n-      {Key? key, required this.login, required this.onTap})\r\n+      {Key? key, required this.login = true, required this.onTap})\r\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -19,9 +19,9 @@\n         GestureDetector(\r\n           onTap: onTap,\r\n           child: Text(\r\n             login ? 'Sign Up' : 'Login',\r\n-            style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n+            style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.bold),\r\n           ),\r\n         )\r\n       ],\r\n     );\r\n"
+                },
+                {
+                    "date": 1651487167806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,18 +5,18 @@\n class AlreadyHaveAnAccountCheck extends StatelessWidget {\r\n   final bool login;\r\n   final Function() onTap;\r\n   const AlreadyHaveAnAccountCheck(\r\n-      {Key? key, required this.login = true, required this.onTap})\r\n+      {Key? key, this.login = true, required this.onTap})\r\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.center,\r\n       children: [\r\n         Text(login ? 'Don\\'t have an account? ' : 'Already have an account? ',\r\n-            style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400)),\r\n+            style: textStyleSimple(kP, 16.0, FontWeight.w400)),\r\n         GestureDetector(\r\n           onTap: onTap,\r\n           child: Text(\r\n             login ? 'Sign Up' : 'Login',\r\n"
+                }
+            ],
+            "date": 1651478539925,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "sourceFile": "lib/Widgets/emailfield.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1651475156398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651475162625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,11 @@\n \r\n+class EmailField extends StatelessWidget {\r\n+  const EmailField({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651475177035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n+import 'package:flutter/material.dart';\r\n \r\n class EmailField extends StatelessWidget {\r\n-  const EmailField({ Key? key }) : super(key: key);\r\n+  const EmailField({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n-    );\r\n\\ No newline at end of file\n+    Size size = Media\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651475183947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n   const EmailField({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = Media\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Container();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651475193466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      margin: ,\r\n+      margin: c,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651475458646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Styles/shadowstyle.dart';\r\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class EmailField extends StatelessWidget {\r\n@@ -19,9 +20,9 @@\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Email',\r\n-          hintStyle: text\r\n+          hintStyle: textStyleSimple(color, fontSize, fontWeight)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                }
+            ],
+            "date": 1651475156398,
+            "name": "Commit-0",
+            "content": "\r\n"
+        }
+    ]
+}

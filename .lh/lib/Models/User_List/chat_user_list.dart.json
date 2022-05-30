@@ -1,0 +1,498 @@
+{
+    "sourceFile": "lib/Models/User_List/chat_user_list.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 120,
+            "patches": [
+                {
+                    "date": 1651667983589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651667993171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,12 @@\n-stl\n\\ No newline at end of file\n+import 'package:flutter/material.dart';\r\n+\r\n+class ChatUserList extends StatelessWidget {\r\n+  const ChatUserList({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651668000451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  const ChatUserList({ Key? key }) : super(key: key);\r\n+  \r\n+  const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n-    );\r\n\\ No newline at end of file\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651668006213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  \r\n+  fina\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668012801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  fina\r\n+  final String text;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668045678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  final String text;\r\n+  final String name;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668052021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n+  final String\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668061076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n-  final String\r\n+  final String chat_text\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668067785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n-  final String chat_text\r\n+  final String chatText;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668074577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n   final String chatText;\r\n+  final String\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668080306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n   final String chatText;\r\n-  final String\r\n+  final String image;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668089152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n   final String chatText;\r\n-  final String image;\r\n+  final String profileImage;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668097175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n   final String chatText;\r\n   final String profileImage;\r\n+  String time;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668102572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  final String name;\r\n-  final String chatText;\r\n-  final String profileImage;\r\n+   String name;\r\n+   String chatText;\r\n+   String profileImage;\r\n   String time;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651668110225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n    String name;\r\n    String chatText;\r\n    String profileImage;\r\n   String time;\r\n+  bool is\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668117030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n    String name;\r\n    String chatText;\r\n    String profileImage;\r\n   String time;\r\n-  bool is\r\n+  bool isMessageRead\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668128354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-   String name;\r\n-   String chatText;\r\n-   String profileImage;\r\n+  final String name;\r\n+  String chatText;\r\n+  String profileImage;\r\n   String time;\r\n-  bool isMessageRead\r\n+  bool isMessageRead;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668134697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n-  String chatText;\r\n-  String profileImage;\r\n-  String time;\r\n-  bool isMessageRead;\r\n+  final String chatText;\r\n+  final String profileImage;\r\n+  final String time;\r\n+  final bool isMessageRead;\r\n   const ChatUserList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651668141394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   final String chatText;\r\n   final String profileImage;\r\n   final String time;\r\n   final bool isMessageRead;\r\n-  const ChatUserList({Key? key}) : super(key: key);\r\n+  const ChatUserList({Key? key, this.name, this.chatText, this.profileImage, this.time, required this.isMessageRead}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651668147963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   final String chatText;\r\n   final String profileImage;\r\n   final String time;\r\n   final bool isMessageRead;\r\n-  const ChatUserList({Key? key, this.name, this.chatText, this.profileImage, this.time, required this.isMessageRead}) : super(key: key);\r\n+  const ChatUserList({Key? key, this.name, this.chatText, required this.profileImage, required this.time, required this.isMessageRead}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651668153999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,16 @@\n   final String chatText;\r\n   final String profileImage;\r\n   final String time;\r\n   final bool isMessageRead;\r\n-  const ChatUserList({Key? key, this.name, this.chatText, required this.profileImage, required this.time, required this.isMessageRead}) : super(key: key);\r\n+  const ChatUserList(\r\n+      {Key? key,\r\n+      required this.name,\r\n+      required this.chatText,\r\n+      required this.profileImage,\r\n+      required this.time,\r\n+      required this.isMessageRead})\r\n+      : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651668302961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return GestureDetector();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668309312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return GestureDetector();\r\n+    return GestureDetector(\r\n+      onTap: (),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668314849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: (),\r\n+      onTap: () => Navigator,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668321015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: () => Navigator,\r\n+      onTap: () => Navigator.of(context).push(route),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668329918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: () => Navigator.of(context).push(route),\r\n+      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668337583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String name;\r\n@@ -17,8 +18,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => )),\r\n+      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ChatDetails())),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668354288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ChatDetails())),\r\n+      onTap: () => Navigator.of(context)\r\n+          .push(MaterialPageRoute(builder: (context) => const ChatDetails())),\r\n     );\r\n+    c\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668369989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: () => Navigator.of(context)\r\n+      onTap: ()  Navigator.of(context)\r\n           .push(MaterialPageRoute(builder: (context) => const ChatDetails())),\r\n     );\r\n-    c\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668378103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: ()  Navigator.of(context)\r\n-          .push(MaterialPageRoute(builder: (context) => const ChatDetails())),\r\n+      onTap: () { Navigator.of(context)\r\n+          .push(MaterialPageRoute(builder: (context) => const ChatDetails()));,}\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668383329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,12 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n-      onTap: () { Navigator.of(context)\r\n-          .push(MaterialPageRoute(builder: (context) => const ChatDetails()));,}\r\n+      onTap: () {\r\n+        Navigator.of(context)\r\n+            .push(MaterialPageRoute(builder: (context) => const ChatDetails()));\r\n+      },\r\n+      \r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668390235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n       onTap: () {\r\n         Navigator.of(context)\r\n             .push(MaterialPageRoute(builder: (context) => const ChatDetails()));\r\n       },\r\n-      \r\n+      child: Conta,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668407616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,10 @@\n       onTap: () {\r\n         Navigator.of(context)\r\n             .push(MaterialPageRoute(builder: (context) => const ChatDetails()));\r\n       },\r\n-      child: Conta,\r\n+      child: Container(\r\n+        \r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668422511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         Navigator.of(context)\r\n             .push(MaterialPageRoute(builder: (context) => const ChatDetails()));\r\n       },\r\n       child: Container(\r\n-        \r\n+        Row\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668428438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         Navigator.of(context)\r\n             .push(MaterialPageRoute(builder: (context) => const ChatDetails()));\r\n       },\r\n       child: Container(\r\n-        Row\r\n+        child: Row(),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668434400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,13 @@\n         Navigator.of(context)\r\n             .push(MaterialPageRoute(builder: (context) => const ChatDetails()));\r\n       },\r\n       child: Container(\r\n-        child: Row(),\r\n+        child: Row(\r\n+          children: [\r\n+            Expanded(child: child)\r\n+          ],\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668469894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,11 @@\n       },\r\n       child: Container(\r\n         child: Row(\r\n           children: [\r\n-            Expanded(child: child)\r\n+            Expanded(child: Row(\r\n+              children: [],\r\n+            ))\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668482572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,13 @@\n       child: Container(\r\n         child: Row(\r\n           children: [\r\n             Expanded(child: Row(\r\n-              children: [],\r\n+              children: [\r\n+                CircleAvatar(\r\n+                  bac\r\n+                )\r\n+              ],\r\n             ))\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651668487726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           children: [\r\n             Expanded(child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n-                  bac\r\n+                  backgroundImage: Asset,\r\n                 )\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668494217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           children: [\r\n             Expanded(child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n-                  backgroundImage: Asset,\r\n+                  backgroundImage: AssetImage(image),\r\n                 )\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668502617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           children: [\r\n             Expanded(child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n-                  backgroundImage: AssetImage(image),\r\n+                  backgroundImage: AssetImage(profileImage),\r\n                 )\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668513045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n             Expanded(child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n                   backgroundImage: AssetImage(profileImage),\r\n+                  \r\n                 )\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668518644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             Expanded(child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n                   backgroundImage: AssetImage(profileImage),\r\n-                  \r\n+                  maxRadius: 30.0,\r\n                 )\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668526766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,14 +25,13 @@\n       },\r\n       child: Container(\r\n         child: Row(\r\n           children: [\r\n-            Expanded(child: Row(\r\n+            Expanded(\r\n+                child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n-                  backgroundImage: AssetImage(profileImage),\r\n-                  maxRadius: 30.0,\r\n-                )\r\n+                    backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668534550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n                 child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n+                    SizedBox()\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668539963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                 child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n-                    SizedBox()\r\n+                    SizedBox(width: 16.0)\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668546596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,10 @@\n                 child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n-                    SizedBox(width: 16.0)\r\n+                    const SizedBox(width: 16.0),\r\n+                    Expa\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668552238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n-                    Expa\r\n+                    Expanded(child: Container())\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668558237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n-                    Expanded(child: Container())\r\n+                    Expanded(child: Container(color: ,))\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668564364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n-                    Expanded(child: Container(color: ,))\r\n+                    Expanded(child: Container(color: Colors.transparent, child: ,))\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668572584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n-                    Expanded(child: Container(color: Colors.transparent, child: ,))\r\n+                    Expanded(child: Container(color: Colors.transparent, child: Column(cre),))\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668578162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n-                    Expanded(child: Container(color: Colors.transparent, child: Column(cre),))\r\n+                    Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,),))\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668585168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,11 @@\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n-                    Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,),))\r\n+                    Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n+                      Text\r\n+                    ],),))\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668590333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n-                      Text\r\n+                      Text(name)\r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668596826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,10 @@\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n-                      Text(name)\r\n+                      Text(name),\r\n+                      \r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668602200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n                       Text(name),\r\n-                      \r\n+                      SizedBox(height: ,)\r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668608951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n                       Text(name),\r\n-                      SizedBox(height: ,)\r\n+                      const SizedBox(height: 6.0),\r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668616243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n                       Text(name),\r\n                       const SizedBox(height: 6.0),\r\n+                      Text(data)\r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668628246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n                       Text(name),\r\n                       const SizedBox(height: 6.0),\r\n-                      Text(data)\r\n+                      Text(chatText)\r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668635766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n                     const SizedBox(width: 16.0),\r\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n                       Text(name),\r\n                       const SizedBox(height: 6.0),\r\n-                      Text(chatText)\r\n+                      Text(chatText),\r\n                     ],),))\r\n               ],\r\n             ))\r\n           ],\r\n"
+                },
+                {
+                    "date": 1651668641202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                     Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n                       Text(name),\r\n                       const SizedBox(height: 6.0),\r\n                       Text(chatText),\r\n-                    ],),))\r\n+                    ],),),),\r\n               ],\r\n             ))\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651668661159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,16 +30,24 @@\n                 child: Row(\r\n               children: [\r\n                 CircleAvatar(\r\n                     backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n-                    const SizedBox(width: 16.0),\r\n-                    Expanded(child: Container(color: Colors.transparent, child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [\r\n-                      Text(name),\r\n-                      const SizedBox(height: 6.0),\r\n-                      Text(chatText),\r\n-                    ],),),),\r\n+                const SizedBox(width: 16.0),\r\n+                Expanded(\r\n+                  child: Container(\r\n+                    color: Colors.transparent,\r\n+                    child: Column(\r\n+                      crossAxisAlignment: CrossAxisAlignment.start,\r\n+                      children: [\r\n+                        Text(name),\r\n+                        const SizedBox(height: 6.0),\r\n+                        Text(chatText),\r\n+                      ],\r\n+                    ),\r\n+                  ),\r\n+                ),\r\n               ],\r\n-            ))\r\n+            ),),\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668668427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,28 +26,31 @@\n       child: Container(\r\n         child: Row(\r\n           children: [\r\n             Expanded(\r\n-                child: Row(\r\n-              children: [\r\n-                CircleAvatar(\r\n-                    backgroundImage: AssetImage(profileImage), maxRadius: 30.0),\r\n-                const SizedBox(width: 16.0),\r\n-                Expanded(\r\n-                  child: Container(\r\n-                    color: Colors.transparent,\r\n-                    child: Column(\r\n-                      crossAxisAlignment: CrossAxisAlignment.start,\r\n-                      children: [\r\n-                        Text(name),\r\n-                        const SizedBox(height: 6.0),\r\n-                        Text(chatText),\r\n-                      ],\r\n+              child: Row(\r\n+                children: [\r\n+                  CircleAvatar(\r\n+                      backgroundImage: AssetImage(profileImage),\r\n+                      maxRadius: 30.0),\r\n+                  const SizedBox(width: 16.0),\r\n+                  Expanded(\r\n+                    child: Container(\r\n+                      color: Colors.transparent,\r\n+                      child: Column(\r\n+                        crossAxisAlignment: CrossAxisAlignment.start,\r\n+                        children: [\r\n+                          Text(name),\r\n+                          const SizedBox(height: 6.0),\r\n+                          Text(chatText),\r\n+                        ],\r\n+                      ),\r\n                     ),\r\n                   ),\r\n-                ),\r\n-              ],\r\n-            ),),\r\n+                ],\r\n+              ),\r\n+            ),\r\n+            Text(data)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668681279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(data)\r\n+            Text(time, )\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668689249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, )\r\n+            Text(time, style: TextStyle(),)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668694932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, style: TextStyle(),)\r\n+            Text(time, style: TextStyle(fontSize: 12.0, ),)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668700725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, style: TextStyle(fontSize: 12.0, ),)\r\n+            Text(time, style: TextStyle(fontSize: 12.0, color: i),)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668707331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, style: TextStyle(fontSize: 12.0, color: i),)\r\n+            Text(time, style: TextStyle(fontSize: 12.0, color: isMessageRead ? Color),)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668715313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, style: TextStyle(fontSize: 12.0, color: isMessageRead ? Color),)\r\n+            Text(time, style: TextStyle(fontSize: 12.0, color: isMessageRead ? Colors.pink : Colors.gr),)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668720462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, style: TextStyle(fontSize: 12.0, color: isMessageRead ? Colors.pink : Colors.gr),)\r\n+            Text(time, style: TextStyle(fontSize: 12.0, color: isMessageRead ? Colors.pink : Colors.grey.sha5),)\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651668727835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,14 @@\n                   ),\r\n                 ],\r\n               ),\r\n             ),\r\n-            Text(time, style: TextStyle(fontSize: 12.0, color: isMessageRead ? Colors.pink : Colors.grey.sha5),)\r\n+            Text(\r\n+              time,\r\n+              style: TextStyle(\r\n+                  fontSize: 12.0,\r\n+                  color: isMessageRead ? Colors.pink : Colors.grey.shade500),\r\n+            ),\r\n           ],\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651670309199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  final String name;\r\n+  final String firstName;\r\n   final String chatText;\r\n   final String profileImage;\r\n   final String time;\r\n   final bool isMessageRead;\r\n"
+                },
+                {
+                    "date": 1651670317780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String firstName;\r\n+  final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n   final String time;\r\n   final bool isMessageRead;\r\n"
+                },
+                {
+                    "date": 1651670326493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   final String time;\r\n   final bool isMessageRead;\r\n   const ChatUserList(\r\n       {Key? key,\r\n-      required this.name,\r\n+      required this.firstName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time,\r\n       required this.isMessageRead})\r\n"
+                },
+                {
+                    "date": 1651670332722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   final bool isMessageRead;\r\n   const ChatUserList(\r\n       {Key? key,\r\n       required this.firstName,\r\n+      required this.lastName\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time,\r\n       required this.isMessageRead})\r\n"
+                },
+                {
+                    "date": 1651670345633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   final bool isMessageRead;\r\n   const ChatUserList(\r\n       {Key? key,\r\n       required this.firstName,\r\n-      required this.lastName\r\n+      required this.lastName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time,\r\n       required this.isMessageRead})\r\n@@ -40,9 +40,9 @@\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(name),\r\n+                          Text(firstName + lastName),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651671340268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n+  \r\n   final String firstName;\r\n   final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n"
+                },
+                {
+                    "date": 1651671345487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  \r\n+  final \r\n   final String firstName;\r\n   final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n"
+                },
+                {
+                    "date": 1651671357836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  final \r\n+  final S\r\n   final String firstName;\r\n   final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n"
+                },
+                {
+                    "date": 1651671363351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  final S\r\n+  final String id;\r\n   final String firstName;\r\n   final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n"
+                },
+                {
+                    "date": 1651671371184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       required this.lastName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time,\r\n-      required this.isMessageRead})\r\n+      required this.isMessageRead, required this.id})\r\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651671454912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  final String id;\r\n+  \r\n   final String firstName;\r\n   final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n@@ -15,9 +15,10 @@\n       required this.lastName,\r\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time,\r\n-      required this.isMessageRead, required this.id})\r\n+      required this.isMessageRead,\r\n+      required this.id})\r\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651671570242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       required this.chatText,\r\n       required this.profileImage,\r\n       required this.time,\r\n       required this.isMessageRead,\r\n-      required this.id})\r\n+      })\r\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -42,9 +42,9 @@\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(firstName + lastName),\r\n+                          Text(firstName + \" \" lastName),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651671784159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,23 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n-  \r\n   final String firstName;\r\n   final String lastName;\r\n   final String chatText;\r\n   final String profileImage;\r\n   final String time;\r\n   final bool isMessageRead;\r\n-  const ChatUserList(\r\n-      {Key? key,\r\n-      required this.firstName,\r\n-      required this.lastName,\r\n-      required this.chatText,\r\n-      required this.profileImage,\r\n-      required this.time,\r\n-      required this.isMessageRead,\r\n-      })\r\n-      : super(key: key);\r\n+  const ChatUserList({\r\n+    Key? key,\r\n+    required this.firstName,\r\n+    required this.lastName,\r\n+    required this.chatText,\r\n+    required this.profileImage,\r\n+    required this.time,\r\n+    required this.isMessageRead,\r\n+  }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return GestureDetector(\r\n@@ -33,18 +31,18 @@\n             Expanded(\r\n               child: Row(\r\n                 children: [\r\n                   CircleAvatar(\r\n-                      backgroundImage: AssetImage(profileImage),\r\n+                      backgroundImage: AssetImage(profileImage),,\r\n                       maxRadius: 30.0),\r\n                   const SizedBox(width: 16.0),\r\n                   Expanded(\r\n                     child: Container(\r\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(firstName + \" \" lastName),\r\n+                          Text(firstName + \" \" + lastName),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651671793045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             Expanded(\r\n               child: Row(\r\n                 children: [\r\n                   CircleAvatar(\r\n-                      backgroundImage: AssetImage(profileImage),,\r\n+                      backgroundImage: AssetImage(profileImage),\r\n                       maxRadius: 30.0),\r\n                   const SizedBox(width: 16.0),\r\n                   Expanded(\r\n                     child: Container(\r\n"
+                },
+                {
+                    "date": 1651673274718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(firstName + \" \" + lastName),\r\n+                          Text(firstName + \" \" + lastName, st),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651673291562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatUserList extends StatelessWidget {\r\n   final String firstName;\r\n@@ -40,9 +42,9 @@\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(firstName + \" \" + lastName, st),\r\n+                          Text(firstName + \" \" + lastName, style: textStyleSimple(kPrimaryColor, fontSize, fontWeight),),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651673300047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(firstName + \" \" + lastName, style: textStyleSimple(kPrimaryColor, fontSize, fontWeight),),\r\n+                          Text(firstName + \" \" + lastName, style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.bold),),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651673307902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,13 @@\n                       color: Colors.transparent,\r\n                       child: Column(\r\n                         crossAxisAlignment: CrossAxisAlignment.start,\r\n                         children: [\r\n-                          Text(firstName + \" \" + lastName, style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.bold),),\r\n+                          Text(\r\n+                            firstName + \" \" + lastName,\r\n+                            style: textStyleSimple(\r\n+                                Colors, 16.0, FontWeight.bold),\r\n+                          ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n                       ),\r\n"
+                },
+                {
+                    "date": 1651673315079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors, 16.0, FontWeight.bold),\r\n+                                Colors.black.s, 16.0, FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673322490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black.s, 16.0, FontWeight.bold),\r\n+                                Colors.black[], 16.0, FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673329070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black[], 16.0, FontWeight.bold),\r\n+                                Colors.black[600], 16.0, FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673338597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black[600], 16.0, FontWeight.bold),\r\n+                                Colors.black., 16.0, FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673346236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,11 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black., 16.0, FontWeight.bold),\r\n+                                Colors.black.withOpacity(0.6),\r\n+                                16.0,\r\n+                                FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673354705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black.withOpacity(0.6),\r\n+                                Colors.gr.withOpacity(0.8),\r\n                                 16.0,\r\n                                 FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n"
+                },
+                {
+                    "date": 1651673361584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.gr.withOpacity(0.8),\r\n+                                Colors.grey.withOpacity(0.8),\r\n                                 16.0,\r\n                                 FontWeight.bold),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n"
+                },
+                {
+                    "date": 1651673374035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,11 +45,11 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.grey.withOpacity(0.8),\r\n+                                Colors.black.withOpacity(0.8),\r\n                                 16.0,\r\n-                                FontWeight.bold),\r\n+                                FontWeight.w78),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673380254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n                                 Colors.black.withOpacity(0.8),\r\n                                 16.0,\r\n-                                FontWeight.w78),\r\n+                                FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(chatText),\r\n                         ],\r\n"
+                },
+                {
+                    "date": 1651673393755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n-                          Text(chatText),\r\n+                          Text(chatText, style: ,),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651673401955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n-                          Text(chatText, style: ,),\r\n+                          Text(chatText, style: textStyleSimple(Colors.b, fontSize, fontWeight),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651673408271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n-                          Text(chatText, style: textStyleSimple(Colors.b, fontSize, fontWeight),),\r\n+                          Text(chatText, style: textStyleSimple(Colors.black.withOpacity(opacity), fontSize, fontWeight),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651673413740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n-                          Text(chatText, style: textStyleSimple(Colors.black.withOpacity(opacity), fontSize, fontWeight),),\r\n+                          Text(chatText, style: textStyleSimple(Colors.black, fontSize, fontWeight),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651673427551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n-                          Text(chatText, style: textStyleSimple(Colors.black, fontSize, fontWeight),),\r\n+                          Text(chatText, style: textStyleSimple(Colors.black12, 14.0, fontWeight),),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651673432920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,13 @@\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n-                          Text(chatText, style: textStyleSimple(Colors.black12, 14.0, fontWeight),),\r\n+                          Text(\r\n+                            chatText,\r\n+                            style: textStyleSimple(\r\n+                                Colors.black12, 14.0, FontWeight.normal),\r\n+                          ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1651673439287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                           const SizedBox(height: 6.0),\r\n                           Text(\r\n                             chatText,\r\n                             style: textStyleSimple(\r\n-                                Colors.black12, 14.0, FontWeight.normal),\r\n+                                Colors.black, 14.0, FontWeight.normal),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651673445208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                           const SizedBox(height: 6.0),\r\n                           Text(\r\n                             chatText,\r\n                             style: textStyleSimple(\r\n-                                Colors.black, 14.0, FontWeight.normal),\r\n+                                Colors.black54, 14.0, FontWeight.normal),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651673461359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black.withOpacity(0.8),\r\n+                                Colors.black,\r\n                                 16.0,\r\n                                 FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n"
+                },
+                {
+                    "date": 1651673466885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,11 +45,9 @@\n                         children: [\r\n                           Text(\r\n                             firstName + \" \" + lastName,\r\n                             style: textStyleSimple(\r\n-                                Colors.black,\r\n-                                16.0,\r\n-                                FontWeight.w600),\r\n+                                Colors.black87, 16.0, FontWeight.w600),\r\n                           ),\r\n                           const SizedBox(height: 6.0),\r\n                           Text(\r\n                             chatText,\r\n"
+                },
+                {
+                    "date": 1651673482941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? Colors.pink : Colors.grey.shade500),\r\n+                  color: isMessageRead ? Colors.pink. : Colors.grey.shade500),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673493483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? Colors.pink. : Colors.grey.shade500),\r\n+                  color: isMessageRead ? Colors.kP : Colors.grey.shade500),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673499862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,11 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? Colors.kP : Colors.grey.shade500),\r\n+                  color: isMessageRead\r\n+                      ? kPrimaryLightColor\r\n+                      : Colors.grey.shade500),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673505966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,11 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead\r\n-                      ? kPrimaryLightColor\r\n-                      : Colors.grey.shade500),\r\n+                  color: isMessageRead ? kPrimaryLightColor : Colors.grey.shade500),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673525795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,10 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? kPrimaryLightColor : Colors.grey.shade500),\r\n+                  color:\r\n+                      isMessageRead ? kPrimaryDeepColor : Colors.kP),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673537351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,10 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color:\r\n-                      isMessageRead ? kPrimaryDeepColor : Colors.kP),\r\n+                  color: isMessageRead ? kPrimaryDeepColor : kP),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673570451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,11 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? kPrimaryDeepColor : kP),\r\n+                  color: isMessageRead\r\n+                      ? Colors.pink\r\n+                      : kPrimaryDeepLightColor),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673583029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,11 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead\r\n-                      ? Colors.pink\r\n-                      : kPrimaryDeepLightColor),\r\n+                  color: isMessageRead ? Colors.pink : Colors.gre),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673591576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? Colors.pink : Colors.gre),\r\n+                  color: isMessageRead ? Colors.pink : Colors.grey.shade600),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673601508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? Colors.pink : Colors.grey.shade600),\r\n+                  color: isMessageRead ? Colors.pink : Colors.grey.shade),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673609214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             Text(\r\n               time,\r\n               style: TextStyle(\r\n                   fontSize: 12.0,\r\n-                  color: isMessageRead ? Colors.pink : Colors.grey.shade),\r\n+                  color: isMessageRead ? Colors.pink : Colors.grey.shade600),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651673662082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n                           const SizedBox(height: 6.0),\r\n                           Text(\r\n                             chatText,\r\n                             style: textStyleSimple(\r\n-                                Colors.black54, 14.0, FontWeight.w2),\r\n+                                Colors.black54, 14.0, FontWeight.w200),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1651680199222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n                           const SizedBox(height: 6.0),\r\n                           Text(\r\n                             chatText,\r\n                             style: textStyleSimple(\r\n-                                Colors.black54, 14.0, isMessageRead ? FontWeight.w400 : ),\r\n+                                Colors.black54, 14.0, isMessageRead ? FontWeight.w400 : F),\r\n                           ),\r\n                         ],\r\n                       ),\r\n                     ),\r\n"
+                }
+            ],
+            "date": 1651667983589,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

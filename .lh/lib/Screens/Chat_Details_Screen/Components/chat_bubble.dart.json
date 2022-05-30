@@ -1,0 +1,134 @@
+{
+    "sourceFile": "lib/Screens/Chat_Details_Screen/Components/chat_bubble.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 29,
+            "patches": [
+                {
+                    "date": 1651736569560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651736575955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-st\n\\ No newline at end of file\n+class ChatBubble extends StatelessWidget {\r\n+  const ChatBubble({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651736581686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class ChatBubble extends StatelessWidget {\r\n   const ChatBubble({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651736588478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n+  final\r\n   const ChatBubble({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651736594422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n+import 'package:chatbase_app/Models/chat_messages.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n-  final\r\n+  ChatMessages\r\n   const ChatBubble({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651736601621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,12 @@\n import 'package:chatbase_app/Models/chat_messages.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n-  ChatMessages\r\n-  const ChatBubble({ Key? key }) : super(key: key);\r\n+  ChatMessages chatMessages;\r\n+  const ChatBubble({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n-    );\r\n\\ No newline at end of file\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651736608720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Models/chat_messages.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n-  ChatMessages chatMessages;\r\n+  ChatMessages? chatMessages;\r\n   const ChatBubble({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651736621663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Models/chat_messages.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n-  ChatMessages? chatMessages;\r\n+  ChatMessages chatMessages;\r\n   const ChatBubble({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651736630184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:chatbase_app/Models/chat_messages.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n-  ChatMessages chatMessages;\r\n+  ChatMessages? chatMessages;\r\n   const ChatBubble({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651736641806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n   ChatMessages? chatMessages;\r\n-  const ChatBubble({Key? key}) : super(key: key);\r\n+   ChatBubble({Key? key, }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651736652785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,13 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n   ChatMessages? chatMessages;\r\n-   ChatBubble({Key? key, }) : super(key: key);\r\n+   ChatBubble({Key? key, this.chatMessages}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Container(\r\n+      \r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736658683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      \r\n+      padding: ,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736665683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      padding: ,\r\n+      padding: const EdgeInsets.all(value),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736672898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      padding: const EdgeInsets.all(value),\r\n+      padding: const EdgeInsets.all(16.0),\r\n+      child: A,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736679795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: A,\r\n+      child: Align(alignment: ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736689525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: ),\r\n+      child: Align(alignment: ()),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736695026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: ()),\r\n+      child: Align(alignment: (chatMessages)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736700148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages)),\r\n+      child: Align(alignment: (chatMessages.type == )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736707783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Models/chat_messages.dart';\r\n+import 'package:chatbase_app/Screens/Chat_Details_Screen/chat_details_screen.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n   ChatMessages? chatMessages;\r\n@@ -8,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == )),\r\n+      child: Align(alignment: (chatMessages.type == MessageType)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736713836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType)),\r\n+      child: Align(alignment: (chatMessages.type == MessageType.receiver ? )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736720291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType.receiver ? )),\r\n+      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Align)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736726145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Align)),\r\n+      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.t)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736731572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.t)),\r\n+      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.topLeft : )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736738061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.topLeft : )),\r\n+      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.topLeft : Alignment.top)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736744692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.topLeft : Alignment.top)),\r\n+      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.topLeft : Alignment.topRight,)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736750113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,18 @@\n import 'package:flutter/material.dart';\r\n \r\n class ChatBubble extends StatelessWidget {\r\n   ChatMessages? chatMessages;\r\n-   ChatBubble({Key? key, this.chatMessages}) : super(key: key);\r\n+  ChatBubble({Key? key, this.chatMessages}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n-      child: Align(alignment: (chatMessages.type == MessageType.receiver ? Alignment.topLeft : Alignment.topRight,)),\r\n+      child: Align(\r\n+        alignment: (chatMessages.type == MessageType.receiver\r\n+            ? Alignment.topLeft\r\n+            : Alignment.topRight),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736767368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(16.0),\r\n       child: Align(\r\n-        alignment: (chatMessages.type == MessageType.receiver\r\n+        alignment: (chatMessages!.type == MessageType.receiver\r\n             ? Alignment.topLeft\r\n             : Alignment.topRight),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651736797043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n       child: Align(\r\n         alignment: (chatMessages!.type == MessageType.receiver\r\n             ? Alignment.topLeft\r\n             : Alignment.topRight),\r\n+            child: ,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651736806504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         alignment: (chatMessages!.type == MessageType.receiver\r\n             ? Alignment.topLeft\r\n             : Alignment.topRight),\r\n             child:  Container(\r\n-              decoration: BoxDE,\r\n+              decoration: BoxDecoration(),\r\n             ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651737825788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Column(\r\n       children: [\r\n-        Container\r\n+        Container()\r\n         // Container(\r\n         //   padding: const EdgeInsets.symmetric(horizontal: 16.0),\r\n         //   child: Align(\r\n         //     alignment: (chatMessages!.type == MessageType.receiver\r\n"
+                }
+            ],
+            "date": 1651736569560,
+            "name": "Commit-0",
+            "content": "st"
+        }
+    ]
+}

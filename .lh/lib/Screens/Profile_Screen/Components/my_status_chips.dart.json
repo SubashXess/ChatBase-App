@@ -1,0 +1,94 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/my_status_chips.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1652031037595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652031050943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+class StatusChip extends StatelessWidget {\r\n+  const StatusChip({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1652031071394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n-class StatusChip extends StatelessWidget {\r\n-  const StatusChip({ Key? key }) : super(key: key);\r\n+import 'package:flutter/material.dart';\r\n \r\n+class StatusChips extends StatelessWidget {\r\n+  const StatusChips({Key? key}) : super(key: key);\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n\\ No newline at end of file\n       \r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031099329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      \r\n+      child: List,\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031165812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: List,\r\n+      child: ListView,\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031174389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: ListView,\r\n+      child: ListView.builder(itemBuilder: (context)),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031181003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: ListView.builder(itemBuilder: (context)),\r\n+      child: ListView.builder(itemBuilder: (context, index) {\r\n+        \r\n+      }),\r\n\\ No newline at end of file\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031187210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(itemBuilder: (context, index) {\r\n-        \r\n+        return ActionChip(label: label, onPressed: onPressed)\r\n       }),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031195559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(itemBuilder: (context, index) {\r\n-        return ActionChip(label: label, onPressed: onPressed)\r\n+        return ActionChip(label: const Text(data), onPressed: onPressed)\r\n       }),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031204578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(itemBuilder: (context, index) {\r\n-        return ActionChip(label: const Text(data), onPressed: onPressed)\r\n+        return ActionChip(label: const Text(\"Away\"), onPressed: ())\r\n       }),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031209879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,12 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(itemBuilder: (context, index) {\r\n-        return ActionChip(label: const Text(\"Away\"), onPressed: ())\r\n+        return ActionChip(\r\n+          label: const Text(\"Away\"),\r\n+          onPressed: () {},\r\n+        );\r\n\\ No newline at end of file\n       }),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031216565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,14 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      child: ListView.builder(itemBuilder: (context, index) {\r\n+      child: ListView.builder(\r\n+        itemBuilder: (context, index) {\r\n         return ActionChip(\r\n           label: const Text(\"Away\"),\r\n           onPressed: () {},\r\n         );\r\n       }),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031222876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,15 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(\r\n+        itemCount: 10,\r\n+         \r\n         itemBuilder: (context, index) {\r\n         return ActionChip(\r\n           label: const Text(\"Away\"),\r\n           onPressed: () {},\r\n         );\r\n       }),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031233599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,14 +7,14 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(\r\n         itemCount: 10,\r\n-         \r\n+         s\r\n         itemBuilder: (context, index) {\r\n         return ActionChip(\r\n           label: const Text(\"Away\"),\r\n           onPressed: () {},\r\n         );\r\n       }),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031244638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,15 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       child: ListView.builder(\r\n-        itemCount: 10,\r\n-         s\r\n-        itemBuilder: (context, index) {\r\n-        return ActionChip(\r\n-          label: const Text(\"Away\"),\r\n-          onPressed: () {},\r\n-        );\r\n-      }),\r\n+          itemCount: 15,\r\n+          shrinkWrap: true,\r\n+          itemBuilder: (context, index) {\r\n\\ No newline at end of file\n+            return ActionChip(\r\n+              label: const Text(\"Away\"),\r\n+              onPressed: () {},\r\n+            );\r\n+          }),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031259828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,14 @@\n     return Container(\r\n       child: ListView.builder(\r\n           itemCount: 15,\r\n           shrinkWrap: true,\r\n+          s\r\n           itemBuilder: (context, index) {\r\n             return ActionChip(\r\n               label: const Text(\"Away\"),\r\n               onPressed: () {},\r\n             );\r\n           }),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031293725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,15 @@\n     return Container(\r\n       child: ListView.builder(\r\n           itemCount: 15,\r\n           shrinkWrap: true,\r\n-          s\r\n+          scrollDirection: Axis.horizontal,\r\n+          \r\n           itemBuilder: (context, index) {\r\n             return ActionChip(\r\n               label: const Text(\"Away\"),\r\n               onPressed: () {},\r\n             );\r\n           }),\r\n     );\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652031305328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,14 +9,13 @@\n       child: ListView.builder(\r\n           itemCount: 15,\r\n           shrinkWrap: true,\r\n           scrollDirection: Axis.horizontal,\r\n-          \r\n           itemBuilder: (context, index) {\r\n             return ActionChip(\r\n               label: const Text(\"Away\"),\r\n               onPressed: () {},\r\n             );\r\n           }),\r\n     );\r\n   }\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1652031340463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      height: size.hashCode,\r\n+      height: size.he,\r\n       child: ListView.builder(\r\n           itemCount: 15,\r\n           shrinkWrap: true,\r\n           scrollDirection: Axis.horizontal,\r\n"
+                },
+                {
+                    "date": 1652031366922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const StatusChips({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size\r\n+    Size size \r\n     return Container(\r\n       height: size.height * 0.12,\r\n       width: double.infinity,\r\n       child: ListView.builder(\r\n"
+                }
+            ],
+            "date": 1652031037595,
+            "name": "Commit-0",
+            "content": "class  extends StatelessWidget {\r\n  const ({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "sourceFile": "lib/Screens/Chat_Details_Screen/Components/chat_details_screen_appbar.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1651686230376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651686239134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stl\n\\ No newline at end of file\n+class ChatDetailsScreenApp extends StatelessWidget {\r\n+  const ChatDetailsScreenApp({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651686249150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-class ChatDetailsScreenApp extends StatelessWidget {\r\n-  const ChatDetailsScreenApp({ Key? key }) : super(key: key);\r\n+import 'package:flutter/material.dart';\r\n \r\n+class ChatDetailsScreenAppBar extends StatelessWidget {\r\n+  const ChatDetailsScreenAppBar({Key? key}) : super(key: key);\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n\\ No newline at end of file\n-      \r\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651686256187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const ChatDetailsScreenAppBar({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return AppBar();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686262644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,10 @@\n   const ChatDetailsScreenAppBar({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return AppBar();\r\n+    return AppBar(\r\n+      elevation: 0,\r\n+      aut\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686270857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return AppBar(\r\n       elevation: 0,\r\n-      aut\r\n+      automaticallyImplyLeading: false,\r\n+      backgroundColor: Colors,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686279410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return AppBar(\r\n       elevation: 0,\r\n       automaticallyImplyLeading: false,\r\n-      backgroundColor: Colors,\r\n+      backgroundColor: Colors.white,\r\n+      flexibleSpace: SafeArea(child: child),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686284667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     return AppBar(\r\n       elevation: 0,\r\n       automaticallyImplyLeading: false,\r\n       backgroundColor: Colors.white,\r\n-      flexibleSpace: SafeArea(child: child),\r\n+      flexibleSpace: SafeArea(child: Container()),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686290948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n     return AppBar(\r\n       elevation: 0,\r\n       automaticallyImplyLeading: false,\r\n       backgroundColor: Colors.white,\r\n-      flexibleSpace: SafeArea(child: Container()),\r\n+      flexibleSpace: SafeArea(child: Container(\r\n+        padding: EDo,\r\n+      )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686297699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       elevation: 0,\r\n       automaticallyImplyLeading: false,\r\n       backgroundColor: Colors.white,\r\n       flexibleSpace: SafeArea(child: Container(\r\n-        padding: EdgeInsets.only(right: ),\r\n+        padding: EdgeInsets.only(right: 1),\r\n       )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651686495746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             const CircleAvatar(\r\n               backgroundImage: AssetImage('assets/profilepic/userImage1.jpeg'),\r\n               maxRadius: 12.0,\r\n             ),\r\n-            SizedBox(width: 12.0)\r\n+            SizedBox(width: 12.0),\r\n           ],\r\n         ),\r\n       )),\r\n     );\r\n"
+                }
+            ],
+            "date": 1651686230376,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

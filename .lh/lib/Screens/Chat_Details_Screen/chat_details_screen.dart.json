@@ -1,0 +1,110 @@
+{
+    "sourceFile": "lib/Screens/Chat_Details_Screen/chat_details_screen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1651668241997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651668247311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+class ChatDetails extends StatelessWidget {\r\n+  const ChatDetails({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651668253981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class ChatDetails extends StatelessWidget {\r\n-  const ChatDetails({ Key? key }) : super(key: key);\r\n+  const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651668260420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Sca();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668266249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Sca();\r\n+    return Scaffold(\r\n+      body: ,\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668274568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: ,\r\n+      body: Center(child: const Text(data)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651668280077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: Center(child: const Text(data)),\r\n+      body: const Center(child: Text('Chat')),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651674245625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Scaffold(\r\n-      body: const Center(child: Text('Chat')),\r\n+    return const Scaffold(\r\n+      body: Center(\r\n+        child: Text('Chat '),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651685766791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,19 @@\n import 'package:flutter/material.dart';\r\n \r\n-class ChatDetails extends StatelessWidget {\r\n+class ChatDetails extends StatefulWidget {\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n+  State<ChatDetails> createState() => _ChatDetailsState();\r\n+}\r\n+\r\n+class _ChatDetailsState extends State<ChatDetails> {\r\n+  @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n-        child: Text('Chat '),\r\n+        child: Text('Chat Details'),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651685774517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n+  \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651685780217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n-  \r\n+  List<ChatMessa\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651685789461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n-  List<ChatMessa\r\n+  List<ChatMessage> chatMessage = []\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651685878913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,17 @@\n import 'package:flutter/material.dart';\r\n \r\n+\r\n+\r\n class ChatDetails extends StatefulWidget {\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n-  List<ChatMessage> chatMessage = []\r\n+  List<ChatMessage> chatMessage = [];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651685885501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n+enum Message\r\n \r\n-\r\n class ChatDetails extends StatefulWidget {\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651685892245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n-enum Message\r\n+enum MessageType {\r\n+  Sender\r\n+}\r\n \r\n class ChatDetails extends StatefulWidget {\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n"
+                },
+                {
+                    "date": 1651685898120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n enum MessageType {\r\n-  Sender\r\n+  Sender,\r\n+  Receiver,\r\n }\r\n \r\n class ChatDetails extends StatefulWidget {\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n"
+                },
+                {
+                    "date": 1651685903860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n enum MessageType {\r\n-  Sender,\r\n+  sender,\r\n   Receiver,\r\n }\r\n \r\n class ChatDetails extends StatefulWidget {\r\n"
+                },
+                {
+                    "date": 1651685918432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n enum MessageType {\r\n   sender,\r\n-  Receiver,\r\n+  receiver,\r\n }\r\n \r\n class ChatDetails extends StatefulWidget {\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n@@ -12,9 +12,9 @@\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n-  List<ChatMessage> chatMessage = [];\r\n+  List<ChatMessages> chatMessage = [];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651686000851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Models/chat_messages.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n enum MessageType {\r\n   sender,\r\n@@ -12,9 +13,11 @@\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n-  List<ChatMessages> chatMessage = [];\r\n+  List<ChatMessages> chatMessage = [\r\n+    \r\n+  ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651686008217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n-  List<ChatMessages> chatMessage = [\r\n-    \r\n+  List<ChatMessages> chatMessages = [\r\n+\r\n   ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n"
+                },
+                {
+                    "date": 1651686013503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n   List<ChatMessages> chatMessages = [\r\n-\r\n+    Chat\r\n   ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n"
+                },
+                {
+                    "date": 1651686023790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n   List<ChatMessages> chatMessages = [\r\n-    Chat\r\n+    ChatMessages(message: \"Hi John\", type: type)\r\n   ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n"
+                },
+                {
+                    "date": 1651686029325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n }\r\n \r\n class _ChatDetailsState extends State<ChatDetails> {\r\n   List<ChatMessages> chatMessages = [\r\n-    ChatMessages(message: \"Hi John\", type: Me)\r\n+    ChatMessages(message: \"Hi John\", type: Mes)\r\n   ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Scaffold(\r\n"
+                },
+                {
+                    "date": 1651733621101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   receiver,\r\n }\r\n \r\n class ChatDetails extends StatefulWidget {\r\n-  final Users \r\n+  final Users u\r\n   const ChatDetails({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   State<ChatDetails> createState() => _ChatDetailsState();\r\n"
+                }
+            ],
+            "date": 1651668241997,
+            "name": "Commit-0",
+            "content": "class  extends StatelessWidget {\r\n  const ({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

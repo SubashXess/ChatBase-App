@@ -1,0 +1,58 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/showSheet.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1651919812911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651919818758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stl\n\\ No newline at end of file\n+class ShowSheets extends StatelessWidget {\r\n+  const ShowSheets({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651919839120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class ShowSheets extends StatelessWidget {\r\n-  const ShowSheets({ Key? key }) : super(key: key);\r\n+  const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      \r\n\\ No newline at end of file\n+      c\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651919846564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      c\r\n+      decoration: BoxDec,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651919855431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      decoration: BoxDec,\r\n+    return widget(\r\n+      child: Container(\r\n+        decoration: BoxDecoration(),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651919860554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,13 @@\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return widget(\r\n+    return SafeArea(\r\n       child: Container(\r\n-        decoration: BoxDecoration(),\r\n+        decoration: BoxDecoration(\r\n+          \r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651919866910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n         decoration: BoxDecoration(\r\n-          \r\n+          borderRadius: BorderRadius.vertical()\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651919873041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n         decoration: BoxDecoration(\r\n-          borderRadius: BorderRadius.vertical()\r\n+          borderRadius: BorderRadius.vertical(top: Radius.)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651919878298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n         decoration: BoxDecoration(\r\n-          borderRadius: BorderRadius.vertical(top: Radius.)\r\n+          borderRadius: BorderRadius.vertical(top: const Radius.circular(29.0))\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651919883387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,12 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n-        decoration: BoxDecoration(\r\n-          borderRadius: BorderRadius.vertical(top: const Radius.circular(29.0))\r\n+        decoration: const BoxDecoration(\r\n+          borderRadius: BorderRadius.vertical(\r\n+            top: Radius.circular(29.0),\r\n+          ),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651919925650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-import 'package:flutter/material.dart';\r\n \r\n+\r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   @override\r\n"
+                }
+            ],
+            "date": 1651919812911,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

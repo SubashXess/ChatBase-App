@@ -1,0 +1,38 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/profil.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1651944823355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652002226271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +0,0 @@\n-import 'package:flutter/cupertino.dart';\r\n-import 'package:flutter/material.dart';\r\n-\r\n-// class ProfileScreenListItem {\r\n-//   String? title;\r\n-//   IconData? icon;\r\n-//   MaterialColor? color;\r\n-//   Color? textColor;\r\n-\r\n-//   ProfileScreenListItem({this.title, this.icon, this.color, this.textColor});\r\n-// }\r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1652002259333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-\n+class  extends StatelessWidget {\r\n+  const ({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1652002265912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+class Request extends StatelessWidget {\r\n+  const Request({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1652002275638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class Request extends StatelessWidget {\r\n-  const Request({ Key? key }) : super(key: key);\r\n+class RequestModal extends StatelessWidget {\r\n+  const RequestModal({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1652002282790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n-class RequestModal extends StatelessWidget {\r\n-  const RequestModal({ Key? key }) : super(key: key);\r\n+import 'package:flutter/material.dart';\r\n \r\n+class RequestModalSheet extends StatelessWidget {\r\n+  const RequestModalSheet({ Key? key }) : super(key: key);\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       \r\n"
+                }
+            ],
+            "date": 1651944823355,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/cupertino.dart';\r\nimport 'package:flutter/material.dart';\r\n\r\n// class ProfileScreenListItem {\r\n//   String? title;\r\n//   IconData? icon;\r\n//   MaterialColor? color;\r\n//   Color? textColor;\r\n\r\n//   ProfileScreenListItem({this.title, this.icon, this.color, this.textColor});\r\n// }\r\n"
+        }
+    ]
+}

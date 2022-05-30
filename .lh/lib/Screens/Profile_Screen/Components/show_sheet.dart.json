@@ -1,0 +1,350 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/show_sheet.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 83,
+            "patches": [
+                {
+                    "date": 1651919978799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651919985534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n+        width: ,\r\n         decoration: const BoxDecoration(\r\n           color: Colors.red,\r\n           borderRadius: BorderRadius.vertical(\r\n             top: Radius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651920001900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,12 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n-        width: ,\r\n+        width: double.infinity,\r\n         decoration: const BoxDecoration(\r\n           color: Colors.red,\r\n+          \r\n           borderRadius: BorderRadius.vertical(\r\n             top: Radius.circular(29.0),\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651920012456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n       child: Container(\r\n         width: double.infinity,\r\n         decoration: const BoxDecoration(\r\n           color: Colors.red,\r\n-          \r\n           borderRadius: BorderRadius.vertical(\r\n             top: Radius.circular(29.0),\r\n           ),\r\n         ),\r\n+        c\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651920032233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,16 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n+        alignment: Alignment.,\r\n         width: double.infinity,\r\n         decoration: const BoxDecoration(\r\n           color: Colors.red,\r\n           borderRadius: BorderRadius.vertical(\r\n             top: Radius.circular(29.0),\r\n           ),\r\n         ),\r\n-        c\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651920039954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Container(\r\n-        alignment: Alignment.,\r\n+        alignment: Alignment.bottomCenter,\r\n         width: double.infinity,\r\n+        he\r\n         decoration: const BoxDecoration(\r\n           color: Colors.red,\r\n           borderRadius: BorderRadius.vertical(\r\n             top: Radius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651920049640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n-      child: Container(\r\n+      child: \r\n+      Container(\r\n         alignment: Alignment.bottomCenter,\r\n         width: double.infinity,\r\n-        he\r\n         decoration: const BoxDecoration(\r\n           color: Colors.red,\r\n           borderRadius: BorderRadius.vertical(\r\n             top: Radius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651920061718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,18 +5,18 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n-      child: \r\n-      Container(\r\n-        alignment: Alignment.bottomCenter,\r\n-        width: double.infinity,\r\n-        decoration: const BoxDecoration(\r\n-          color: Colors.red,\r\n-          borderRadius: BorderRadius.vertical(\r\n-            top: Radius.circular(29.0),\r\n-          ),\r\n-        ),\r\n-      ),\r\n+      child: Dialog\r\n+      // Container(\r\n+      //   alignment: Alignment.bottomCenter,\r\n+      //   width: double.infinity,\r\n+      //   decoration: const BoxDecoration(\r\n+      //     color: Colors.red,\r\n+      //     borderRadius: BorderRadius.vertical(\r\n+      //       top: Radius.circular(29.0),\r\n+      //     ),\r\n+      //   ),\r\n+      // ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651920093998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n-      child: Dialog\r\n+      child: \r\n       // Container(\r\n       //   alignment: Alignment.bottomCenter,\r\n       //   width: double.infinity,\r\n       //   decoration: const BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1651920104620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,18 +5,19 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n-      child: \r\n-      // Container(\r\n-      //   alignment: Alignment.bottomCenter,\r\n-      //   width: double.infinity,\r\n-      //   decoration: const BoxDecoration(\r\n-      //     color: Colors.red,\r\n-      //     borderRadius: BorderRadius.vertical(\r\n-      //       top: Radius.circular(29.0),\r\n-      //     ),\r\n-      //   ),\r\n-      // ),\r\n+      child: Expanded(\r\n+        child: Container(\r\n+          alignment: Alignment.bottomCenter,\r\n+          width: double.infinity,\r\n+          decoration: const BoxDecoration(\r\n+            color: Colors.red,\r\n+            borderRadius: BorderRadius.vertical(\r\n+              top: Radius.circular(29.0),\r\n+            ),\r\n+          ),\r\n+        ),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651920134138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n   Widget build(BuildContext context) {\r\n     return SafeArea(\r\n       child: Expanded(\r\n         child: Container(\r\n-          alignment: Alignment.bottomCenter,\r\n           width: double.infinity,\r\n           decoration: const BoxDecoration(\r\n             color: Colors.red,\r\n             borderRadius: BorderRadius.vertical(\r\n"
+                },
+                {
+                    "date": 1651920308326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n+          child: showB,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920324433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: showB,\r\n+          child: ,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920331937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: ,\r\n+          child: showN,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920341090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: showN,\r\n+          child: showBo,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920366222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: showBo,\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920390677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,15 +8,15 @@\n     return SafeArea(\r\n       child: Expanded(\r\n         child: Container(\r\n           width: double.infinity,\r\n+          height: ,\r\n           decoration: const BoxDecoration(\r\n             color: Colors.red,\r\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920404223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context),size;\r\n     return SafeArea(\r\n       child: Expanded(\r\n         child: Container(\r\n           width: double.infinity,\r\n"
+                },
+                {
+                    "date": 1651920413588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,14 @@\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context),size;\r\n+    Size size = MediaQuery.of(context).size;\r\n     return SafeArea(\r\n       child: Expanded(\r\n         child: Container(\r\n           width: double.infinity,\r\n-          height: ,\r\n+          height: size.he,\r\n           decoration: const BoxDecoration(\r\n             color: Colors.red,\r\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651920435156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,16 @@\n     return SafeArea(\r\n       child: Expanded(\r\n         child: Container(\r\n           width: double.infinity,\r\n-          height: size.he,\r\n+          height: size.height,\r\n           decoration: const BoxDecoration(\r\n             color: Colors.red,\r\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n+          child: ,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920441285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: ,\r\n+          child: Container(\r\n+            child: ,\r\n+          ),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651920447771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: Container(\r\n-            child: ,\r\n+            child: Column(\r\n+              children: [],\r\n+            ),\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920455169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: Container(\r\n+            padding: EdgeInsets.a,\r\n             child: Column(\r\n               children: [],\r\n             ),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651920460665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: Container(\r\n-            padding: EdgeInsets.a,\r\n+            padding: EdgeInsets.only(),\r\n             child: Column(\r\n               children: [],\r\n             ),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651920466975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: Container(\r\n-            padding: EdgeInsets.only(),\r\n+            (padding: EdgeInsets.only),\r\n             child: Column(\r\n               children: [],\r\n             ),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651920474812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,10 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: Container(\r\n-            (padding: EdgeInsets.only),\r\n-            child: Column(\r\n-              children: [],\r\n-            ),\r\n+          child: Column(\r\n+            children: [],\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920485722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,12 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: Column(\r\n-            children: [],\r\n+          child: ListV(\r\n+            children: [\r\n+\r\n+            ],\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920492648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,10 @@\n             borderRadius: BorderRadius.vertical(\r\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n-          child: ListV(\r\n-            children: [\r\n-\r\n-            ],\r\n+          child: ListView.builder(\r\n+            \r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920499864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: ListView.builder(\r\n-            \r\n+            itemCount: ,\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920508416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: ListView.builder(\r\n-            itemCount: ,\r\n+            itemCount: 10,\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920520266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n             ),\r\n           ),\r\n           child: ListView.builder(\r\n             itemCount: 10,\r\n+            s\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920530623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n             ),\r\n           ),\r\n           child: ListView.builder(\r\n             itemCount: 10,\r\n-            s\r\n+            shrinkWrap: true,\r\n+             itemBuilder: ,\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920539750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n           ),\r\n           child: ListView.builder(\r\n             itemCount: 10,\r\n             shrinkWrap: true,\r\n-             itemBuilder: ,\r\n+             itemBuilder: (context, index),\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920544907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n           ),\r\n           child: ListView.builder(\r\n             itemCount: 10,\r\n             shrinkWrap: true,\r\n-             itemBuilder: (context, index),\r\n+             itemBuilder: (),\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920550310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n           ),\r\n           child: ListView.builder(\r\n             itemCount: 10,\r\n             shrinkWrap: true,\r\n-             itemBuilder: (),\r\n+             itemBuilder: ((context, index)),\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920555366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n           ),\r\n           child: ListView.builder(\r\n             itemCount: 10,\r\n             shrinkWrap: true,\r\n-             itemBuilder: ((context, index)),\r\n+            itemBuilder: ((context, index) {\r\n+              re\r\n+            }),\r\n           ),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651920562318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n           child: ListView.builder(\r\n             itemCount: 10,\r\n             shrinkWrap: true,\r\n             itemBuilder: ((context, index) {\r\n-              re\r\n+              return ListT\r\n             }),\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651920579734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,11 @@\n           child: ListView.builder(\r\n             itemCount: 10,\r\n             shrinkWrap: true,\r\n             itemBuilder: ((context, index) {\r\n-              return ListT\r\n+              return ListTile(\r\n+                leading: ,\r\n+              );\r\n             }),\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651920666016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n+  \r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return SafeArea(\r\n"
+                },
+                {
+                    "date": 1651920686814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  \r\n+  List<Profile\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920697005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  List<Profile\r\n+  List<ProfileScreenListItem>\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920702663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  List<ProfileScreenListItem>\r\n+  List<ProfileScreenListItem> pro\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920709446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  List<ProfileScreenListItem> pro\r\n+  List<ProfileScreenListItem> profileScreenListUI\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920715533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  List<ProfileScreenListItem> profileScreenListUI\r\n+  List<ProfileScreenListItem> profileScreenListItem =[]\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920851422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n+import 'package:chatbase_app/Screens/Profile_Screen/Components/profile_screen_list_item.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  List<ProfileScreenListItem> profileScreenListItem =[]\r\n+  List<ProfileScreenListItem> profileScreenListItem =[];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920857060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n \r\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n-  List<ProfileScreenListItem> profileScreenListItem =[];\r\n+  List<ProfileScreenListItem> profileScreenListItem =[\r\n+    ProfileScreenListItem()\r\n+  ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651920862685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem()\r\n+    ProfileScreenListItem(title: )\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920869688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: )\r\n+    ProfileScreenListItem(title: \"Edit profile\")\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920879753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\")\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: )\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920888352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: )\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons)\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920893690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons)\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icon(Icons.abc))\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920900068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icon(Icons.abc))\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.)\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920906859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.)\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_r)\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920915289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n class ShowSheets extends StatelessWidget {\r\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_r)\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.)\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920921440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,38 @@\n+import 'package:chatbase_app/Screens/Profile_Screen/Components/profile_screen_list_item.dart';\r\n+import 'package:flutter/material.dart';\r\n+\r\n+class ShowSheets extends StatelessWidget {\r\n+  const ShowSheets({Key? key}) : super(key: key);\r\n+\r\n+  List<ProfileScreenListItem> profileScreenListItem =[\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n+  ];\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context).size;\r\n+    return SafeArea(\r\n+      child: Expanded(\r\n+        child: Container(\r\n+          width: double.infinity,\r\n+          height: size.height,\r\n+          decoration: const BoxDecoration(\r\n+            color: Colors.red,\r\n+            borderRadius: BorderRadius.vertical(\r\n+              top: Radius.circular(29.0),\r\n+            ),\r\n+          ),\r\n+          child: ListView.builder(\r\n+            itemCount: 10,\r\n+            shrinkWrap: true,\r\n+            itemBuilder: ((context, index) {\r\n+              return ListTile(\r\n+                leading: ,\r\n+              );\r\n+            }),\r\n+          ),\r\n+        ),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1651920929258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n   const ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -35,42 +37,4 @@\n       ),\r\n     );\r\n   }\r\n }\r\n-import 'package:chatbase_app/Screens/Profile_Screen/Components/profile_screen_list_item.dart';\r\n-import 'package:flutter/material.dart';\r\n-\r\n-class ShowSheets extends StatelessWidget {\r\n-  const ShowSheets({Key? key}) : super(key: key);\r\n-\r\n-  List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.)\r\n-  ];\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context).size;\r\n-    return SafeArea(\r\n-      child: Expanded(\r\n-        child: Container(\r\n-          width: double.infinity,\r\n-          height: size.height,\r\n-          decoration: const BoxDecoration(\r\n-            color: Colors.red,\r\n-            borderRadius: BorderRadius.vertical(\r\n-              top: Radius.circular(29.0),\r\n-            ),\r\n-          ),\r\n-          child: ListView.builder(\r\n-            itemCount: 10,\r\n-            shrinkWrap: true,\r\n-            itemBuilder: ((context, index) {\r\n-              return ListTile(\r\n-                leading: ,\r\n-              );\r\n-            }),\r\n-          ),\r\n-        ),\r\n-      ),\r\n-    );\r\n-  }\r\n-}\r\n"
+                },
+                {
+                    "date": 1651920937910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import 'package:chatbase_app/Screens/Profile_Screen/Components/profile_screen_list_item.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ShowSheets extends StatelessWidget {\r\n-  const ShowSheets({Key? key}) : super(key: key);\r\n+   ShowSheets({Key? key}) : super(key: key);\r\n \r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n+    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651920946236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,15 @@\n import 'package:chatbase_app/Screens/Profile_Screen/Components/profile_screen_list_item.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n-class ShowSheets extends StatelessWidget {\r\n-   ShowSheets({Key? key}) : super(key: key);\r\n+class ShowSheets extends StatefulWidget {\r\n+  const ShowSheets({Key? key}) : super(key: key);\r\n \r\n+  @override\r\n+  State<ShowSheets> createState() => _ShowSheetsState();\r\n+}\r\n+\r\n+class _ShowSheetsState extends State<ShowSheets> {\r\n   List<ProfileScreenListItem> profileScreenListItem =[\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n     ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n"
+                },
+                {
+                    "date": 1651920995938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: ListView.builder(\r\n-            itemCount: 10,\r\n+            itemCount: ,\r\n             shrinkWrap: true,\r\n             itemBuilder: ((context, index) {\r\n               return ListTile(\r\n                 leading: ,\r\n"
+                },
+                {
+                    "date": 1651921002146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n               top: Radius.circular(29.0),\r\n             ),\r\n           ),\r\n           child: ListView.builder(\r\n-            itemCount: ,\r\n+            itemCount: profileScreenListItem.length,\r\n             shrinkWrap: true,\r\n             itemBuilder: ((context, index) {\r\n               return ListTile(\r\n                 leading: ,\r\n"
+                },
+                {
+                    "date": 1651921034632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             itemCount: profileScreenListItem.length,\r\n             shrinkWrap: true,\r\n             itemBuilder: ((context, index) {\r\n               return ListTile(\r\n-                leading: ,\r\n+                leading: Container(),\r\n               );\r\n             }),\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651921042817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,11 @@\n             itemCount: profileScreenListItem.length,\r\n             shrinkWrap: true,\r\n             itemBuilder: ((context, index) {\r\n               return ListTile(\r\n-                leading: Container(),\r\n+                leading: Container(\r\n+                  height: 45.0,\r\n+                ),\r\n               );\r\n             }),\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651921050657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,10 @@\n             itemBuilder: ((context, index) {\r\n               return ListTile(\r\n                 leading: Container(\r\n                   height: 45.0,\r\n+                  width: 45.0,\r\n+                  decoration: BoxDecoration(),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921060317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,11 @@\n               return ListTile(\r\n                 leading: Container(\r\n                   height: 45.0,\r\n                   width: 45.0,\r\n-                  decoration: BoxDecoration(),\r\n+                  decoration: BoxDecoration(\r\n+                    borderRadius: BorderRadius.circular(29.0)\r\n+                  ),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921073114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,10 @@\n                 leading: Container(\r\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n-                    borderRadius: BorderRadius.circular(29.0)\r\n+                    borderRadius: BorderRadius.circular(29.0),\r\n+                    color: \r\n                   ),\r\n                 ),\r\n               );\r\n             }),\r\n"
+                },
+                {
+                    "date": 1651921081115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: \r\n+                    color: profileScreenListItem[index]\r\n                   ),\r\n                 ),\r\n               );\r\n             }),\r\n"
+                },
+                {
+                    "date": 1651921087850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: profileScreenListItem[index]\r\n+                    color: profileScreenListItem[index].bgColor\r\n                   ),\r\n                 ),\r\n               );\r\n             }),\r\n"
+                },
+                {
+                    "date": 1651921094775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: profileScreenListItem[index].bgColor\r\n+                    color: profileScreenListItem[index].bgColor!.shade50\r\n                   ),\r\n                 ),\r\n               );\r\n             }),\r\n"
+                },
+                {
+                    "date": 1651921103414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: profileScreenListItem[index].bgColor!.shade50\r\n+                    color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n                 ),\r\n               );\r\n             }),\r\n"
+                },
+                {
+                    "date": 1651921163231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: profileScreenListItem[index].bgColor!.shade50,\r\n+                    color: profileScreenListItem[index].bgColor!.sha,\r\n                   ),\r\n                 ),\r\n               );\r\n             }),\r\n"
+                },
+                {
+                    "date": 1651921214739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,25 @@\n   State<ShowSheets> createState() => _ShowSheetsState();\r\n }\r\n \r\n class _ShowSheetsState extends State<ShowSheets> {\r\n-  List<ProfileScreenListItem> profileScreenListItem =[\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n-    ProfileScreenListItem(title: \"Edit profile\", icon: Icons.person_rounded, bgColor: Colors.green),\r\n+  List<ProfileScreenListItem> profileScreenListItem = [\r\n+    ProfileScreenListItem(\r\n+        title: \"Edit profile\",\r\n+        icon: Icons.person_rounded,\r\n+        bgColor: Colors.green),\r\n+    ProfileScreenListItem(\r\n+        title: \"Edit profile\",\r\n+        icon: Icons.person_rounded,\r\n+        bgColor: Colors.green),\r\n+    ProfileScreenListItem(\r\n+        title: \"Edit profile\",\r\n+        icon: Icons.person_rounded,\r\n+        bgColor: Colors.green),\r\n+    ProfileScreenListItem(\r\n+        title: \"Edit profile\",\r\n+        icon: Icons.person_rounded,\r\n+        bgColor: Colors.green),\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -39,10 +51,11 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: profileScreenListItem[index].bgColor!.sha,\r\n+                    color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n+                  child: Icon,\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921221044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n-                  child: Icon,\r\n+                  child: Icon(profileScreenListItem),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921226502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem),\r\n+                  child: Icon(profileScreenListItem[index].),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921232008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].),\r\n+                  child: Icon(profileScreenListItem[index].icon, s),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921239571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].icon, s),\r\n+                  child: Icon(profileScreenListItem[index].icon, size: 24.0, c),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921246114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].icon, size: 24.0, c),\r\n+                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index],),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921281315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   List<ProfileScreenListItem> profileScreenListItem = [\r\n     ProfileScreenListItem(\r\n         title: \"Edit profile\",\r\n         icon: Icons.person_rounded,\r\n-        bgColor: Colors.green),\r\n+        color: Colors.green),\r\n     ProfileScreenListItem(\r\n         title: \"Edit profile\",\r\n         icon: Icons.person_rounded,\r\n         bgColor: Colors.green),\r\n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].bgColor!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index],),\r\n+                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].,),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921287014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,13 @@\n         color: Colors.green),\r\n     ProfileScreenListItem(\r\n         title: \"Edit profile\",\r\n         icon: Icons.person_rounded,\r\n-        bgColor: Colors.green),\r\n+        color: Colors.green),\r\n     ProfileScreenListItem(\r\n         title: \"Edit profile\",\r\n         icon: Icons.person_rounded,\r\n-        bgColor: Colors.green),\r\n+        color: Colors.green),\r\n     ProfileScreenListItem(\r\n         title: \"Edit profile\",\r\n         icon: Icons.person_rounded,\r\n         bgColor: Colors.green),\r\n"
+                },
+                {
+                    "date": 1651921293412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         color: Colors.green),\r\n     ProfileScreenListItem(\r\n         title: \"Edit profile\",\r\n         icon: Icons.person_rounded,\r\n-        bgColor: Colors.green),\r\n+        color: Colors.green),\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -51,9 +51,9 @@\n                   height: 45.0,\r\n                   width: 45.0,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n-                    color: profileScreenListItem[index].bgColor!.shade50,\r\n+                    color: profileScreenListItem[index].color!.shade50,\r\n                   ),\r\n                   child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].,),\r\n                 ),\r\n               );\r\n"
+                },
+                {
+                    "date": 1651921299335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].color!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].,),\r\n+                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].color.s,),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921305181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].color!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].color.s,),\r\n+                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].color!.shade400,),\r\n                 ),\r\n               );\r\n             }),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1651921315926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,23 +10,15 @@\n \r\n class _ShowSheetsState extends State<ShowSheets> {\r\n   List<ProfileScreenListItem> profileScreenListItem = [\r\n     ProfileScreenListItem(\r\n-        title: \"Edit profile\",\r\n-        icon: Icons.person_rounded,\r\n-        color: Colors.green),\r\n+        title: \"Edit profile\", icon: Icons.person_rounded, color: Colors.green),\r\n     ProfileScreenListItem(\r\n-        title: \"Edit profile\",\r\n-        icon: Icons.person_rounded,\r\n-        color: Colors.green),\r\n+        title: \"Edit profile\", icon: Icons.person_rounded, color: Colors.green),\r\n     ProfileScreenListItem(\r\n-        title: \"Edit profile\",\r\n-        icon: Icons.person_rounded,\r\n-        color: Colors.green),\r\n+        title: \"Edit profile\", icon: Icons.person_rounded, color: Colors.green),\r\n     ProfileScreenListItem(\r\n-        title: \"Edit profile\",\r\n-        icon: Icons.person_rounded,\r\n-        color: Colors.green),\r\n+        title: \"Edit profile\", icon: Icons.person_rounded, color: Colors.green),\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -53,10 +45,15 @@\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.circular(29.0),\r\n                     color: profileScreenListItem[index].color!.shade50,\r\n                   ),\r\n-                  child: Icon(profileScreenListItem[index].icon, size: 24.0, color: profileScreenListItem[index].color!.shade400,),\r\n+                  child: Icon(\r\n+                    profileScreenListItem[index].icon,\r\n+                    size: 24.0,\r\n+                    color: profileScreenListItem[index].color!.shade400,\r\n+                  ),\r\n                 ),\r\n+                title: ,\r\n               );\r\n             }),\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651921321476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n                     size: 24.0,\r\n                     color: profileScreenListItem[index].color!.shade400,\r\n                   ),\r\n                 ),\r\n-                title: Text(profileScreenListItem),\r\n+                title: Text(profileScreenListItem[]),\r\n               );\r\n             }),\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651922355299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         color: Colors.blue),\r\n     ProfileScreenListItem(\r\n         title: \"Account Settings\", icon: Icons.person_rounded, color: Colors.green),\r\n     ProfileScreenListItem(\r\n-        title: \"Settings\", icon: Icons.settings_r color: Colors.green),\r\n+        title: \"Settings\", icon: Icons.settings_ro color: Colors.green),\r\n   ];\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                }
+            ],
+            "date": 1651919978799,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass ShowSheets extends StatelessWidget {\r\n  const ShowSheets({Key? key}) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return SafeArea(\r\n      child: Container(\r\n        decoration: const BoxDecoration(\r\n          color: Colors.red,\r\n          borderRadius: BorderRadius.vertical(\r\n            top: Radius.circular(29.0),\r\n          ),\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

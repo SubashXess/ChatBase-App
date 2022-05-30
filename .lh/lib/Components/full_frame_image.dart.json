@@ -1,0 +1,430 @@
+{
+    "sourceFile": "lib/Components/full_frame_image.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 103,
+            "patches": [
+                {
+                    "date": 1651832118758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651832128267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class FullFrame extends StatelessWidget {\r\n-  const FullFrame({ Key? key }) : super(key: key);\r\n+class FullFrameImage extends StatelessWidget {\r\n+  const FullFrameImage({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651832134047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class FullFrameImage extends StatelessWidget {\r\n-  const FullFrameImage({ Key? key }) : super(key: key);\r\n+class  extends StatelessWidget {\r\n+  const ({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651832140844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class  extends StatelessWidget {\r\n-  const ({ Key? key }) : super(key: key);\r\n+class ShowFullFrameImage extends StatelessWidget {\r\n+  const ShowFullFrameImage({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651832151230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class ShowFullFrameImage extends StatelessWidget {\r\n-  const ShowFullFrameImage({ Key? key }) : super(key: key);\r\n+  const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Scaffold();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651832156475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Scaffold();\r\n+    return Scaffold(\r\n+      body: ,\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832182816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: ,\r\n+      body: C,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832190240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: C,\r\n+      body: Center(child: Text,),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832195854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      body: Center(child: Text,),\r\n+      body: Center(child: const Text('Image'),),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832205438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,12 @@\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Scaffold(\r\n-      body: Center(child: const Text('Image'),),\r\n+    return const Scaffold(\r\n+      appBar: AppBar(),\r\n+      body: Center(\r\n+        child: Text('Image'),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832216369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Scaffold(\r\n-      appBar: AppBar(),\r\n+    return  Scaffold(\r\n+      appBar: AppBar(title: ),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832224496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: ),\r\n+      appBar: AppBar(title: Text(name)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832231261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: Text(name)),\r\n+      appBar: AppBar(title: Text(name, style: TextSt,)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832239153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: Text(name, style: TextSt,)),\r\n+      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor),)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832245484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor),)),\r\n+      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, ),)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832251958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, ),)),\r\n+      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, fontWeight: FontW),)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832259015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, fontWeight: FontW),)),\r\n+      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, fontWeight: FontWeight.bold, overflow: Over),)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832264512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return  Scaffold(\r\n-      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, fontWeight: FontWeight.bold, overflow: Over),)),\r\n+      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, fontWeight: FontWeight.bold, overflow: TextOver),)),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832270982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,19 @@\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return  Scaffold(\r\n-      appBar: AppBar(title: Text(name, style: TextStyle(color: kPrimaryColor, fontSize: 20.0, fontWeight: FontWeight.bold, overflow: TextOver),)),\r\n+    return Scaffold(\r\n+      appBar: AppBar(\r\n+          title: Text(\r\n+        name,\r\n+        style: TextStyle(\r\n+          color: kPrimaryColor,\r\n+          fontSize: 20.0,\r\n+          fontWeight: FontWeight.bold,\r\n+          overflow: TextOverflow.ellipsis,\r\n+        ),\r\n+      )),\r\n       body: Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832277610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n           title: Text(\r\n         name,\r\n         style: TextStyle(\r\n           color: kPrimaryColor,\r\n+          \r\n           fontSize: 20.0,\r\n           fontWeight: FontWeight.bold,\r\n           overflow: TextOverflow.ellipsis,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651832311821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n           title: Text(\r\n-        name,\r\n+        \"name\",\r\n+        maxLines: 1,\r\n         style: TextStyle(\r\n           color: kPrimaryColor,\r\n-          \r\n           fontSize: 20.0,\r\n           fontWeight: FontWeight.bold,\r\n           overflow: TextOverflow.ellipsis,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651832326419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n+  final String name;\r\n+  final String\r\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651832332684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n   final String name;\r\n-  final String\r\n+  final String profilePic;\r\n   const ShowFullFrameImage({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651832339964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n   final String name;\r\n   final String profilePic;\r\n-  const ShowFullFrameImage({Key? key}) : super(key: key);\r\n+  const ShowFullFrameImage({Key? key, this.name, required this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651832346871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n   final String name;\r\n   final String profilePic;\r\n-  const ShowFullFrameImage({Key? key, this.name, required this.profilePic}) : super(key: key);\r\n+  const ShowFullFrameImage({Key? key, required this.name, required this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n@@ -19,9 +19,9 @@\n           fontWeight: FontWeight.bold,\r\n           overflow: TextOverflow.ellipsis,\r\n         ),\r\n       )),\r\n-      body: Center(\r\n+      body: const Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651832352176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,24 +3,27 @@\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n   final String name;\r\n   final String profilePic;\r\n-  const ShowFullFrameImage({Key? key, required this.name, required this.profilePic}) : super(key: key);\r\n+  const ShowFullFrameImage(\r\n+      {Key? key, required this.name, required this.profilePic})\r\n+      : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n-          title: Text(\r\n-        \"name\",\r\n-        maxLines: 1,\r\n-        style: TextStyle(\r\n-          color: kPrimaryColor,\r\n-          fontSize: 20.0,\r\n-          fontWeight: FontWeight.bold,\r\n-          overflow: TextOverflow.ellipsis,\r\n+        title: const Text(\r\n+          \"name\",\r\n+          maxLines: 1,\r\n+          style: TextStyle(\r\n+            color: kPrimaryColor,\r\n+            fontSize: 20.0,\r\n+            fontWeight: FontWeight.bold,\r\n+            overflow: TextOverflow.ellipsis,\r\n+          ),\r\n         ),\r\n-      )),\r\n+      ),\r\n       body: const Center(\r\n         child: Text('Image'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651832523997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n         title: const Text(\r\n-          \"name\",\r\n+          name,\r\n           maxLines: 1,\r\n           style: TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n"
+                },
+                {
+                    "date": 1651832529250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,12 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n-        title: const Text(\r\n+        title:  Text(\r\n           name,\r\n           maxLines: 1,\r\n-          style: TextStyle(\r\n+          style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n"
+                },
+                {
+                    "date": 1651832535235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n             overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n       ),\r\n-      body: const Center(\r\n-        child: Text('Image'),\r\n+      body:  Center(\r\n+        child: Text(image),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832565676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n-        title:  Text(\r\n+        title: Text(\r\n           name,\r\n           maxLines: 1,\r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n@@ -21,11 +21,12 @@\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n+        \r\n       ),\r\n-      body:  Center(\r\n-        child: Text(image),\r\n+      body: Center(\r\n+        child: Text(profilePic),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651832571027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n-        \r\n+        backgroundColor: Colors.white,\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832579837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,10 @@\n             overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n         backgroundColor: Colors.white,\r\n+        elevation: 0.0,\r\n+        \r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832610452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n           ),\r\n         ),\r\n         backgroundColor: Colors.white,\r\n         elevation: 0.0,\r\n-        \r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832615630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n+      \r\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n           maxLines: 1,\r\n"
+                },
+                {
+                    "date": 1651832627771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n-      \r\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n           maxLines: 1,\r\n"
+                },
+                {
+                    "date": 1651832635356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n-        backgroundColor: Colors.white,\r\n+        backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832688159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n           ),\r\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n+        l\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832693270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n           ),\r\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n-        l\r\n+        automaticallyImplyLeading: false,\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832699194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n+        leading: ,\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832706659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n-        leading: ,\r\n+        leading: Icon(Icons.ba),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832712645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n-        leading: Icon(Icons.ba),\r\n+        leading: Icon(Icons.arrow_bac),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832718148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n-        leading: Icon(Icons.arrow_bac),\r\n+        leading: Icon(Icons.arrow_back_ios_new_rounded, c),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832725213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n-        leading: Icon(Icons.arrow_back_ios_new_rounded, c),\r\n+        leading: Icon(Icons.arrow_back_ios_new_rounded, color: kPrimaryLightColor,),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832731404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,13 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n-        leading: Icon(Icons.arrow_back_ios_new_rounded, color: kPrimaryLightColor,),\r\n+        leading: const Icon(\r\n+          Icons.arrow_back_ios_new_rounded,\r\n+          color: kPrimaryLightColor,\r\n+          size: 20.0,\r\n+        ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832741426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         leading: const Icon(\r\n           Icons.arrow_back_ios_new_rounded,\r\n-          color: kPrimaryLightColor,\r\n+          color: kP,\r\n           size: 20.0,\r\n         ),\r\n       ),\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651832758043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n           maxLines: 1,\r\n+          textAlign: TextA,\r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n             fontWeight: FontWeight.bold,\r\n@@ -26,9 +27,9 @@\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         leading: const Icon(\r\n           Icons.arrow_back_ios_new_rounded,\r\n-          color: kP,\r\n+          color: kPrimaryColor,\r\n           size: 20.0,\r\n         ),\r\n       ),\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651832767949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,15 @@\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n           maxLines: 1,\r\n-          textAlign: TextA,\r\n+          textAlign: TextAlign.center,\r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n+            te\r\n           ),\r\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n"
+                },
+                {
+                    "date": 1651832774585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,14 @@\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n           maxLines: 1,\r\n-          textAlign: TextAlign.center,\r\n+          \r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n-            te\r\n           ),\r\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n"
+                },
+                {
+                    "date": 1651832790695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n           maxLines: 1,\r\n-          \r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n             fontWeight: FontWeight.bold,\r\n"
+                },
+                {
+                    "date": 1651832831651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,16 +11,18 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n-        title: Text(\r\n-          name,\r\n-          maxLines: 1,\r\n-          style: const TextStyle(\r\n-            color: kPrimaryColor,\r\n-            fontSize: 20.0,\r\n-            fontWeight: FontWeight.bold,\r\n-            overflow: TextOverflow.ellipsis,\r\n+        title: Center(\r\n+          child: Text(\r\n+            name,\r\n+            maxLines: 1,\r\n+            style: const TextStyle(\r\n+              color: kPrimaryColor,\r\n+              fontSize: 20.0,\r\n+              fontWeight: FontWeight.bold,\r\n+              overflow: TextOverflow.ellipsis,\r\n+            ),\r\n           ),\r\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n"
+                },
+                {
+                    "date": 1651832862771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n+        \r\n         leading: const Icon(\r\n           Icons.arrow_back_ios_new_rounded,\r\n           color: kPrimaryColor,\r\n           size: 20.0,\r\n"
+                },
+                {
+                    "date": 1651832869881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n-        \r\n+        centerTitle: true,\r\n         leading: const Icon(\r\n           Icons.arrow_back_ios_new_rounded,\r\n           color: kPrimaryColor,\r\n           size: 20.0,\r\n"
+                },
+                {
+                    "date": 1651832896107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,25 +11,23 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n-        title: Center(\r\n-          child: Text(\r\n-            name,\r\n-            maxLines: 1,\r\n-            style: const TextStyle(\r\n-              color: kPrimaryColor,\r\n-              fontSize: 20.0,\r\n-              fontWeight: FontWeight.bold,\r\n-              overflow: TextOverflow.ellipsis,\r\n-            ),\r\n+        title: Text(\r\n+          name,\r\n+          maxLines: 1,\r\n+          style: const TextStyle(\r\n+            color: kPrimaryColor,\r\n+            fontSize: 20.0,\r\n+            fontWeight: FontWeight.bold,\r\n+            overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n-        leading: const Icon(\r\n+        leading: const IconButton(\r\n           Icons.arrow_back_ios_new_rounded,\r\n           color: kPrimaryColor,\r\n           size: 20.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651832903825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n         leading: const IconButton(\r\n-          Icons.arrow_back_ios_new_rounded,\r\n+        icon:  Icons.arrow_back_ios_new_rounded,\r\n           color: kPrimaryColor,\r\n           size: 20.0,\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651832926542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,12 +25,12 @@\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n-        leading: const IconButton(\r\n-        icon:  Icons.arrow_back_ios_new_rounded,\r\n+        leading:  IconButton(\r\n+        icon:  Icon(Icons.arrow_back_ios_new_rounded,\r\n           color: kPrimaryColor,\r\n-          size: 20.0,\r\n+          size: 20.0,)\r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832932355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,12 +25,15 @@\n         backgroundColor: Colors.red,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n-        leading:  IconButton(\r\n-        icon:  Icon(Icons.arrow_back_ios_new_rounded,\r\n-          color: kPrimaryColor,\r\n-          size: 20.0,)\r\n+        leading: IconButton(\r\n+          icon: Icon(\r\n+            Icons.arrow_back_ios_new_rounded,\r\n+            color: kPrimaryColor,\r\n+            size: 20.0,\r\n+          ),\r\n+          on\r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832942236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             Icons.arrow_back_ios_new_rounded,\r\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n-          on\r\n+          onPressed: () => Navigat,\r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832947717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             Icons.arrow_back_ios_new_rounded,\r\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n-          onPressed: () => Navigat,\r\n+          onPressed: () => Navigator.of(context).p,\r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832953347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,14 @@\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n         leading: IconButton(\r\n-          icon: Icon(\r\n+          icon: const Icon(\r\n             Icons.arrow_back_ios_new_rounded,\r\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n-          onPressed: () => Navigator.of(context).p,\r\n+          onPressed: () => Navigator.of(context).pop(),\r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832961881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n+          \r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832971921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n+          highlightColor: Colors.transparent,\r\n           \r\n         ),\r\n       ),\r\n       body: Center(\r\n"
+                },
+                {
+                    "date": 1651832981544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n             size: 20.0,\r\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n           highlightColor: Colors.transparent,\r\n-          \r\n+          splashColor: ,\r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651832991783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,10 @@\n             size: 20.0,\r\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n           highlightColor: Colors.transparent,\r\n-          splashColor: ,\r\n+          splashColor: kPrimaryLightColor,\r\n+          \r\n         ),\r\n       ),\r\n       body: Center(\r\n         child: Text(profilePic),\r\n"
+                },
+                {
+                    "date": 1651833022862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,13 +34,11 @@\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n           highlightColor: Colors.transparent,\r\n           splashColor: kPrimaryLightColor,\r\n-          \r\n+          splashRadius: 20.0,\r\n         ),\r\n       ),\r\n-      body: Center(\r\n-        child: Text(profilePic),\r\n-      ),\r\n+      body: Text(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833031111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,8 @@\n           splashColor: kPrimaryLightColor,\r\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n-      body: Text(profilePic),\r\n+      body: Container(),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833038506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,10 @@\n           splashColor: kPrimaryLightColor,\r\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n-      body: Container(),\r\n+      body: Container(\r\n+        child: Image,\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833047393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: Container(\r\n-        child: Image,\r\n+        child: Image.asset(profilePic),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833054007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: Container(\r\n-        child: Image.asset(profilePic),\r\n+        child: Image.asset(profilePic, ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833060570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: Container(\r\n-        child: Image.asset(profilePic, ),\r\n+        child: Image.asset(profilePic, fit: Box),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833067655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,10 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: Container(\r\n-        child: Image.asset(profilePic, fit: Box),\r\n+        height: ,\r\n+        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833082940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context)\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n"
+                },
+                {
+                    "date": 1651833089346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context)\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n         title: Text(\r\n           name,\r\n@@ -39,9 +39,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: Container(\r\n-        height: ,\r\n+        height: size.,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651833095019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,10 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: Container(\r\n-        height: size.,\r\n+        height: size.height,\r\n+        width: size.,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651833116323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             fontWeight: FontWeight.bold,\r\n             overflow: TextOverflow.ellipsis,\r\n           ),\r\n         ),\r\n-        backgroundColor: Colors.red,\r\n+        backgroundColor: Colors.white,\r\n         elevation: 0.0,\r\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n         leading: IconButton(\r\n@@ -40,9 +40,9 @@\n         ),\r\n       ),\r\n       body: Container(\r\n         height: size.height,\r\n-        width: size.,\r\n+        width: size.width,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651833247723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,26 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n-class ShowFullFrameImage extends StatelessWidget {\r\n+class ShowFullFrameImage extends StatefulWidget {\r\n   final String name;\r\n   final String profilePic;\r\n   const ShowFullFrameImage(\r\n       {Key? key, required this.name, required this.profilePic})\r\n       : super(key: key);\r\n \r\n   @override\r\n+  State<ShowFullFrameImage> createState() => _ShowFullFrameImageState();\r\n+}\r\n+\r\n+class _ShowFullFrameImageState extends State<ShowFullFrameImage> {\r\n+  @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n         title: Text(\r\n-          name,\r\n+          widget.name,\r\n           maxLines: 1,\r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n@@ -41,9 +46,9 @@\n       ),\r\n       body: Container(\r\n         height: size.height,\r\n         width: size.width,\r\n-        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        child: Image.asset(widget.profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833253999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,10 @@\n   State<ShowFullFrameImage> createState() => _ShowFullFrameImageState();\r\n }\r\n \r\n class _ShowFullFrameImageState extends State<ShowFullFrameImage> {\r\n+\r\n+  Future\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651833285379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\r\n \r\n class _ShowFullFrameImageState extends State<ShowFullFrameImage> {\r\n \r\n-  Future\r\n+  \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n"
+                },
+                {
+                    "date": 1651833375617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,21 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n-class ShowFullFrameImage extends StatefulWidget {\r\n+class ShowFullFrameImage extends StatelessWidget {\r\n   final String name;\r\n   final String profilePic;\r\n   const ShowFullFrameImage(\r\n       {Key? key, required this.name, required this.profilePic})\r\n       : super(key: key);\r\n \r\n   @override\r\n-  State<ShowFullFrameImage> createState() => _ShowFullFrameImageState();\r\n-}\r\n-\r\n-class _ShowFullFrameImageState extends State<ShowFullFrameImage> {\r\n-\r\n-  \r\n-  @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n       appBar: AppBar(\r\n         title: Text(\r\n-          widget.name,\r\n+          name,\r\n           maxLines: 1,\r\n           style: const TextStyle(\r\n             color: kPrimaryColor,\r\n             fontSize: 20.0,\r\n@@ -35,9 +28,9 @@\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n         leading: IconButton(\r\n           icon: const Icon(\r\n-            Icons.arrow_back_ios_new_rounded,\r\n+            Icons.arrow_bac,\r\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n@@ -48,9 +41,9 @@\n       ),\r\n       body: Container(\r\n         height: size.height,\r\n         width: size.width,\r\n-        child: Image.asset(widget.profilePic, fit: BoxFit.cover),\r\n+        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833395128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         automaticallyImplyLeading: false,\r\n         centerTitle: true,\r\n         leading: IconButton(\r\n           icon: const Icon(\r\n-            Icons.arrow_bac,\r\n+            Icons.arrow_back_rounded,\r\n             color: kPrimaryColor,\r\n             size: 20.0,\r\n           ),\r\n           onPressed: () => Navigator.of(context).pop(),\r\n@@ -38,9 +38,9 @@\n           splashColor: kPrimaryLightColor,\r\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n-      body: Container(\r\n+      body: SizedBox(\r\n         height: size.height,\r\n         width: size.width,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651833631331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n       ),\r\n       body: SizedBox(\r\n         height: size.height,\r\n         width: size.width,\r\n-        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        child: Image.asset(profilePic, fit: BoxFit.fit),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833654309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n       ),\r\n       body: SizedBox(\r\n         height: size.height,\r\n         width: size.width,\r\n-        child: Image.asset(profilePic, fit: BoxFit.fit),\r\n+        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833667289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,10 +39,10 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SizedBox(\r\n-        height: size.height,\r\n-        width: size.width,\r\n+        // height: size.height,\r\n+        // width: size.width,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651833678897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,10 @@\n       ),\r\n       body: SizedBox(\r\n         // height: size.height,\r\n         // width: size.width,\r\n-        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        child: SingleChildScrollView(\r\n+            child: Image.asset(profilePic, fit: BoxFit.cover)),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833686345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,10 +39,10 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SizedBox(\r\n-        // height: size.height,\r\n-        // width: size.width,\r\n+        height: size.height,\r\n+        width: size.width,\r\n         child: SingleChildScrollView(\r\n             child: Image.asset(profilePic, fit: BoxFit.cover)),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651833703017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,9 @@\n       ),\r\n       body: SizedBox(\r\n         height: size.height,\r\n         width: size.width,\r\n-        child: SingleChildScrollView(\r\n-            child: Image.asset(profilePic, fit: BoxFit.cover)),\r\n+        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833708955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,12 +38,14 @@\n           splashColor: kPrimaryLightColor,\r\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n-      body: SizedBox(\r\n-        height: size.height,\r\n-        width: size.width,\r\n-        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+      body: SinglSC(\r\n+        child: SizedBox(\r\n+          height: size.height,\r\n+          width: size.width,\r\n+          child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651833721945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,10 @@\n           splashColor: kPrimaryLightColor,\r\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n-      body: SinglSC(\r\n+      body: SingleChildScrollView(\r\n+        \r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833728585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n-        \r\n+        physics: ,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833734361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n-        physics: ,\r\n+        physics: Boun,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833747330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n-        physics: Boun,\r\n+        physics: BouncingScrollPhysics(),\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833755054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n-        physics: BouncingScrollPhysics(),\r\n+        physics: const BouncingScrollPhysics(),\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833765745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n+        dragStartBehavior: ,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833773011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        dragStartBehavior: ,\r\n+        dragStartBehavior: DragStart,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833781089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/constants.dart';\r\n+import 'package:flutter/gestures.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class ShowFullFrameImage extends StatelessWidget {\r\n   final String name;\r\n@@ -40,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        dragStartBehavior: DragStart,\r\n+        dragStartBehavior: DragStartBehavior.down,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833790466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        dragStartBehavior: DragStartBehavior.down,\r\n+        dragStartBehavior: DragStartBehavior.start,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833803805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        dragStartBehavior: DragStartBehavior.start,\r\n+        \r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833814150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        \r\n+        restorationId: ,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833819327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        restorationId: ,\r\n+        \r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833831997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        \r\n+        scrollDirection: Ax,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833845715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         physics: const BouncingScrollPhysics(),\r\n-        scrollDirection: Ax,\r\n+        scrollDirection: Axis.horizontal,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833851911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n           splashRadius: 20.0,\r\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n-        physics: const BouncingScrollPhysics(),\r\n+        // physics: const BouncingScrollPhysics(),\r\n         scrollDirection: Axis.horizontal,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n"
+                },
+                {
+                    "date": 1651833857333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         // physics: const BouncingScrollPhysics(),\r\n-        scrollDirection: Axis.horizontal,\r\n+        scrollDirection: Axis.vertical,\r\n         child: SizedBox(\r\n           height: size.height,\r\n           width: size.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651833867735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         // physics: const BouncingScrollPhysics(),\r\n         scrollDirection: Axis.vertical,\r\n         child: SizedBox(\r\n           height: size.height,\r\n-          width: size.width,\r\n+          width: double.width,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651833881161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,12 +41,12 @@\n         ),\r\n       ),\r\n       body: SingleChildScrollView(\r\n         // physics: const BouncingScrollPhysics(),\r\n-        scrollDirection: Axis.vertical,\r\n+        // scrollDirection: Axis.vertical,\r\n         child: SizedBox(\r\n           height: size.height,\r\n-          width: double.width,\r\n+          width: double.infinity,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n         ),\r\n       ),\r\n     );\r\n"
+                }
+            ],
+            "date": 1651832118758,
+            "name": "Commit-0",
+            "content": "class FullFrame extends StatelessWidget {\r\n  const FullFrame({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

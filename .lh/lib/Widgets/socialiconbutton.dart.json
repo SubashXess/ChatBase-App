@@ -1,0 +1,550 @@
+{
+    "sourceFile": "lib/Widgets/socialiconbutton.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 133,
+            "patches": [
+                {
+                    "date": 1651482222339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651482229208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-class SocialIcon extends StatelessWidget {\r\n-  const SocialIcon({ Key? key }) : super(key: key);\r\n+import 'package:flutter/material.dart';\r\n \r\n+class SocialIconButton extends StatelessWidget {\r\n+  const SocialIconButton({Key? key}) : super(key: key);\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n\\ No newline at end of file\n-      \r\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651482236553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class SocialIconButton extends StatelessWidget {\r\n+  final String\r\n   const SocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651482243064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class SocialIconButton extends StatelessWidget {\r\n-  final String\r\n+  final String iconSrc;\r\n+  \r\n   const SocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651482249163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class SocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n-  \r\n+  final Function()\r\n   const SocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651482254928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class SocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n-  final Function()\r\n+  final Function() onPressed;\r\n   const SocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651482261651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class SocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Function() onPressed;\r\n-  const SocialIconButton({Key? key}) : super(key: key);\r\n+  const SocialIconButton({Key? key, required this.iconSrc, required this.onPressed}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651482383791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,9 @@\n   const SocialIconButton({Key? key, required this.iconSrc, required this.onPressed}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Container(\r\n+      margin: const ED,\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482392934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      margin: const ED,\r\n+      margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482399231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n+      child: ,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482450956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: ,\r\n+      child: Out,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482464473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: Out,\r\n+      child: Icon,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482495094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: Icon,\r\n+      child: Outlined,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482505636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: Outlined,\r\n+      child: OutlinedButton(onPressed: onPressed, child: child),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482518438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(onPressed: onPressed, child: child),\r\n+      child: OutlinedButton(onPressed: onPressed, child: Svg),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482524039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\r\n+import 'package:flutter_svg/flutter_svg.dart';\r\n \r\n class SocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Function() onPressed;\r\n@@ -8,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(onPressed: onPressed, child: Svg),\r\n+      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(assetName)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482530435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(assetName)),\r\n+      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(iconSrc, w)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482541996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(iconSrc, w)),\r\n+      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(iconSrc, width: 15.0,height: 15.0,)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482547125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n import 'package:flutter_svg/flutter_svg.dart';\r\n \r\n class SocialIconButton extends StatelessWidget {\r\n@@ -9,8 +10,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(iconSrc, width: 15.0,height: 15.0,)),\r\n+      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(iconSrc, width: 15.0,height: 15.0, color: kPrimaryColor,)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482585011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,19 @@\n \r\n class SocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Function() onPressed;\r\n-  const SocialIconButton({Key? key, required this.iconSrc, required this.onPressed}) : super(key: key);\r\n+  const SocialIconButton(\r\n+      {Key? key, required this.iconSrc, required this.onPressed})\r\n+      : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(onPressed: onPressed, child: SvgPicture.asset(iconSrc, width: 15.0,height: 15.0, color: kPrimaryColor,)),\r\n+      child: OutlinedButton(\r\n+          onPressed: onPressed,\r\n+          child: SvgPicture.asset(iconSrc,\r\n+              width: 15.0, height: 15.0, color: kPrimaryColor)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482595584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,11 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n-          onPressed: onPressed,\r\n-          child: SvgPicture.asset(iconSrc,\r\n-              width: 15.0, height: 15.0, color: kPrimaryColor)),\r\n+        onPressed: onPressed,\r\n+        child: SvgPicture.asset(iconSrc,\r\n+            width: 15.0, height: 15.0, color: kPrimaryColor),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482603438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n+            style: ButtonS,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482610514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n-            style: ButtonS,\r\n+            style: ButtonStyle(\r\n+              shape: \r\n+            ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482618658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n             style: ButtonStyle(\r\n-              shape: \r\n+              shape: MaterialStateProperty\r\n             ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482625185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n             style: ButtonStyle(\r\n-              shape: MaterialStateProperty\r\n+              shape: MaterialStateProperty.all(value)\r\n             ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482631332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n             style: ButtonStyle(\r\n-              shape: MaterialStateProperty.all(value)\r\n+              shape: MaterialStateProperty.all(const Circl)\r\n             ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482640169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,12 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n-            style: ButtonStyle(\r\n-              shape: MaterialStateProperty.all(const Circl)\r\n-            ),\r\n+        style: ButtonStyle(\r\n+          shape: MaterialStateProperty.all(const CircleBorder()),\r\n+          pa\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651482647592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          pa\r\n+          padding: MaterialStateProperty\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482653632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 15.0, height: 15.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty\r\n+          padding: MaterialStateProperty.all(const EdgeInsets.all(value))\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651482666519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n-            width: 15.0, height: 15.0, color: kPrimaryColor),\r\n+            width: 15.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(const EdgeInsets.all(value))\r\n+          padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484683446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,13 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n-            width: 15.0, height: 20.0, color: kPrimaryColor),\r\n+            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484692932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n-          \r\n+          s\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484701769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n-          s\r\n+          side: MaterialS\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484707900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n-          side: MaterialS\r\n+          side: MaterialStateProperty.all(value)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484715058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n-          side: MaterialStateProperty.all(value)\r\n+          side: MaterialStateProperty.all(const BorderSide())\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484720987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,12 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n-          side: MaterialStateProperty.all(const BorderSide())\r\n-        ),\r\n+            shape: MaterialStateProperty.all(const CircleBorder()),\r\n+            padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n+            side: MaterialStateProperty.all(\r\n+                const BorderSide(color: kPrimaryLightColor))),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484730578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n             shape: MaterialStateProperty.all(const CircleBorder()),\r\n             padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n             side: MaterialStateProperty.all(\r\n                 const BorderSide(color: kPrimaryLightColor))),\r\n+                \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484809112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,10 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: ButtonStyle(\r\n-            shape: MaterialStateProperty.all(const CircleBorder()),\r\n-            padding: MaterialStateProperty.all(const EdgeInsets.all(15.0)),\r\n-            side: MaterialStateProperty.all(\r\n-                const BorderSide(color: kPrimaryLightColor))),\r\n-                \r\n+        style: Outlined\r\n+\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484814194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: Outlined\r\n+        style: OutlinedButton.styleFrom()\r\n \r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651484822018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,11 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n-        onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc,\r\n-            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: OutlinedButton.styleFrom()\r\n-\r\n-      ),\r\n+          onPressed: onPressed,\r\n+          child: SvgPicture.asset(iconSrc,\r\n+              width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+          style: OutlinedButton.styleFrom()),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484832648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n       child: OutlinedButton(\r\n           onPressed: onPressed,\r\n           child: SvgPicture.asset(iconSrc,\r\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-          style: OutlinedButton.styleFrom()),\r\n+          style: OutlinedButton.styleFrom(\r\n+            shape: \r\n+          )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484841201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n           onPressed: onPressed,\r\n           child: SvgPicture.asset(iconSrc,\r\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n-            shape: \r\n+            shape: CircleBorder()\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484847555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n           onPressed: onPressed,\r\n           child: SvgPicture.asset(iconSrc,\r\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n-            shape: CircleBorder()\r\n+            shape: const CircleBorder(),\r\n+            \r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484853370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n           child: SvgPicture.asset(iconSrc,\r\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n-            \r\n+            padding: const ED\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484862409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n           child: SvgPicture.asset(iconSrc,\r\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n-            padding: const ED\r\n+            padding: const EdgeInsets.all(15.0),\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484867490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n+            \r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484876486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            \r\n+            side\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484885812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side\r\n+            side: BorderSide(color: kPrimaryColor)\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484892287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side: BorderSide(color: kPrimaryColor)\r\n+            side: BorderSide(color: kPrimaryLightColor)\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484906421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n               width: 20.0, height: 20.0, color: kPrimaryColor),\r\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side: BorderSide(color: kPrimaryLightColor)\r\n+            side: const BorderSide(color: kPrimaryLightColor),\r\n+            over\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484914011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n             side: const BorderSide(color: kPrimaryLightColor),\r\n-            over\r\n+            sp\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484919658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n           style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n             side: const BorderSide(color: kPrimaryLightColor),\r\n-            sp\r\n           )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484989850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,15 +13,16 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n-          onPressed: onPressed,\r\n-          child: SvgPicture.asset(iconSrc,\r\n-              width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-          style: OutlinedButton.styleFrom(\r\n-            shape: const CircleBorder(),\r\n-            padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor),\r\n-          )),\r\n+        onPressed: onPressed,\r\n+        child: SvgPicture.asset(iconSrc,\r\n+            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+        style: OutlinedButton.styleFrom(\r\n+          shape: const CircleBorder(),\r\n+          padding: const EdgeInsets.all(15.0),\r\n+          side: const BorderSide(color: kPrimaryLightColor),\r\n+        ),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651484996048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,16 +13,15 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n-        onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc,\r\n-            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: OutlinedButton.styleFrom(\r\n-          shape: const CircleBorder(),\r\n-          padding: const EdgeInsets.all(15.0),\r\n-          side: const BorderSide(color: kPrimaryLightColor),\r\n-        ),\r\n-      ),\r\n+          onPressed: onPressed,\r\n+          child: SvgPicture.asset(iconSrc,\r\n+              width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+          style: OutlinedButton.styleFrom(\r\n+            shape: const CircleBorder(),\r\n+            padding: const EdgeInsets.all(15.0),\r\n+            side: const BorderSide(color: kPrimaryLightColor),\r\n+          )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485002055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,15 +13,15 @@\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n-          onPressed: onPressed,\r\n-          child: SvgPicture.asset(iconSrc,\r\n-              width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-          style: OutlinedButton.styleFrom(\r\n+        onPressed: onPressed,\r\n+        child: SvgPicture.asset(iconSrc,\r\n+            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+        style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor),\r\n-          )),\r\n+            side: const BorderSide(color: kPrimaryLightColor)),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485016104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+            \r\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n             side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485028501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            \r\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n             side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485098992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n             side: const BorderSide(color: kPrimaryLightColor)),\r\n+            \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485168119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(\r\n+      child: Material(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n"
+                },
+                {
+                    "date": 1651485174114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: Material(\r\n+      child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n"
+                },
+                {
+                    "date": 1651485180236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,12 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: OutlinedButton.styleFrom(\r\n-            shape: const CircleBorder(),\r\n-            padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor)),\r\n-            \r\n+        // style: OutlinedButton.styleFrom(\r\n+        //     shape: const CircleBorder(),\r\n+        //     padding: const EdgeInsets.all(15.0),\r\n+        //     side: const BorderSide(color: kPrimaryLightColor)),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485188185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+            \r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485202861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            \r\n+            s\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485213010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            s\r\n+            shape: Shape,\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485221139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: Shape,\r\n+            shape: ,\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485229385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: ,\r\n+            shape: RoundedRectangleBorder(),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485237726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: RoundedRectangleBorder(),\r\n+            shape: RoundedRectangleBorder(borderRadius: 50.0),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485245268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: RoundedRectangleBorder(borderRadius: 50.0),\r\n+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius)),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485250898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius)),\r\n+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0), ),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485257406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0), ),\r\n+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0), side: BorderSid),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485265001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0), side: BorderSid),\r\n+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0), side: BorderSide(color: kPrimaryColor)),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485271844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0), side: BorderSide(color: kPrimaryColor)),\r\n+        shape: RoundedRectangleBorder(\r\n+            borderRadius: BorderRadius.circular(50.0),\r\n+            side: BorderSide(color: kPrimaryColor)),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485278580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(50.0),\r\n-            side: BorderSide(color: kPrimaryColor)),\r\n+            side: const BorderSide(color: kPrimaryColor)),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485284522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,12 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n-            borderRadius: BorderRadius.circular(50.0),\r\n-            side: const BorderSide(color: kPrimaryColor)),\r\n+          borderRadius: BorderRadius.circular(50.0),\r\n+          side: const BorderSide(color: kPrimaryColor),\r\n+          \r\n+        ),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485292610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,11 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n-          borderRadius: BorderRadius.circular(50.0),\r\n-          side: const BorderSide(color: kPrimaryColor),\r\n-          \r\n-        ),\r\n+            borderRadius: BorderRadius.circular(50.0),\r\n+            side: const BorderSide(color: kPrimaryColor)),\r\n+            \r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485300982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(50.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-            \r\n+            padding: ,\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485314933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(50.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-            padding: ,\r\n+            padding: const EdgeInsets.all(value),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485359191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n-            borderRadius: BorderRadius.circular(50.0),\r\n+            borderRadius: BorderRadius.circular(100.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-            padding: const EdgeInsets.all(value),\r\n+        padding: const EdgeInsets.all(20.0),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485365146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(100.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-        padding: const EdgeInsets.all(20.0),\r\n+        padding: const EdgeInsets.all(2.0),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485377329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(100.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-        padding: const EdgeInsets.all(2.0),\r\n+        padding: const EdgeInsets.all(0.0),\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485386850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(100.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-        padding: const EdgeInsets.all(0.0),\r\n+        padding: const EdgeInsets.,\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485395895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         shape: RoundedRectangleBorder(\r\n             borderRadius: BorderRadius.circular(100.0),\r\n             side: const BorderSide(color: kPrimaryColor)),\r\n-        padding: const EdgeInsets.,\r\n+        ,\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485402824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,9 @@\n       child: MaterialButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        shape: RoundedRectangleBorder(\r\n-            borderRadius: BorderRadius.circular(100.0),\r\n-            side: const BorderSide(color: kPrimaryColor)),\r\n-        ,\r\n+\r\n         // style: OutlinedButton.styleFrom(\r\n         //     shape: const CircleBorder(),\r\n         //     padding: const EdgeInsets.all(15.0),\r\n         //     side: const BorderSide(color: kPrimaryLightColor)),\r\n"
+                },
+                {
+                    "date": 1651485412043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: MaterialButton(\r\n+      child: Eleva(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n \r\n"
+                },
+                {
+                    "date": 1651485421363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,17 +12,16 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: Eleva(\r\n+      child: ElevatedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-\r\n-        // style: OutlinedButton.styleFrom(\r\n-        //     shape: const CircleBorder(),\r\n-        //     padding: const EdgeInsets.all(15.0),\r\n-        //     side: const BorderSide(color: kPrimaryLightColor)),\r\n+        style: OutlinedButton.styleFrom(\r\n+            shape: const CircleBorder(),\r\n+            padding: const EdgeInsets.all(15.0),\r\n+            side: const BorderSide(color: kPrimaryLightColor)),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485428347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n             side: const BorderSide(color: kPrimaryLightColor)),\r\n+            \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485436573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor)),\r\n-            \r\n+            side: const BorderSide(color: kPrimaryLightColor), ),\r\n+\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485441732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor), ),\r\n+            side: const BorderSide(color: kPrimaryLightColor), backgroundColor: ),\r\n \r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485453310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n             shape: const CircleBorder(),\r\n             padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor), backgroundColor: ),\r\n-\r\n+            side: const BorderSide(color: kPrimaryLightColor),\r\n+            backgroundColor: Colors.white),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485462482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,14 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n-            shape: const CircleBorder(),\r\n-            padding: const EdgeInsets.all(15.0),\r\n-            side: const BorderSide(color: kPrimaryLightColor),\r\n-            backgroundColor: Colors.white),\r\n+          shape: const CircleBorder(),\r\n+          padding: const EdgeInsets.all(15.0),\r\n+          side: const BorderSide(color: kPrimaryLightColor),\r\n+          backgroundColor: Colors.white,\r\n+          elevation: 0.0\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651485476621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n         style: OutlinedButton.styleFrom(\r\n           shape: const CircleBorder(),\r\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n-          backgroundColor: Colors.white,\r\n-          elevation: 0.0\r\n+          backgroundColor: Colors.transparent,\r\n+          elevation: 0.0,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485514998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: ElevatedButton(\r\n+      child: Outli(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n"
+                },
+                {
+                    "date": 1651485524454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: Outli(\r\n+      child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: OutlinedButton.styleFrom(\r\n@@ -22,8 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485534571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          \r\n+          splashFactory: Inter\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485540238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          splashFactory: Inter\r\n+          splashFactory: InteractiveInkFeatureFactory()\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485545958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          splashFactory: InteractiveInkFeatureFactory()\r\n+          splashFactory: InteractiveInkFeatureFactory/\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485552760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          splashFactory: InteractiveInkFeatureFactory/\r\n+          splashFactory: Inter\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485559151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          splashFactory: Inter\r\n+          splashFactory: InteractiveInkFeatureFactory()\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485583732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          splashFactory: InteractiveInkFeatureFactory()\r\n+          splashFactory: InteractiveInkFeatureFactory.\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485597721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          splashFactory: InteractiveInkFeatureFactory.\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485611732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: OutlinedButton.styleFrom(\r\n+        style: ButtonStyle.styleFrom(\r\n           shape: const CircleBorder(),\r\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n"
+                },
+                {
+                    "date": 1651485625609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: ButtonStyle.styleFrom(\r\n-          shape: const CircleBorder(),\r\n+        style: ButtonStyle(\r\n+          shape: MaterialStateProperty.all CircleBorder(),\r\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n"
+                },
+                {
+                    "date": 1651485634259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all CircleBorder(),\r\n+          shape: MaterialStateProperty.all (CircleBorder()),\r\n           padding: const EdgeInsets.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n"
+                },
+                {
+                    "date": 1651485651001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,13 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all (CircleBorder()),\r\n-          padding: const EdgeInsets.all(15.0),\r\n+          shape: MaterialStateProperty.all(const CircleBorder()),\r\n+          padding: MaterialStateProperty.all(15.0),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n-          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485658306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(15.0),\r\n+          padding: MaterialStateProperty.all(const ED),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485670733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(const ED),\r\n+          padding: MaterialStateProperty.all(10),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485676268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(10),\r\n+          padding: MaterialStateProperty.all(ED),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485682910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(ED),\r\n+          padding: MaterialStateProperty.all(Edge),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485687991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(Edge),\r\n+          padding: MaterialStateProperty.all(EdgeInsert),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485694165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(EdgeInsert),\r\n+          padding: MaterialStateProperty.all(),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485699272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(),\r\n+          padding: MaterialStateProperty.all(const ED),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485705388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(const ED),\r\n+          padding: MaterialStateProperty.all(const EdgeInsets.all(10)),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485714193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(const EdgeInsets.all(10)),\r\n+          padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651485719305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n-          side: const BorderSide(color: kPrimaryLightColor),\r\n+          side: MaterialStateProperty.all const BorderSide(color: kPrimaryLightColor),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651485725190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n-          side: MaterialStateProperty.all const BorderSide(color: kPrimaryLightColor),\r\n+          side: MaterialStateProperty.all (const BorderSide(color: kPrimaryLightColor)),\r\n           backgroundColor: Colors.transparent,\r\n           elevation: 0.0,\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651485735487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,10 @@\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n-          side: MaterialStateProperty.all (const BorderSide(color: kPrimaryLightColor)),\r\n-          backgroundColor: Colors.transparent,\r\n-          elevation: 0.0,\r\n+          side: MaterialStateProperty.all(\r\n+              const BorderSide(color: kPrimaryLightColor)),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485742206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n+              s\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485752884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              s\r\n+              overlayColor: MaterialS\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485758546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialS\r\n+              overlayColor: MaterialSta\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485765594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialSta\r\n+              overlayColor: MaterialStateProperty.resolveWith((states) => null)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485776298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith((states) => null)\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485781723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color?> (())\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485787321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color?> (())\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) => )\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485793302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) => )\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) => if )\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485801143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) => if )\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) => if (states.conta))\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485808513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) => if (states.conta))\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) )\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485816512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,11 @@\n           shape: MaterialStateProperty.all(const CircleBorder()),\r\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) )\r\n+              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) {\r\n+                if (states.contains(value))\r\n+              })\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651485821990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n               overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) {\r\n-                if (states.contains(value))\r\n+                if (states.contains(MaterialState))\r\n               })\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651485827296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n           padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n           side: MaterialStateProperty.all(\r\n               const BorderSide(color: kPrimaryLightColor)),\r\n               overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) {\r\n-                if (states.contains(MaterialState))\r\n+                if (states.contains(MaterialState.pressed)) {}\r\n               })\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1651485834753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,16 +17,17 @@\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n             width: 20.0, height: 20.0, color: kPrimaryColor),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all(const CircleBorder()),\r\n-          padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n-          side: MaterialStateProperty.all(\r\n-              const BorderSide(color: kPrimaryLightColor)),\r\n-              overlayColor: MaterialStateProperty.resolveWith<Color?> ((states) {\r\n-                if (states.contains(MaterialState.pressed)) {}\r\n-              })\r\n-        ),\r\n+            shape: MaterialStateProperty.all(const CircleBorder()),\r\n+            padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n+            side: MaterialStateProperty.all(\r\n+                const BorderSide(color: kPrimaryLightColor)),\r\n+            overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {\r\n+              if (states.contains(MaterialState.pressed)) {\r\n+                return kPrimaryLightColor;\r\n+              }\r\n+            })),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651510879733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n             overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {\r\n               if (states.contains(MaterialState.pressed)) {\r\n                 return kPrimaryLightColor;\r\n               }\r\n+              return null;\r\n             })),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904101989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+import 'package:chatbase_app/constants.dart';\r\n+import 'package:flutter/material.dart';\r\n+import 'package:flutter_svg/flutter_svg.dart';\r\n+\r\n+class SocialIconButton extends StatelessWidget {\r\n+  final String iconSrc;\r\n+  final Function() onPressed;\r\n+  const SocialIconButton(\r\n+      {Key? key, required this.iconSrc, required this.onPressed})\r\n+      : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n+      child: OutlinedButton(\r\n+        onPressed: onPressed,\r\n+        child: SvgPicture.asset(iconSrc,\r\n+            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n+        style: ButtonStyle(\r\n+            shape: MaterialStateProperty.all(const CircleBorder()),\r\n+            padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n+            side: MaterialStateProperty.all(\r\n+                const BorderSide(color: kPrimaryLightColor)),\r\n+            overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {\r\n+              if (states.contains(MaterialState.pressed)) {\r\n+                return kPrimaryLightColor;\r\n+              }\r\n+              return null;\r\n+            })),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1651905088336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,38 +31,4 @@\n       ),\r\n     );\r\n   }\r\n }\r\n-import 'package:chatbase_app/constants.dart';\r\n-import 'package:flutter/material.dart';\r\n-import 'package:flutter_svg/flutter_svg.dart';\r\n-\r\n-class SocialIconButton extends StatelessWidget {\r\n-  final String iconSrc;\r\n-  final Function() onPressed;\r\n-  const SocialIconButton(\r\n-      {Key? key, required this.iconSrc, required this.onPressed})\r\n-      : super(key: key);\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return Container(\r\n-      margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n-      child: OutlinedButton(\r\n-        onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc,\r\n-            width: 20.0, height: 20.0, color: kPrimaryColor),\r\n-        style: ButtonStyle(\r\n-            shape: MaterialStateProperty.all(const CircleBorder()),\r\n-            padding: MaterialStateProperty.all(const EdgeInsets.all(20)),\r\n-            side: MaterialStateProperty.all(\r\n-                const BorderSide(color: kPrimaryLightColor)),\r\n-            overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {\r\n-              if (states.contains(MaterialState.pressed)) {\r\n-                return kPrimaryLightColor;\r\n-              }\r\n-              return null;\r\n-            })),\r\n-      ),\r\n-    );\r\n-  }\r\n-}\r\n"
+                },
+                {
+                    "date": 1651906482472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n               if (states.contains(MaterialState.pressed)) {\r\n                 return kPrimaryLightColor;\r\n               }\r\n               return null;\r\n-            })),\r\n+            },),),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1651482222339,
+            "name": "Commit-0",
+            "content": "class SocialIcon extends StatelessWidget {\r\n  const SocialIcon({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

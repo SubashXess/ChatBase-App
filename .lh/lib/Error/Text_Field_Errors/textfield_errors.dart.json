@@ -1,0 +1,150 @@
+{
+    "sourceFile": "lib/Error/Text_Field_Errors/textfield_errors.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 33,
+            "patches": [
+                {
+                    "date": 1651561774763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651561782872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-TextFor\n\\ No newline at end of file\n+import 'package:flutter/material.dart';\r\n+\r\n+TextFormField textFormFieldValidate\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651561793421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n import 'package:flutter/material.dart';\r\n \r\n-TextFormField textFormFieldValidate\n\\ No newline at end of file\n+TextFormField textFormFieldValidate() {\r\n+  return TextFormField()\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651561798754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import 'package:flutter/material.dart';\r\n \r\n TextFormField textFormFieldValidate() {\r\n-  return TextFormField()\r\n-}\n\\ No newline at end of file\n+  return TextFormField(\r\n+    validator: ,\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1651561832651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,6 @@\n   return TextFormField(\r\n     validator: ,\r\n   );\r\n }\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1651561844544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,5 @@\n   );\r\n }\r\n \r\n \r\n+TextFormFieldValidat\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651561850888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import 'package:flutter/material.dart';\r\n \r\n-TextFormField textFormFieldValidate() {\r\n-  return TextFormField(\r\n-    validator: ,\r\n-  );\r\n-}\r\n+// TextFormField textFormFieldValidate() {\r\n+//   return TextFormField(\r\n+//     validator: ,\r\n\\ No newline at end of file\n+//   );\r\n+// }\r\n \r\n \r\n-TextFormFieldValidat\n+TextFormFieldValidator\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651561861672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n //   );\r\n // }\r\n \r\n \r\n-TextFormFieldValidator\n\\ No newline at end of file\n+textFormFieldValidator () {\r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651561874361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,7 @@\n //     validator: ,\r\n //   );\r\n // }\r\n \r\n-\r\n-textFormFieldValidator () {\r\n-\r\n-}\n\\ No newline at end of file\n+textFormFieldValidator() {\r\n+  validator\r\n+}\r\n"
+                },
+                {
+                    "date": 1651561882981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n import 'package:flutter/material.dart';\r\n \r\n-// TextFormField textFormFieldValidate() {\r\n-//   return TextFormField(\r\n-//     validator: ,\r\n-//   );\r\n-// }\r\n+TextFormField textFormFieldValidate() {\r\n+  return TextFormField(\r\n+    validator: ,\r\n+  );\r\n+}\r\n \r\n textFormFieldValidator() {\r\n-  validator\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651561891440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator() {\r\n+textFormFieldValidator(String ) {\r\n   \r\n }\r\n"
+                },
+                {
+                    "date": 1651561901066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(String ) {\r\n+textFormFieldValidator(String Function() validat) {\r\n   \r\n }\r\n"
+                },
+                {
+                    "date": 1651561907185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(String Function() validat) {\r\n-  \r\n+textFormFieldValidator(String Function() validate) {\r\n+  va\r\n }\r\n"
+                },
+                {
+                    "date": 1651561913618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n   );\r\n }\r\n \r\n textFormFieldValidator(String Function() validate) {\r\n-  va\r\n+  validate\r\n }\r\n"
+                },
+                {
+                    "date": 1651561926712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n   );\r\n }\r\n \r\n textFormFieldValidator(String Function() validate) {\r\n-  validate\r\n+  validate;\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651561933737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(String Function() validate) {\r\n+textFormFieldValidator(String Function() validate, ) {\r\n   validate;\r\n-  \r\n+  if ()\r\n }\r\n"
+                },
+                {
+                    "date": 1651561939240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(String Function() validate, ) {\r\n+textFormFieldValidator(String Function() validate, String email) {\r\n   validate;\r\n   if ()\r\n }\r\n"
+                },
+                {
+                    "date": 1651561944861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n }\r\n \r\n textFormFieldValidator(String Function() validate, String email) {\r\n   validate;\r\n-  if ()\r\n+  if (email)\r\n }\r\n"
+                },
+                {
+                    "date": 1651561951185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(String Function() validate, String email) {\r\n+textFormFieldValidator(String Function() validate, String? email) {\r\n   validate;\r\n-  if (email)\r\n+  if (email!)\r\n }\r\n"
+                },
+                {
+                    "date": 1651561957256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,8 @@\n }\r\n \r\n textFormFieldValidator(String Function() validate, String? email) {\r\n   validate;\r\n-  if (email!)\r\n+  if (email!.isEmpty) {\r\n+    \r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1651561962914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Components/showsnackbar.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n TextFormField textFormFieldValidate() {\r\n   return TextFormField(\r\n@@ -8,7 +9,7 @@\n \r\n textFormFieldValidator(String Function() validate, String? email) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n-    \r\n+    showSnackBar(context, message)\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651561973817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(String Function() validate, String? email) {\r\n+textFormFieldValidator(BuildContext context String Function() validate, String? email) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n     showSnackBar(context, message)\r\n   }\r\n"
+                },
+                {
+                    "date": 1651561979855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(BuildContext context String Function() validate, String? email) {\r\n+textFormFieldValidator(BuildContext context, String Function() validate, String? email) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n-    showSnackBar(context, message)\r\n+    showSnackBar(context, '')\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651561986732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n \r\n textFormFieldValidator(BuildContext context, String Function() validate, String? email) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n-    showSnackBar(context, '')\r\n+    showSnackBar(context, 'Required email')\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651562002069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(BuildContext context, String Function() validate, String? email) {\r\n+textFormFieldValidator(BuildContext context, String Function() validate, String? email, String ) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n-    showSnackBar(context, 'Required email')\r\n+    showSnackBar(context, 'Required email');\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651562011210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(BuildContext context, String Function() validate, String? email, String ) {\r\n+textFormFieldValidator(BuildContext context, String Function() validate, String? email, String? password) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n"
+                },
+                {
+                    "date": 1651562018375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     validator: ,\r\n   );\r\n }\r\n \r\n-textFormFieldValidator(BuildContext context, String Function() validate, String? email, String? password) {\r\n+textFormFieldValidator(BuildContext context, String Function() validate,String? n String? email, String? password) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n"
+                },
+                {
+                    "date": 1651562026936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import 'package:chatbase_app/Components/showsnackbar.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n-TextFormField textFormFieldValidate() {\r\n-  return TextFormField(\r\n-    validator: ,\r\n-  );\r\n-}\r\n+// TextFormField textFormFieldValidate() {\r\n+//   return TextFormField(\r\n+//     validator: ,\r\n+//   );\r\n+// }\r\n \r\n-textFormFieldValidator(BuildContext context, String Function() validate,String? n String? email, String? password) {\r\n+textFormFieldValidator(BuildContext context, String Function() validate,\r\n+    String? name, String? email, String? password) {\r\n   validate;\r\n   if (email!.isEmpty) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n"
+                },
+                {
+                    "date": 1651562040751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \r\n textFormFieldValidator(BuildContext context, String Function() validate,\r\n     String? name, String? email, String? password) {\r\n   validate;\r\n-  if (email!.isEmpty) {\r\n+  if (email!.isEmpty &&) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651562050489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \r\n textFormFieldValidator(BuildContext context, String Function() validate,\r\n     String? name, String? email, String? password) {\r\n   validate;\r\n-  if (email!.isEmpty &&) {\r\n+  if (name!) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651562057694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \r\n textFormFieldValidator(BuildContext context, String Function() validate,\r\n     String? name, String? email, String? password) {\r\n   validate;\r\n-  if (name!) {\r\n+  if (name!.) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651562063612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \r\n textFormFieldValidator(BuildContext context, String Function() validate,\r\n     String? name, String? email, String? password) {\r\n   validate;\r\n-  if (name!.) {\r\n+  if (name!.isEmpty && ) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651562069604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n \r\n textFormFieldValidator(BuildContext context, String Function() validate,\r\n     String? name, String? email, String? password) {\r\n   validate;\r\n-  if (name!.isEmpty && email!.isEmpty) {\r\n+  if (name!.isEmpty && email!.isEmpty ) {\r\n     showSnackBar(context, 'Required email');\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651564762771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n class ValidateTextField {\r\n   String? loginTextFormFieldValidator(BuildContext context,\r\n       [String email = '', String password = '']) {\r\n     if (email.isEmpty && password.isEmpty) {\r\n-      showSnackBar(context, 'Please enter mail, password');\r\n+      showSnackBar(context, 'Please enter email, password');\r\n     } else if (email.isEmpty) {\r\n       showSnackBar(context, 'Please enter Email');\r\n       if (email.isEmpty && password.length < 8) {\r\n         showSnackBar(context, 'Please enter Email and Password must be at least 8 characters');\r\n"
+                }
+            ],
+            "date": 1651561774763,
+            "name": "Commit-0",
+            "content": "TextFor"
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+    "sourceFile": "lib/Widgets/adding_social_icon_button.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 52,
+            "patches": [
+                {
+                    "date": 1651903998327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651904007384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stl\n\\ No newline at end of file\n+class AddSocialIconButton extends StatelessWidget {\r\n+  const AddSocialIconButton({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651904013793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class AddSocialIconButton extends StatelessWidget {\r\n-  const AddSocialIconButton({ Key? key }) : super(key: key);\r\n+  const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651904047371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return ;\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904053085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return ;\r\n+    return OutlinedButton(onPressed: (), child: child);\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904059080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return OutlinedButton(onPressed: (), child: child);\r\n+    return OutlinedButton(onPressed: () {}, child: Icon);\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904064148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return OutlinedButton(onPressed: () {}, child: Icon);\r\n+    return OutlinedButton(onPressed: () {}, child: const Icon(Icons.add));\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904108857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n+  final \r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904124264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n-  final \r\n+  final IconD\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904131299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n-  final IconD\r\n+  final IconData i\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904137309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n-  final IconData i\r\n+  final \r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904151941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n-  final \r\n+  final String S\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904175330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n-  final String S\r\n+  final String iconSrc;\r\n+  final \r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904181337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n-  final \r\n+  final Color \r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904187241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n-  final Color \r\n+  final Color iconColor;\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904192994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Color iconColor;\r\n+  final String \r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904199912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Color iconColor;\r\n-  final String \r\n+  final String? \r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904208659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Color iconColor;\r\n-  final String? \r\n+  final String? title;\r\n+  final\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904214195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Color iconColor;\r\n   final String? title;\r\n-  final\r\n+  final Function()\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904225881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Color iconColor;\r\n   final String? title;\r\n-  final Function()\r\n+  final Function() onPressed;\r\n   const AddSocialIconButton({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651904235082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   final String iconSrc;\r\n   final Color iconColor;\r\n   final String? title;\r\n   final Function() onPressed;\r\n-  const AddSocialIconButton({Key? key}) : super(key: key);\r\n+  const AddSocialIconButton({Key? key, required this.iconSrc, this.iconColor, this.title, this.onPressed}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return OutlinedButton(onPressed: () {}, child: const Icon(Icons.add));\r\n"
+                },
+                {
+                    "date": 1651904247091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   final String iconSrc;\r\n   final Color iconColor;\r\n   final String? title;\r\n   final Function() onPressed;\r\n-  const AddSocialIconButton({Key? key, required this.iconSrc, this.iconColor, this.title, this.onPressed}) : super(key: key);\r\n+  const AddSocialIconButton({Key? key, required this.iconSrc, required this.iconColor, this.title, required this.onPressed}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return OutlinedButton(onPressed: () {}, child: const Icon(Icons.add));\r\n"
+                },
+                {
+                    "date": 1651904259580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n   const AddSocialIconButton({Key? key, required this.iconSrc, required this.iconColor, this.title, required this.onPressed}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return OutlinedButton(onPressed: () {}, child: const Icon(Icons.add));\r\n+    return OutlinedButton(onPressed: onPressed, child: const Icon(Icons.add));\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904267659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,15 @@\n   final String iconSrc;\r\n   final Color iconColor;\r\n   final String? title;\r\n   final Function() onPressed;\r\n-  const AddSocialIconButton({Key? key, required this.iconSrc, required this.iconColor, this.title, required this.onPressed}) : super(key: key);\r\n+  const AddSocialIconButton(\r\n+      {Key? key,\r\n+      required this.iconSrc,\r\n+      required this.iconColor,\r\n+      this.title,\r\n+      required this.onPressed})\r\n+      : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return OutlinedButton(onPressed: onPressed, child: const Icon(Icons.add));\r\n"
+                },
+                {
+                    "date": 1651904275389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,10 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return OutlinedButton(onPressed: onPressed, child: const Icon(Icons.add));\r\n+    return OutlinedButton(\r\n+      onPressed: onPressed,\r\n+      child: const Icon(Icons.add, ),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904282945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return OutlinedButton(\r\n       onPressed: onPressed,\r\n-      child: const Icon(Icons.add, ),\r\n+      child: const Icon(Icons.add, color: iconColor),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904289511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return OutlinedButton(\r\n       onPressed: onPressed,\r\n-      child: const Icon(Icons.add, color: iconColor),\r\n+      child:  Icon(Icons.add, color: iconColor, ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904296722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return OutlinedButton(\r\n       onPressed: onPressed,\r\n-      child:  Icon(Icons.add, color: iconColor, ),\r\n+      child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904308915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,12 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return OutlinedButton(\r\n-      onPressed: onPressed,\r\n-      child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n+    return Container(\r\n+      child: OutlinedButton(\r\n+        onPressed: onPressed,\r\n+        child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904315755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n+      margin: ,\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651904320845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      margin: ,\r\n+      margin: const EdgeInsets.symmetric(),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651904326630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n-      margin: const EdgeInsets.symmetric(),\r\n+      margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651904337834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n+        \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904347026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n-        \r\n+        style: ButtonStyle.,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904362581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n-        style: ButtonStyle.,\r\n+        style: ButtonS,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904375921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n-        style: ButtonS,\r\n+        style: ButtonStyle(\r\n+          shape: \r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904384644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: \r\n+          shape: MaterialStateProperty.\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904394740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.\r\n+          shape: MaterialStateProperty.all(Radius.)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904402667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all(Radius.)\r\n+          shape: MaterialStateProperty.all()\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904410354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all()\r\n+          shape: MaterialStateProperty.all(Rectan)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904420790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all(Rectan)\r\n+          shape: MaterialStateProperty.all(RoundedRectangleBorder())\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904429297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all(RoundedRectangleBorder())\r\n+          shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius)))\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651904442184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-          shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius)))\r\n-        ),\r\n+            shape: MaterialStateProperty.all(RoundedRectangleBorder(\r\n+                borderRadius: BorderRadius.circular(29.0),),),),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904704609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,16 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: Icon(Icons.add, color: iconColor, size: 20.0),\r\n+        child: Icon(Icons.icon, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n-            shape: MaterialStateProperty.all(RoundedRectangleBorder(\r\n-                borderRadius: BorderRadius.circular(29.0),),),),\r\n+          shape: MaterialStateProperty.all(\r\n+            RoundedRectangleBorder(\r\n+              borderRadius: BorderRadius.circular(29.0),\r\n+            ),\r\n+          ),\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651904710084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: Icon(Icons.icon, color: iconColor, size: 20.0),\r\n+        child: Icon(I, color: iconColor, size: 20.0),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904727635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: Icon(I, color: iconColor, size: 20.0),\r\n+        child: Svg\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904752400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\r\n+import 'package:flutter_svg/flutter_svg.dart';\r\n \r\n class AddSocialIconButton extends StatelessWidget {\r\n   final String iconSrc;\r\n   final Color iconColor;\r\n@@ -18,9 +19,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: Svg\r\n+        child: SvgPicture.asset(assetName)\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904758907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: SvgPicture.asset(assetName)\r\n+        child: SvgPicture.asset(iconSrc),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904764160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc),\r\n+        child: SvgPicture.asset(iconSrc, color: ),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904769343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc, color: ),\r\n+        child: SvgPicture.asset(iconSrc, color: iconColor, ),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904781561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc, color: iconColor, ),\r\n+        child: SvgPicture.asset(iconSrc, color: iconColor,  he),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904787988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     return Container(\r\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n-        child: SvgPicture.asset(iconSrc, color: iconColor,  he),\r\n+        child: SvgPicture.asset(iconSrc, color: iconColor,  height: 20.0, width: 20.0,),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                },
+                {
+                    "date": 1651904883090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       margin: const EdgeInsets.symmetric(horizontal: 16.0),\r\n       child: OutlinedButton(\r\n         onPressed: onPressed,\r\n         child: SvgPicture.asset(iconSrc,\r\n-            color: iconColor, height: 20.0, width: 20.0, ),\r\n+            color: iconColor, height: 20.0, width: 20.0, c),\r\n         style: ButtonStyle(\r\n           shape: MaterialStateProperty.all(\r\n             RoundedRectangleBorder(\r\n               borderRadius: BorderRadius.circular(29.0),\r\n"
+                }
+            ],
+            "date": 1651903998327,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

@@ -1,0 +1,358 @@
+{
+    "sourceFile": "lib/Widgets/namefield.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 85,
+            "patches": [
+                {
+                    "date": 1651480448134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651480453378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class NameField extends StatelessWidget {\r\n-  const NameField({ Key? key }) : super(key: key);\r\n+  const NameField({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651480472313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n   const NameField({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Container();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480479801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return Container();\r\n+    return Container(\r\n+      pa\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480486212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      pa\r\n+      padding: const EdgeInsets.symmetric(),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480492878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      padding: const EdgeInsets.symmetric(),\r\n+      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480502412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n+      width: size.width * 0.8,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480508855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n+      decoration: BoxDecoration(),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480517243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,12 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n-      decoration: BoxDecoration(),\r\n+      decoration: BoxDecoration(\r\n+        boxShadow: [\r\n+          Bo\r\n+        ]\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480522320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Styles/shadowstyle.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class NameField extends StatelessWidget {\r\n   const NameField({Key? key}) : super(key: key);\r\n@@ -10,9 +11,9 @@\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [\r\n-          Bo\r\n+          boxShadowStyle(color)\r\n         ]\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480532877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Styles/shadowstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class NameField extends StatelessWidget {\r\n   const NameField({Key? key}) : super(key: key);\r\n@@ -11,9 +12,9 @@\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [\r\n-          boxShadowStyle(color)\r\n+          boxShadowStyle(kPrimaryDeepColor.op)\r\n         ]\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480539537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,10 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n-      decoration: BoxDecoration(\r\n-        boxShadow: [\r\n-          boxShadowStyle(kPrimaryDeepColor.op)\r\n-        ]\r\n-      ),\r\n+      decoration: BoxDecoration(boxShadow: [\r\n+        boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4)),\r\n+      ]),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480550173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,13 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n-      decoration: BoxDecoration(boxShadow: [\r\n-        boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4)),\r\n-      ]),\r\n+      decoration: BoxDecoration(\r\n+        boxShadow: [\r\n+          boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4)),\r\n+          c\r\n+        ],\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480556801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,10 @@\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n-        boxShadow: [\r\n-          boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4)),\r\n-          c\r\n-        ],\r\n+        boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n+        color: \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480562051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n-        color: \r\n+        color: kPrimaryLightColor,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480568550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n         color: kPrimaryLightColor,\r\n+        bor\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480574416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n         color: kPrimaryLightColor,\r\n-        bor\r\n+        borderRadius: BorDerRa\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480583210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n         color: kPrimaryLightColor,\r\n-        borderRadius: BorDerRa\r\n+        borderRadius: BorderRadius.circular(29.0)\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480591451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n       width: size.width * 0.8,\r\n       decoration: BoxDecoration(\r\n         boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n         color: kPrimaryLightColor,\r\n-        borderRadius: BorderRadius.circular(29.0)\r\n+        borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n+      child: ,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480598898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n         boxShadow: [boxShadowStyle(kPrimaryDeepColor.withOpacity(0.4))],\r\n         color: kPrimaryLightColor,\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n-      child: ,\r\n+      child: TextFormField(\r\n+        de\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480604643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         color: kPrimaryLightColor,\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n-        de\r\n+        decoration: InputDecoration(),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480609993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n         color: kPrimaryLightColor,\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n-        decoration: InputDecoration(),\r\n+        decoration: InputDecoration(\r\n+          contentPadding: const ED\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480616372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n-          contentPadding: const ED\r\n+          contentPadding: const EdgeInsets.only(top: 15.0)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480622380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n-          contentPadding: const EdgeInsets.only(top: 15.0)\r\n+          contentPadding: const EdgeInsets.only(top: 15.0),\r\n+          hint\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480629084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n       ),\r\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n-          hint\r\n+          hintText: 'Enter Name',\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480636554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n-          \r\n+          hintStyle: text\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480642637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Styles/shadowstyle.dart';\r\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class NameField extends StatelessWidget {\r\n@@ -19,9 +20,9 @@\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n-          hintStyle: text\r\n+          hintStyle: textStyleSimple(kPrimaryColor, fontSize, fontWeight)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480648137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n-          hintStyle: textStyleSimple(kPrimaryColor, fontSize, fontWeight)\r\n+          hintStyle: textStyleSimple(kPrimaryColor, 16.0, fon)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480656412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n-          hintStyle: textStyleSimple(kPrimaryColor, 16.0, fon)\r\n+          hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n+          bo\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480662439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n-          bo\r\n+          border: InputBorder.none\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480671122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,11 @@\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n-          border: InputBorder.none\r\n+          border: InputBorder.none,\r\n+          errorBorder: InputBorder.none,\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480679536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,10 @@\n           hintText: 'Enter Name',\r\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n           errorBorder: InputBorder.none,\r\n-          \r\n+          enabledBorder: InputBorder.none,\r\n+          focusedBorder: \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480685492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n-          focusedBorder: \r\n+          focusedBorder: InputBorder.none,\r\n+          bo\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480691749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           border: InputBorder.none,\r\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n-          bo\r\n+          disabledBorder: InputBorder.none,\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480708776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n+          \r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480715328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          \r\n+          suffixIcon: Icon\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480728893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          suffixIcon: Icon\r\n+          suffixIcon: Icon(Icons.person)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480733974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          suffixIcon: Icon(Icons.person)\r\n+          suffixIcon: Icon(Icons.person_rounded)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480740351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          suffixIcon: Icon(Icons.person_rounded)\r\n+          suffixIcon: Icon(Icons.person_rounded, color: kPrimaryColor,)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480749957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          suffixIcon: Icon(Icons.person_rounded, color: kPrimaryColor,)\r\n+          pr: Icon(Icons.person_rounded, color: kPrimaryColor),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480755554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          pr: Icon(Icons.person_rounded, color: kPrimaryColor),\r\n+          prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480764597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n+          prefixIcon: const Icon(Icons.person_r, color: kPrimaryColor),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480770051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n-          prefixIcon: const Icon(Icons.person_r, color: kPrimaryColor),\r\n+          prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480780858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n+          s\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480789149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n-          s\r\n+          suffixIcon: Icon\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480796932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n-          suffixIcon: Icon\r\n+          suffixIcon: Icon(Icons.close)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480802654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n-          suffixIcon: Icon(Icons.close)\r\n+          suffixIcon: Icon(Icons.close_rounded, )\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480807874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n-          suffixIcon: Icon(Icons.close_rounded, )\r\n+          suffixIcon: Icon(Icons.close_rounded, color: kPrimaryColor,)\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480814874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n-          suffixIcon: Icon(Icons.close_rounded, color: kPrimaryColor,)\r\n+          suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651480826314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n+        ke\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480833922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n-        ke\r\n+        keyboardType: TextInputType.name,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480839412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n         keyboardType: TextInputType.name,\r\n+        autofillHints: const,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651480845642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n         keyboardType: TextInputType.name,\r\n-        autofillHints: const,\r\n+        autofillHints: const [AutofillHin],\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651486306011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n+          \r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n@@ -30,9 +31,9 @@\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n         keyboardType: TextInputType.name,\r\n-        autofillHints: const [AutofillHin],\r\n+        autofillHints: const [AutofillHints.name],\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651486367588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n-          \r\n+\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n@@ -31,8 +31,9 @@\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n         keyboardType: TextInputType.name,\r\n+        cu\r\n         autofillHints: const [AutofillHints.name],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651486373619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n-\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n           hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n@@ -31,9 +30,9 @@\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n         keyboardType: TextInputType.name,\r\n-        cu\r\n+        cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651486420968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       child: TextFormField(\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n-          hintStyle: textStyleSimple(kPrimaryColor, 16.0, FontWeight.w400),\r\n+          hintStyle: textStyleSimple(kP, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n"
+                },
+                {
+                    "date": 1651486830943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,14 @@\n         color: kPrimaryLightColor,\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n+        style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.normal),\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n-          hintStyle: textStyleSimple(kP, 16.0, FontWeight.w400),\r\n+          hintStyle:\r\n+              textStyleSimple(kPrimaryDeepLightColor, 16.0, FontWeight.w400),\r\n           border: InputBorder.none,\r\n           errorBorder: InputBorder.none,\r\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n"
+                },
+                {
+                    "date": 1651486902619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n         ),\r\n         keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n+        \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651486913054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         ),\r\n         keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n-        \r\n+        inputFormatters: [Upper],\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651486951400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         ),\r\n         keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n-        inputFormatters: [Upper],\r\n+        text,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651486957716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         ),\r\n         keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n-        text,\r\n+        textCapitalization: TextCap,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651486967629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         ),\r\n         keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n-        textCapitalization: TextCap,\r\n+        textCapitalization: TextCapitalization.words,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651487018320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n-        keyboardType: TextInputType.name,\r\n+        keyboardType: TextInputType.text,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n         textCapitalization: TextCapitalization.words,\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651487047044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n           suffixIcon: const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n-        keyboardType: TextInputType.text,\r\n+        keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n         autofillHints: const [AutofillHints.name],\r\n         textCapitalization: TextCapitalization.words,\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651490008185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,17 @@\n import 'package:chatbase_app/Styles/textstyle.dart';\r\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n-class NameField extends StatelessWidget {\r\n+class NameField extends StatefulWidget {\r\n   const NameField({Key? key}) : super(key: key);\r\n \r\n   @override\r\n+  State<NameField> createState() => _NameFieldState();\r\n+}\r\n+\r\n+class _NameFieldState extends State<NameField> {\r\n+  @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),\r\n"
+                },
+                {
+                    "date": 1651490035667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,11 @@\n   State<NameField> createState() => _NameFieldState();\r\n }\r\n \r\n class _NameFieldState extends State<NameField> {\r\n+\r\n+final\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651490045028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _NameFieldState extends State<NameField> {\r\n \r\n-final\r\n+final TextEditingController\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651490053426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _NameFieldState extends State<NameField> {\r\n \r\n-final TextEditingController\r\n+final TextEditingController nameController\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651490058767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n class _NameFieldState extends State<NameField> {\r\n \r\n-final TextEditingController nameController\r\n+final TextEditingController nameController = TextEditingController()\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651490073511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,11 @@\n   State<NameField> createState() => _NameFieldState();\r\n }\r\n \r\n class _NameFieldState extends State<NameField> {\r\n+  final TextEditingController nameController = TextEditingController();\r\n \r\n-final TextEditingController nameController = TextEditingController()\r\n+  \r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651490083436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,12 @@\n   State<NameField> createState() => _NameFieldState();\r\n }\r\n \r\n class _NameFieldState extends State<NameField> {\r\n-  final TextEditingController nameController = TextEditingController();\r\n+  final TextEditingController _nameController = TextEditingController();\r\n \r\n-  \r\n \r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n@@ -26,8 +26,9 @@\n         color: kPrimaryLightColor,\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n+        con\r\n         style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.normal),\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n"
+                },
+                {
+                    "date": 1651490124255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n \r\n class _NameFieldState extends State<NameField> {\r\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n+  \r\n \r\n-\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n@@ -26,9 +26,9 @@\n         color: kPrimaryLightColor,\r\n         borderRadius: BorderRadius.circular(29.0),\r\n       ),\r\n       child: TextFormField(\r\n-        con\r\n+        controller: _nameController,\r\n         style: textStyleSimple(kPrimaryColor, 16.0, FontWeight.normal),\r\n         decoration: InputDecoration(\r\n           contentPadding: const EdgeInsets.only(top: 15.0),\r\n           hintText: 'Enter Name',\r\n"
+                },
+                {
+                    "date": 1651490139026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,13 @@\n \r\n class _NameFieldState extends State<NameField> {\r\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n-  \r\n+  @override\r\n+  void dispose() {\r\n+    // TODO: implement dispose\r\n+    super.dispose();\r\n+  }\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651490145787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n   @override\r\n   void dispose() {\r\n-    // TODO: implement dispose\r\n+   _nameController\r\n     super.dispose();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490159698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n   @override\r\n   void dispose() {\r\n-   _nameController\r\n+    _nameController.dispose();\r\n+    \r\n     super.dispose();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490164933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   @override\r\n   void dispose() {\r\n     _nameController.dispose();\r\n-    \r\n+    _nameController.removeListener(() { })\r\n     super.dispose();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490170995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   @override\r\n   void dispose() {\r\n     _nameController.dispose();\r\n-    _nameController.removeListener(() { })\r\n+    _nameController.removeListener(\r\n     super.dispose();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490177971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   @override\r\n   void dispose() {\r\n     _nameController.dispose();\r\n-    _nameController.removeListener(\r\n+    _nameController.removeListener(onListen);\r\n     super.dispose();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490187075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,10 @@\n     _nameController.removeListener(onListen);\r\n     super.dispose();\r\n   }\r\n \r\n+  void o\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651490193860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n     _nameController.removeListener(onListen);\r\n     super.dispose();\r\n   }\r\n \r\n-  void o\r\n+  void onListen() {\r\n+    setState(() {});\r\n+  }\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n"
+                },
+                {
+                    "date": 1651490202615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,10 @@\n \r\n class _NameFieldState extends State<NameField> {\r\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n+  void\r\n+\r\n   @override\r\n   void dispose() {\r\n     _nameController.dispose();\r\n     _nameController.removeListener(onListen);\r\n"
+                },
+                {
+                    "date": 1651490209400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,13 @@\n \r\n class _NameFieldState extends State<NameField> {\r\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n-  void\r\n+  @override\r\n+  void initState() {\r\n+    // TODO: implement initState\r\n+    super.initState();\r\n+  }\r\n \r\n   @override\r\n   void dispose() {\r\n     _nameController.dispose();\r\n"
+                },
+                {
+                    "date": 1651490215071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n   @override\r\n   void initState() {\r\n-    // TODO: implement initState\r\n+    _name\r\n     super.initState();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490221393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   final TextEditingController _nameController = TextEditingController();\r\n \r\n   @override\r\n   void initState() {\r\n-    _nameController.addListener(() { })\r\n+    _nameController.addListener(() {})\r\n     super.initState();\r\n   }\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1651490631787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n           enabledBorder: InputBorder.none,\r\n           focusedBorder: InputBorder.none,\r\n           disabledBorder: InputBorder.none,\r\n           prefixIcon: const Icon(Icons.person_rounded, color: kPrimaryColor),\r\n-          suffixIcon: _nameController.text.isEmpty ? Container(width: 0.0) : IconButton(onPressed: () => _nameController.clear(), icon: Icon)\r\n+          suffixIcon: _nameController.text.isEmpty ? Container(width: 0.0) : IconButton(onPressed: () => _nameController.clear(), icon: Icon(icon))\r\n           // const Icon(Icons.close_rounded, color: kPrimaryColor),\r\n         ),\r\n         keyboardType: TextInputType.name,\r\n         cursorColor: kPrimaryDeepColor,\r\n"
+                }
+            ],
+            "date": 1651480448134,
+            "name": "Commit-0",
+            "content": "class NameField extends StatelessWidget {\r\n  const NameField({ Key? key }) : super(key: key);\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      \r\n    );\r\n  }\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "sourceFile": "lib/Screens/Welcome_Screen/welcome_screen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1651171622401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651171627717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stl\n\\ No newline at end of file\n+class WelcomeScreen extends StatelessWidget {\r\n+  const WelcomeScreen({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651459226123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class WelcomeScreen extends StatelessWidget {\r\n-  const WelcomeScreen({ Key? key }) : super(key: key);\r\n+  const WelcomeScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n\\ No newline at end of file\n-    );\r\n+    return Background();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651459531434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Screens/Welcome_Screen/Components/background.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class WelcomeScreen extends StatelessWidget {\r\n   const WelcomeScreen({Key? key}) : super(key: key);\r\n"
+                },
+                {
+                    "date": 1651459820218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import 'package:chatbase_app/Screens/Welcome_Screen/Components/background.dart';\r\n+import 'package:flutter/material.dart';\r\n+\r\n+class WelcomeScreen extends StatelessWidget {\r\n+  const WelcomeScreen({Key? key}) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Background(\r\n+      \r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1651459860627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,19 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      \r\n+      child: ,\r\n     );\r\n   }\r\n }\r\n-import 'package:chatbase_app/Screens/Welcome_Screen/Components/background.dart';\r\n-import 'package:flutter/material.dart';\r\n-\r\n-class WelcomeScreen extends StatelessWidget {\r\n-  const WelcomeScreen({Key? key}) : super(key: key);\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return Background();\r\n-  }\r\n-}\r\n"
+                },
+                {
+                    "date": 1651459876067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: ,\r\n+      child: SafeArea(child: SingleChildScrollView()),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459882335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: SafeArea(child: SingleChildScrollView()),\r\n+      child: SafeArea(child: SingleChildScrollView(child: ,)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459894136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: SafeArea(child: SingleChildScrollView(child: ,)),\r\n+      child: SafeArea(child: SingleChildScrollView(child: Column,)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459899815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: SafeArea(child: SingleChildScrollView(child: Column,)),\r\n+      child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center,),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459905180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center,),)),\r\n+      child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [],),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459912521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [],),)),\r\n+      child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [\r\n+        const Text(data)\r\n+      ],),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459918170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n       child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [\r\n-        const Text(data)\r\n+        const Text('Welcome to ')\r\n       ],),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459923477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n       child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [\r\n-        const Text('Welcome to ')\r\n+        const Text('Welcome to ChatBase')\r\n       ],),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459929032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n       child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [\r\n-        const Text('Welcome to ChatBase')\r\n+        const Text('Welcome to ChatBase',)\r\n       ],),)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460248418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,19 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Background(\r\n-      child: SafeArea(child: SingleChildScrollView(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [\r\n-        const Text('Welcome to ChatBase',)\r\n-      ],),)),\r\n+      child: SafeArea(\r\n+        child: SingleChildScrollView(\r\n+          child: Column(\r\n+            mainAxisAlignment: MainAxisAlignment.center,\r\n+            children: [\r\n+              const Text(\r\n+                'Welcome to ChatBase',\r\n+              ),\r\n+            ],\r\n+          ),\r\n+        ),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651460257916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n             mainAxisAlignment: MainAxisAlignment.center,\r\n             children: [\r\n               const Text(\r\n                 'Welcome to ChatBase',\r\n+                style: te,\r\n               ),\r\n             ],\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651460264750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import 'package:chatbase_app/Screens/Welcome_Screen/Components/background.dart';\r\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class WelcomeScreen extends StatelessWidget {\r\n   const WelcomeScreen({Key? key}) : super(key: key);\r\n@@ -13,9 +15,9 @@\n             mainAxisAlignment: MainAxisAlignment.center,\r\n             children: [\r\n               const Text(\r\n                 'Welcome to ChatBase',\r\n-                style: te,\r\n+                style: textStyleSimple(kPrimaryColor, fontSize, fontWeight),\r\n               ),\r\n             ],\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651460272576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             mainAxisAlignment: MainAxisAlignment.center,\r\n             children: [\r\n               const Text(\r\n                 'Welcome to ChatBase',\r\n-                style: textStyleSimple(kPrimaryColor, fontSize, fontWeight),\r\n+                style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n             ],\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651460383468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,13 @@\n         child: SingleChildScrollView(\r\n           child: Column(\r\n             mainAxisAlignment: MainAxisAlignment.center,\r\n             children: [\r\n-              const Text(\r\n+              Text(\r\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n+              SizedBox()\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651460392318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   const WelcomeScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size \r\n     return Background(\r\n       child: SafeArea(\r\n         child: SingleChildScrollView(\r\n           child: Column(\r\n@@ -17,9 +18,9 @@\n               Text(\r\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n-              SizedBox()\r\n+              SizedBox(height: size,)\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651460401573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const WelcomeScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size \r\n+    Size size = MediaQuery.of(context)\r\n     return Background(\r\n       child: SafeArea(\r\n         child: SingleChildScrollView(\r\n           child: Column(\r\n"
+                },
+                {
+                    "date": 1651460408150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const WelcomeScreen({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context)\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Background(\r\n       child: SafeArea(\r\n         child: SingleChildScrollView(\r\n           child: Column(\r\n@@ -18,9 +18,11 @@\n               Text(\r\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n-              SizedBox(height: size,)\r\n+              SizedBox(\r\n+                height: size.,\r\n+              )\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651460416834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n               SizedBox(\r\n-                height: size.,\r\n+                height: size.height * 0.05,\r\n               )\r\n             ],\r\n           ),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651460423984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,9 @@\n               Text(\r\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n-              SizedBox(\r\n-                height: size.height * 0.05,\r\n-              )\r\n+              SizedBox(height: size.height * 0.05),\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651460429544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n               SizedBox(height: size.height * 0.05),\r\n+              S\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651460442558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n               SizedBox(height: size.height * 0.05),\r\n-              S\r\n+              0\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651460451026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                 'Welcome to ChatBase',\r\n                 style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n               ),\r\n               SizedBox(height: size.height * 0.05),\r\n-              Svg\r\n+              SvgP\r\n             ],\r\n           ),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651474208259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n                       bgColor: kPrimaryDeepLightColor,\r\n                       textColor: Colors.white,\r\n                       overlayColor: kPrimaryColor,\r\n                       onPressed: () {\r\n-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SignUp))\r\n+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SignUpS))\r\n                       },\r\n                     ),\r\n                   ],\r\n                 ),\r\n"
+                }
+            ],
+            "date": 1651171622401,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

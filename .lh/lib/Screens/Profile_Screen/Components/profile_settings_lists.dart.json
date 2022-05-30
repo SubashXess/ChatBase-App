@@ -1,0 +1,50 @@
+{
+    "sourceFile": "lib/Screens/Profile_Screen/Components/profile_settings_lists.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1652020253417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652020262784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stk\n\\ No newline at end of file\n+class ProfileSettingsList extends StatelessWidget {\r\n+  const ProfileSettingsList({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1652020268597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class ProfileSettingsList extends StatelessWidget {\r\n   const ProfileSettingsList({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n"
+                },
+                {
+                    "date": 1652020957159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n import 'package:flutter/material.dart';\r\n \r\n class ProfileSettingsList extends StatelessWidget {\r\n-  const ProfileSettingsList({ Key? key }) : super(key: key);\r\n+  const ProfileSettingsList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n-    );\r\n+    return Expanded();\r\n\\ No newline at end of file\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652020963212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n   const ProfileSettingsList({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Expanded();\r\n+    return Expanded(\r\n+      child: Container,\r\n\\ No newline at end of file\n+    );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652020970873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Expanded(\r\n-      child: Container,\r\n+      child: Container(\r\n+        child: Text(Hello),\r\n+      ),\r\n\\ No newline at end of file\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652020987496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Expanded(\r\n       child: Container(\r\n-        child: Text(Hello),\r\n+        child: const Text(\"Hello\"),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652021007853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Expanded(\r\n       child: Container(\r\n+        width: ,\r\n         child: const Text(\"Hello\"),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1652021013952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Expanded(\r\n       child: Container(\r\n-        width: ,\r\n+        width: double.infinity,\r\n         child: const Text(\"Hello\"),\r\n       ),\r\n     );\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                }
+            ],
+            "date": 1652020253417,
+            "name": "Commit-0",
+            "content": "stk"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "sourceFile": "lib/Screens/Welcome_Screen/Components/background.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1651459360454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651459407262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,12 @@\n-stl\n\\ No newline at end of file\n+import 'package:flutter/material.dart';\r\n+\r\n+class Background extends StatelessWidget {\r\n+  const Background({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651459426906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   const Background({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MEdiaQuery.of(co)\r\n     return Container(\r\n       \r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651459432928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const Background({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MEdiaQuery.of(co)\r\n+    Size size = MediaQuery.of(context)\r\n     return Container(\r\n       \r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651459441015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return Sized();\r\n+    return SizedBox();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651459498231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     return SizedBox(\r\n       height: size.height,\r\n       width: double.infinity,\r\n       child: Stack(alignment: Alignment.center, children: [\r\n-        Positioned(child: Image.asset('assets/images/main_top.png', w))\r\n+        Positioned(child: Image.asset('assets/images/main_top.png', width: ,))\r\n       ],),\r\n     );\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1651459360454,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}

@@ -1,0 +1,646 @@
+{
+    "sourceFile": "lib/Screens/Chat_Screen/Components/photo_dialog_box.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 157,
+            "patches": [
+                {
+                    "date": 1651813841406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651813846531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n-stl\n\\ No newline at end of file\n+class PhotDialogBox extends StatelessWidget {\r\n+  const PhotDialogBox({ Key? key }) : super(key: key);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Container(\r\n+      \r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1651813854010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-class PhotDialogBox extends StatelessWidget {\r\n-  const PhotDialogBox({ Key? key }) : super(key: key);\r\n+class PhotoDialogBox extends StatelessWidget {\r\n+  const PhotoDialogBox({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                },
+                {
+                    "date": 1651813901682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n+import 'package:flutter/material.dart';\r\n+\r\n class PhotoDialogBox extends StatelessWidget {\r\n+  final \r\n   const PhotoDialogBox({ Key? key }) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651813907491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n-  final \r\n-  const PhotoDialogBox({ Key? key }) : super(key: key);\r\n+  final profilePic;\r\n+  const PhotoDialogBox({Key? key}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container(\r\n-      \r\n-    );\r\n\\ No newline at end of file\n+    return Container();\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1651813917270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n-  final profilePic;\r\n-  const PhotoDialogBox({Key? key}) : super(key: key);\r\n+  final String profilePic;\r\n+  const PhotoDialogBox({Key? key, this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container();\r\n"
+                },
+                {
+                    "date": 1651814116713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n-  const PhotoDialogBox({Key? key, this.profilePic}) : super(key: key);\r\n+  const PhotoDialogBox({Key? key, required this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Dialog();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814135690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,9 @@\n   const PhotoDialogBox({Key? key, required this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Dialog();\r\n+    return Dialog(\r\n+      \r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814150236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n-      \r\n+      shape: Rounded,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814159124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n-      shape: Rounded,\r\n+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.c),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814169977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.c),\r\n+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n+      \r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814180133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n-      \r\n+      elevation: 0.0,\r\n+      c\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814194431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n-      c\r\n+      child: Stac,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814201023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n-      child: Stac,\r\n+      child: dialogC,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814206945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n-      child: dialogC,\r\n+      child: dialogContent(context),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814214164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,8 @@\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n     );\r\n   }\r\n+\r\n+\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1651814223066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n       child: dialogContent(context),\r\n     );\r\n   }\r\n \r\n+dialogContent(BuildContext context)\r\n \r\n-  \r\n }\r\n"
+                },
+                {
+                    "date": 1651814231372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,9 @@\n       child: dialogContent(context),\r\n     );\r\n   }\r\n \r\n-dialogContent(BuildContext context)\r\n+dialogContent(BuildContext context) {\r\n+  return Stack()\r\n+}\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1651814248722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,12 @@\n       child: dialogContent(context),\r\n     );\r\n   }\r\n \r\n-dialogContent(BuildContext context) {\r\n-  return Stack()\r\n+  dialogContent(BuildContext context) {\r\n+    return Stack(\r\n+      children: [\r\n+        \r\n+      ],\r\n+    );\r\n+  }\r\n }\r\n-\r\n-}\r\n"
+                },
+                {
+                    "date": 1651814258597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        \r\n+        Text(data)\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814268083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n+  final String\r\n   const PhotoDialogBox({Key? key, required this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -15,9 +16,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        Text(data)\r\n+        Text(\"Name\")\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814274563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n-  final String\r\n+  final String name;\r\n   const PhotoDialogBox({Key? key, required this.profilePic}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -15,10 +15,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [\r\n-        Text(\"Name\")\r\n-      ],\r\n+      children: [Text(\"Name\")],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814279833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n   final String name;\r\n-  const PhotoDialogBox({Key? key, required this.profilePic}) : super(key: key);\r\n+  const PhotoDialogBox({Key? key, required this.profilePic, required this.name}) : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n"
+                },
+                {
+                    "date": 1651814299594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [Text(\"Name\")],\r\n+      children: [Text(user)],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814305359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [Text(user)],\r\n+      children: [Text(name, st)],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814311870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:chatbase_app/Styles/textstyle.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n@@ -15,8 +16,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [Text(name, st)],\r\n+      children: [Text(name, style: textStyleSimple(k, fontSize, fontWeight),)],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814318806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:chatbase_app/Styles/textstyle.dart';\r\n+import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n@@ -16,8 +17,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [Text(name, style: textStyleSimple(k, fontSize, fontWeight),)],\r\n+      children: [Text(name, style: textStyleSimple(kPrimaryColor, 18.0, fontWeight),)],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814353812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n   final String profilePic;\r\n   final String name;\r\n-  const PhotoDialogBox({Key? key, required this.profilePic, required this.name}) : super(key: key);\r\n+  const PhotoDialogBox({Key? key, required this.profilePic, required this.name})\r\n+      : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n@@ -17,8 +18,13 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [Text(name, style: textStyleSimple(kPrimaryColor, 18.0, fontWeight),)],\r\n+      children: [\r\n+        Text(\r\n+          name,\r\n+          style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n+        ),\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814372347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n         Text(\r\n           name,\r\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n+        \r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814378272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         Text(\r\n           name,\r\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n-        \r\n+        Container()\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814383863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,11 @@\n         Text(\r\n           name,\r\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n-        Container()\r\n+        Container(\r\n+          padding: ,\r\n+        ),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651814392273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n           name,\r\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n-          padding: ,\r\n+          padding: const EdgeInsets.all(10.0),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814412139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n+          \r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814421542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          \r\n+          c\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814431135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          c\r\n+          child: ,\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814437816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: ,\r\n+          child: Imagse,\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814448592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Imagse,\r\n+          child: ImageAs,\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814459657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: ImageAs,\r\n+          child: Image,\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814466115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Image,\r\n+          child: Image(image: profilePic),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814625464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Image(image: profilePic),\r\n+          decoration: ,\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814632894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          decoration: ,\r\n+          decoration: BoxDecoration(image: ),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814677064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          decoration: BoxDecoration(image: ),\r\n+          decoration: BoxDecoration(image: profilePic),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814683787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          decoration: BoxDecoration(image: profilePic),\r\n+          decoration: BoxDecoration(image: profilePic.t),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814692711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          decoration: BoxDecoration(image: profilePic.t),\r\n+          decoration: BoxDecoration(image: profilePic.),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814762005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n-  final String profilePic;\r\n+  final Image profilePic;\r\n   final String name;\r\n   const PhotoDialogBox({Key? key, required this.profilePic, required this.name})\r\n       : super(key: key);\r\n \r\n"
+                },
+                {
+                    "date": 1651814781664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          decoration: BoxDecoration(image: profilePic.),\r\n+          child: Text,\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814787625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Text,\r\n+          child: Text(profilePic),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814799858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Text(profilePic),\r\n+          child: Text($profilePic),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814806538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Text($profilePic),\r\n+          child: Text(${profilePic}),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814815454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Text(${profilePic}),\r\n+          child: Text(\"${profilePic}\"),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814820621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Text(\"${profilePic}\"),\r\n+          child: Text(\"$profilePic\"),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651814829730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:chatbase_app/constants.dart';\r\n import 'package:flutter/material.dart';\r\n \r\n class PhotoDialogBox extends StatelessWidget {\r\n-  final Image profilePic;\r\n+  final String profilePic;\r\n   final String name;\r\n   const PhotoDialogBox({Key? key, required this.profilePic, required this.name})\r\n       : super(key: key);\r\n \r\n"
+                },
+                {
+                    "date": 1651814865324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n         ),\r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n-          child: Text(\"$profilePic\"),\r\n+          child: Text(profilePic),\r\n         ),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651815100721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        Text(\r\n-          name,\r\n-          style: textStyleSimple(kPrimaryColor, 18.0, FontWeight.bold),\r\n-        ),\r\n+        \r\n         Container(\r\n           padding: const EdgeInsets.all(10.0),\r\n           child: Text(profilePic),\r\n         ),\r\n"
+                },
+                {
+                    "date": 1651815111207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,15 +17,10 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Stack(\r\n-      children: [\r\n-        \r\n-        Container(\r\n-          padding: const EdgeInsets.all(10.0),\r\n-          child: Text(profilePic),\r\n-        ),\r\n-      ],\r\n+    return Container(\r\n+      padding: const EdgeInsets.all(10.0),\r\n+      child: Center,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815117390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,8 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n-      child: Center,\r\n+      child: Center(child: Asser,),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815126168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,8 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n-      child: Center(child: Asser,),\r\n+      child: Center(child: AImage,),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815139710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,10 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n-      child: Center(child: AImage,),\r\n+      child: Center(\r\n+        child: AssetImage(profilePic),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815147874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n       child: Center(\r\n-        child: AssetImage(profilePic),\r\n+        child: AssetImage(),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815159342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n       child: Center(\r\n-        child: AssetImage(),\r\n+        child: AssetImage(a),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815167119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n       child: Center(\r\n-        child: AssetImage(a),\r\n+        child: ,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815173198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n       child: Center(\r\n-        child: ,\r\n+        child: \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815266596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       padding: const EdgeInsets.all(10.0),\r\n       child: Center(\r\n-        child: \r\n+        child: Image,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815280889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,11 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      padding: const EdgeInsets.all(10.0),\r\n+      // padding: const EdgeInsets.all(10.0),\r\n       child: Center(\r\n-        child: Image,\r\n+        child: Image.asset(profilePic),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815299141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,9 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Container(\r\n-      // padding: const EdgeInsets.all(10.0),\r\n-      child: Center(\r\n-        child: Image.asset(profilePic),\r\n-      ),\r\n+    return Center(\r\n+      child: Image.asset(profilePic, ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815313332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Image.asset(profilePic, ),\r\n+      child: Card(child: Image.asset(profilePic, )),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815318621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Card(child: Image.asset(profilePic, )),\r\n+      child: Card(child: Image.asset(profilePic)),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815329794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Card(child: Image.asset(profilePic)),\r\n+      child: Conat\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815335729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Conat\r\n+      child: Container(decoration: BoxDecoration(),)\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815342893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Container(decoration: BoxDecoration(),)\r\n+      child: Container(decoration: BoxDecoration(image: Image.asset(profilePic)),)\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815352804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Container(decoration: BoxDecoration(image: Image.asset(profilePic)),)\r\n+      child: Container(decoration: BoxDecoration(image: ),)\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815360452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Container(decoration: BoxDecoration(image: ),)\r\n+      child: Container(decoration: BoxDecoration(image: DecorationImage(image: image)),)\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815367453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Container(decoration: BoxDecoration(image: DecorationImage(image: image)),)\r\n+      child: Container(decoration: BoxDecoration(image: DecorationImage(image: )),)\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815380267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n-      child: Container(decoration: BoxDecoration(image: DecorationImage(image: )),)\r\n+      child: Card(\r\n+        child: Image.asset(profilePic),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815394731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n       child: Card(\r\n         child: Image.asset(profilePic),\r\n+        \r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815416060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,12 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Center(\r\n+      \r\n       child: Card(\r\n         child: Image.asset(profilePic),\r\n-        \r\n+\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815433639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,12 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Center(\r\n-      \r\n+    return Container(\r\n       child: Card(\r\n         child: Image.asset(profilePic),\r\n-\r\n+        s\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815439340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       child: Card(\r\n         child: Image.asset(profilePic),\r\n-        s\r\n+        clipBehavior: Clip.,\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815452205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,8 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      child: Card(\r\n-        child: Image.asset(profilePic),\r\n-        clipBehavior: Clip.,\r\n-      ),\r\n+      child: Image.asset(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815461666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n+      decoration: BoxDecoration(),\r\n       child: Image.asset(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815470745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      decoration: BoxDecoration(),\r\n+      decoration: BoxDecoration(\r\n+        borderRadius: BorderRadius.circular(29.0)\r\n+      ),\r\n       child: Image.asset(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815482070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       decoration: BoxDecoration(\r\n-        borderRadius: BorderRadius.circular(29.0)\r\n+        borderRadius: BorderRadius.circular(29.0),\r\n+        \r\n       ),\r\n       child: Image.asset(profilePic),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651815487539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      decoration: BoxDecoration(\r\n-        borderRadius: BorderRadius.circular(29.0),\r\n-        \r\n-      ),\r\n+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       child: Image.asset(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815495370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+      clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Image.asset(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815533375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+      \r\n       child: Image.asset(profilePic),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815540038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-      \r\n-      child: Image.asset(profilePic),\r\n+      child: Image.asset(profilePic, ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815549505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,8 @@\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-      child: Image.asset(profilePic, ),\r\n+      child: Image.asset(profilePic, fit: BoxFit.),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815573334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,15 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Container(\r\n-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-      clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-      child: Image.asset(profilePic, fit: BoxFit.),\r\n+    return Column(\r\n+      children: [\r\n+        Container(\r\n+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+          clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+          child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        ),\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815581139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Column(\r\n       children: [\r\n+        Text(\"data\"),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815600315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,18 +10,18 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n+      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Column(\r\n       children: [\r\n-        Text(\"data\"),\r\n+        Text(name),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815615257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     return Dialog(\r\n       // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n+      backgroundColor: Colors.transparent,\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651815626922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n       // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n       backgroundColor: Colors.transparent,\r\n+      \r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651815637470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,13 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Dialog(\r\n-      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n       backgroundColor: Colors.transparent,\r\n-      \r\n+\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651815652028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,21 +14,22 @@\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n       backgroundColor: Colors.transparent,\r\n-\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Column(\r\n-      children: [\r\n-        Text(name),\r\n-        Container(\r\n-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-          clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-          child: Image.asset(profilePic, fit: BoxFit.cover),\r\n-        ),\r\n-      ],\r\n+    return Container(\r\n+      child: Column(\r\n+        children: [\r\n+          Text(name),\r\n+          Container(\r\n+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+            clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+            child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+          ),\r\n+        ],\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815671141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = \r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n@@ -19,8 +20,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n+      width: ,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815676422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = \r\n+    Size size = MediaQury\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n"
+                },
+                {
+                    "date": 1651815686630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n   const PhotoDialogBox({Key? key, required this.profilePic, required this.name})\r\n       : super(key: key);\r\n \r\n   @override\r\n-  Widget build(BuildContext context) {\r\n-    Size size = MediaQury\r\n+  Widget build(BuildContext context) \r\n+    Size size = MediaQuery.of(context)\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n"
+                },
+                {
+                    "date": 1651815693480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n   const PhotoDialogBox({Key? key, required this.profilePic, required this.name})\r\n       : super(key: key);\r\n \r\n   @override\r\n-  Widget build(BuildContext context) \r\n-    Size size = MediaQuery.of(context)\r\n+  Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n@@ -20,9 +20,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      width: ,\r\n+      width: si,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815700412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    Size size = MediaQuery.of(context).size;\r\n+    \r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n@@ -20,9 +20,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      width: si,\r\n+      width: ,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815706161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,11 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      width: ,\r\n+      width: size.width,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815713580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      width: size.width,\r\n+      width: size.width * 0.,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815719484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n       : super(key: key);\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    \r\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n@@ -21,14 +20,15 @@\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      width: size.width * 0.,\r\n+      width: size.width * 0.2,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+            decoration:\r\n+                BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n             clipBehavior: Clip.antiAliasWithSaveLayer,\r\n             child: Image.asset(profilePic, fit: BoxFit.cover),\r\n           ),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651815727363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n-      backgroundColor: Colors.transparent,\r\n+      backgroundColor: Colors.Blue,\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1651815737351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,16 +13,17 @@\n     return Dialog(\r\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n-      backgroundColor: Colors.Blue,\r\n+      backgroundColor: Colors.blue,\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       width: size.width * 0.2,\r\n+      height: ,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815743665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       width: size.width * 0.2,\r\n-      height: ,\r\n+      height: size.,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815750708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n       width: size.width * 0.2,\r\n-      height: size.,\r\n+      height: size.height * ,\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815776551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Container(\r\n-      width: size.width * 0.2,\r\n-      height: size.height * ,\r\n+      \r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815781731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return Container(\r\n-      \r\n+    return SizedBox(\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815792368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return SizedBox(\r\n+    return Stack(\r\n       child: Column(\r\n         children: [\r\n           Text(name),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1651815800424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     Size size = MediaQuery.of(context).size;\r\n     return Stack(\r\n       child: Column(\r\n         children: [\r\n-          Text(name),\r\n+         \r\n           Container(\r\n             decoration:\r\n                 BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n             clipBehavior: Clip.antiAliasWithSaveLayer,\r\n"
+                },
+                {
+                    "date": 1651815811275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,19 +19,12 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return Stack(\r\n-      child: Column(\r\n-        children: [\r\n-         \r\n-          Container(\r\n-            decoration:\r\n-                BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-            clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-            child: Image.asset(profilePic, fit: BoxFit.cover),\r\n-          ),\r\n-        ],\r\n-      ),\r\n+    return Container(\r\n+      decoration:\r\n+          BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+      clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+      child: Image.asset(profilePic, fit: BoxFit.cover),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815817279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,14 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return Container(\r\n-      decoration:\r\n-          BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-      clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-      child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+    return Stack(\r\n+      child: Container(\r\n+        decoration:\r\n+            BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+        clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815823049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,15 @@\n \r\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Stack(\r\n+      children: [\r\n       child: Container(\r\n         decoration:\r\n             BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n         clipBehavior: Clip.antiAliasWithSaveLayer,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815830823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n   dialogContent(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Stack(\r\n       children: [\r\n-      child: Container(\r\n+        Text(data)\r\n+       Container(\r\n         decoration:\r\n             BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n         clipBehavior: Clip.antiAliasWithSaveLayer,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815851400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,18 +18,16 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    Size size = MediaQuery.of(context).size;\r\n     return Stack(\r\n       children: [\r\n-        Text(data)\r\n-       Container(\r\n-        decoration:\r\n-            BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-        clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n-      ),\r\n+        Text(name),\r\n+        Container(\r\n+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+          clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+          child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        ),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651815862768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        Text(name),\r\n+        Text(name,),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815868573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        Text(name,),\r\n+        Text(name, style: textStyleSimple(color, fontSize, fontWeight),),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815875508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        Text(name, style: textStyleSimple(color, fontSize, fontWeight),),\r\n+        Text(name, style: textStyleSimple(kPrimaryColor, 20.0, fontWeight),),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815888561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,14 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n+      \r\n       children: [\r\n-        Text(name, style: textStyleSimple(kPrimaryColor, 20.0, fontWeight),),\r\n+        Text(\r\n+          name,\r\n+          style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n+        ),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815896659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      \r\n+      alignment: Alignment.c,\r\n       children: [\r\n         Text(\r\n           name,\r\n           style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n"
+                },
+                {
+                    "date": 1651815901964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      alignment: Alignment.c,\r\n+      alignment: Alignment.topCenter,\r\n       children: [\r\n         Text(\r\n           name,\r\n           style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n"
+                },
+                {
+                    "date": 1651815919674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,15 +18,9 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Stack(\r\n-      alignment: Alignment.topCenter,\r\n-      children: [\r\n-        Text(\r\n-          name,\r\n-          style: textStyleSimple(kPrimaryColor, 20.0, FontWeight.bold),\r\n-        ),\r\n+    return \r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651815926237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,7 @@\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n           child: Image.asset(profilePic, fit: BoxFit.cover),\r\n         ),\r\n-      ],\r\n-    );\r\n+      \r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651816018382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,15 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return \r\n-        Container(\r\n-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-          clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-          child: Image.asset(profilePic, fit: BoxFit.cover),\r\n-        ),\r\n-      \r\n+    return Container(\r\n+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+      clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+      child: Column(\r\n+        children: [\r\n+          Image.asset(profilePic, fit: BoxFit.cover),\r\n+        ],\r\n+      ),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651816026070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n+          Text(name)\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816034158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,14 +19,15 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n+      c\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(name)\r\n+          Text(name),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816042674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      c\r\n+      constraints: const BoxConstraints(ma),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816048432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(ma),\r\n+      constraints: const BoxConstraints(maxHeight: 400.0),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816055771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(maxHeight: 400.0),\r\n+      constraints: const BoxConstraints(maxHeight: 00.0),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816065588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(maxHeight: 00.0),\r\n+      constraints: const BoxConstraints(maxHeight: 380.0),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816091202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(maxHeight: 380.0),\r\n+      constraints: const BoxConstraints(maxHeight: 600.0),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816100451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(maxHeight: 600.0),\r\n+      constraints: const BoxConstraints(maxHeight: 800.0),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816108699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(maxHeight: 800.0),\r\n+      constraints: const BoxConstraints(maxHeight: 00.0),\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816146820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Container(\r\n-      constraints: const BoxConstraints(maxHeight: 00.0),\r\n+      \r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816153362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,9 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Container(\r\n-      \r\n+    return Ex(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Column(\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1651816239755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,12 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Ex(\r\n+    return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-      child: Column(\r\n+      child: Stack(\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(name),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651816253247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n+        \r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(name),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651816258525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n-        \r\n+        fit: StackF,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(name),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651816264397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n-        fit: StackF,\r\n+        fit: StackFit.,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(name),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651816296496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n-        fit: StackFit.,\r\n+        fit: StackFit.loose,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(name),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651816305914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n-        fit: StackFit.loose,\r\n+        fit: StackFit.,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(name),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1651816326280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,12 @@\n     return Container(\r\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n-        fit: StackFit.,\r\n+        fit: StackFit.passthrough,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(name),\r\n+          Text(name, s),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816331915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(name, s),\r\n+          Text(name, textAlign: TextA),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816345847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(name, textAlign: TextA),\r\n+          Text(name, textAlign: TextAlign.center, s),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816351844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(name, textAlign: TextAlign.center, s),\r\n+          Text(name, textAlign: TextAlign.center, style: TextStyle(color: ),),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816360368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,13 @@\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(name, textAlign: TextAlign.center, style: TextStyle(color: ),),\r\n+          Text(\r\n+            name,\r\n+            textAlign: TextAlign.center,\r\n+            style: TextStyle(color: kPrimaryColor),\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816376880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n+        \r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(\r\n             name,\r\n"
+                },
+                {
+                    "date": 1651816383192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n-        \r\n+        alignment: Alignment.bottomCenter,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(\r\n             name,\r\n"
+                },
+                {
+                    "date": 1651816399969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n       decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n       clipBehavior: Clip.antiAliasWithSaveLayer,\r\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n-        alignment: Alignment.bottomCenter,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n           Text(\r\n             name,\r\n"
+                },
+                {
+                    "date": 1651816406786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,9 @@\n       child: Stack(\r\n         fit: StackFit.passthrough,\r\n         children: [\r\n           Image.asset(profilePic, fit: BoxFit.cover),\r\n-          Text(\r\n-            name,\r\n-            textAlign: TextAlign.center,\r\n-            style: TextStyle(color: kPrimaryColor),\r\n-          ),\r\n+          \r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1651816418827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,17 +18,13 @@\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n-    return Container(\r\n-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-      clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-      child: Stack(\r\n-        fit: StackFit.passthrough,\r\n-        children: [\r\n-          Image.asset(profilePic, fit: BoxFit.cover),\r\n-          \r\n-        ],\r\n+    return Stack(\r\n+      child: Container(\r\n+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+        clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651816425751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n+      children: [],\r\n       child: Container(\r\n         decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n         clipBehavior: Clip.antiAliasWithSaveLayer,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n"
+                },
+                {
+                    "date": 1651816430963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,13 +19,14 @@\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n-      children: [],\r\n+      children: [\r\n       child: Container(\r\n         decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n         clipBehavior: Clip.antiAliasWithSaveLayer,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651816439179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,14 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-      child: Container(\r\n+        Text(\r\n+            name,\r\n+            textAlign: TextAlign.center,\r\n+            style: TextStyle(color: kPrimaryColor),\r\n+          ),\r\n+       Container(\r\n         decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n         clipBehavior: Clip.antiAliasWithSaveLayer,\r\n         child: Image.asset(profilePic, fit: BoxFit.cover),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1651816439277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,17 +21,17 @@\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n         Text(\r\n-            name,\r\n-            textAlign: TextAlign.center,\r\n-            style: TextStyle(color: kPrimaryColor),\r\n-          ),\r\n-       Container(\r\n-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n-        clipBehavior: Clip.antiAliasWithSaveLayer,\r\n-        child: Image.asset(profilePic, fit: BoxFit.cover),\r\n-      ),\r\n+          name,\r\n+          textAlign: TextAlign.center,\r\n+          style: TextStyle(color: kPrimaryColor),\r\n+        ),\r\n+        Container(\r\n+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n+          clipBehavior: Clip.antiAliasWithSaveLayer,\r\n+          child: Image.asset(profilePic, fit: BoxFit.cover),\r\n+        ),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1651816470374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,14 @@\n \r\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n-        Text(\r\n-          name,\r\n-          textAlign: TextAlign.center,\r\n-          style: TextStyle(color: kPrimaryColor),\r\n+        Align(\r\n+          child: Text(\r\n+            name,\r\n+            textAlign: TextAlign.center,\r\n+            style: TextStyle(color: kPrimaryColor),\r\n+          ),\r\n         ),\r\n         Container(\r\n           decoration: BoxDecoration(borderRadius: BorderRadius.circular(29.0)),\r\n           clipBehavior: Clip.antiAliasWithSaveLayer,\r\n"
+                },
+                {
+                    "date": 1651816478558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   dialogContent(BuildContext context) {\r\n     return Stack(\r\n       children: [\r\n         Align(\r\n-          alignment: Alignment.t,\r\n+          alignment: Alignment.topCenter,\r\n           child: Text(\r\n             name,\r\n             textAlign: TextAlign.center,\r\n             style: TextStyle(color: kPrimaryColor),\r\n"
+                },
+                {
+                    "date": 1651816760200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(29.0)),\r\n       elevation: 0.0,\r\n       child: dialogContent(context),\r\n       backgroundColor: Colors.blue,\r\n-      insetPadding: EdgeInsets,\r\n+      insetPadding: EdgeInsets.,\r\n     );\r\n   }\r\n \r\n   dialogContent(BuildContext context) {\r\n"
+                }
+            ],
+            "date": 1651813841406,
+            "name": "Commit-0",
+            "content": "stl"
+        }
+    ]
+}
